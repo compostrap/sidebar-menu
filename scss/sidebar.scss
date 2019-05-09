@@ -1,0 +1,27 @@
+/*!
+ * Sidebar menu for Bootstrap 4
+ * Copyright Zdeněk Papučík
+ * MIT License
+*/
+
+// bootstrap
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+@import '../node_modules/bootstrap/scss/_mixins';
+
+// sidebar-menu
+@import 'utils/_functions';
+@import 'utils/_variables';
+
+@import 'base/_body';
+
+@import 'layout/_content';
+@import 'layout/_sidebar';
+
+@import 'components/_navbar';
+@import 'components/_list';
+@import 'components/_scrollbar';
+@import 'components/_nanobar';
+
+@import 'themes/_colors';
+@import 'themes/_theme';

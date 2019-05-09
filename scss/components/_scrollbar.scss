@@ -1,0 +1,20 @@
+//
+// scrollbar for list
+//
+
+.list-scrollbar {
+  position: relative;
+  overflow: hidden;
+}
+
+// customize
+.ps__rail-y {
+  margin-top: rem(1);
+}
+
+.ps__rail-y.ps--clicking .ps__thumb-y,
+.ps__rail-y:focus .ps__thumb-y,
+.ps__rail-y:hover .ps__thumb-y,
+.ps__thumb-y {
+  width: $sm-scrollbar;
+}

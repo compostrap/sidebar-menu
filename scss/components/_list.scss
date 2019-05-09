@@ -1,0 +1,78 @@
+//
+// list for sidebar-menu
+//
+
+.list {
+  max-height: 80vh;
+  padding: 0 rem(20) 0 rem(17);
+  @include font-size($font-size);
+}
+
+.list-item {
+  padding: 0;
+  margin-top: rem(10);
+  line-height: rem(34);
+}
+
+.list-title {
+  margin-bottom: 0;
+  @include font-size($font-size-sm);
+}
+
+.list-hidden {
+  display: none;
+  padding-left: rem(10);
+  margin: rem(15) 0 rem(15) rem(10);
+  overflow: hidden;
+}
+
+.list-link {
+  display: block;
+  padding: 0 rem(10);
+  margin-bottom: rem(2);
+  @include border-radius($border-radius);
+  @include hover {
+    text-decoration: none;
+
+    .fa {
+      transform: rotate(360deg);
+      transition: 0.5s all;
+    }
+  }
+}
+
+.list-notify {
+  padding-left: rem(20);
+}
+
+.list-icon {
+  width: rem(22);
+  display: inline-block;
+}
+
+// arrow icon up and down in menu
+.link-arrow:before {
+  font-family: $font-awesome;
+  margin-right: rem(3);
+  float: right;
+}
+
+.link-arrow.up:before {
+  content: "\f106";
+}
+
+.link-arrow.down:before {
+  content: "\f107";
+}
+
+.link-arrow.transition:before {
+  transition: 0.2s all;
+}
+
+.link-arrow.rotate:before {
+  transform: rotate(180deg);
+}
+
+.link-arrow.rotate-revert:before {
+  transform: rotate(-180deg);
+}

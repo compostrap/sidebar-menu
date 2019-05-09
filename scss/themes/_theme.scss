@@ -1,0 +1,55 @@
+//
+// theme default
+//
+
+@each $theme, $map in $theme-colors {
+
+  .sidebar-#{$theme} {
+    background-color: map-get($map, sidebar-bg);
+  }
+
+  .sidebar-#{$theme} .list {
+    color: map-get($map, list-color);
+  }
+
+  .sidebar-#{$theme} .list-notify {
+    color: map-get($map, list-notify);
+  }
+
+  .sidebar-#{$theme} .list-link {
+    color: map-get($map, list-link);
+  }
+
+  .sidebar-#{$theme} .link-current,
+  .sidebar-#{$theme} .list-link:hover {
+    background-color: map-get($map, list-link-bg);
+  }
+
+  .sidebar-#{$theme} .link-arrow:before,
+  .sidebar-#{$theme} .list-link .fa {
+    opacity: 0.3;
+  }
+
+  .sidebar-#{$theme} .link-arrow.active:before,
+  .sidebar-#{$theme} .list-link:hover .fa {
+    opacity: 1.0;
+  }
+
+  .sidebar-#{$theme} .list-hidden {
+    border-left: rem(1) solid map-get($map, list-border);
+  }
+
+  .sidebar-#{$theme} .ps__rail-y.ps--clicking .ps__thumb-y,
+  .sidebar-#{$theme} .ps__rail-y:focus .ps__thumb-y,
+  .sidebar-#{$theme} .ps__rail-y:hover .ps__thumb-y,
+  .sidebar-#{$theme} .ps__thumb-y {
+    background-color: map-get($map, scrollbar-bg);
+  }
+
+  .ps .ps__rail-y.ps--clicking,
+  .ps .ps__rail-y:focus,
+  .ps .ps__rail-y:hover {
+    background: none;
+  }
+
+}

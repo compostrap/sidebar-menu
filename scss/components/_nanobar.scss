@@ -1,0 +1,17 @@
+//
+// progress bars
+//
+
+.nanobar {
+  width: 100%;
+  height: rem(4);
+  z-index: 9999;
+  top: 0;
+}
+
+.nanobar .bar {
+  width: 0;
+  height: 100%;
+  transition: height 0.3s;
+  background-color: #fd9d36;
+}

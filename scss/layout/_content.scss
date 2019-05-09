@@ -1,0 +1,11 @@
+//
+// wrapping layout for content
+//
+
+.content {
+  min-width: 100vw;
+  @include media-breakpoint-up('md') {
+    min-width: 0;
+    width: 100%;
+  }
+}

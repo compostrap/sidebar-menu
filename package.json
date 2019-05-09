@@ -1,0 +1,30 @@
+{
+  "name": "sidebar-menu",
+  "version": "1.3.2",
+  "description": "Simple and fast sidebar menu on Bootstrap 4",
+  "main": "",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "nanobar": "^0.4.2",
+    "open-sans-fontface": "^1.4.0",
+    "perfect-scrollbar": "^1.4.0",
+    "popper.js": "^1.14.7"
+  },
+  "author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "sidebar",
+    "menu",
+    "bootstrap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://accgit@github.com/accgit/sidebar-menu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/accgit/sidebar-menu/issues"
+  },
+  "homepage": "https://github.com/accgit/sidebar-menu#readme"
+}

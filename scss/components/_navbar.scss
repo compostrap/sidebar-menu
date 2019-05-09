@@ -1,0 +1,12 @@
+//
+// extension navbar
+//
+
+.nav-bars {
+  transition: 0.2s all;
+  @include font-size($font-size);
+}
+
+.nav-fixed {
+  margin-top: $sm-top;
+}
