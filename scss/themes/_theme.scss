@@ -16,9 +16,15 @@
     color: map-get($map, list-link);
   }
 
-  .sidebar-#{$theme} .link-current,
   .sidebar-#{$theme} .list-link:hover {
     background-color: map-get($map, list-link-bg);
+  }
+
+  .sidebar-#{$theme} .link-current,
+  .sidebar-#{$theme} .link-current.list-link .fa,
+  .sidebar-#{$theme} .link-current.list-link:hover {
+    background-color: map-get($map, list-link-current);
+    opacity: 1.0;
   }
 
   .sidebar-#{$theme} .link-arrow:before,
@@ -35,7 +41,12 @@
     background-color: map-get($map, list-hidden);
   }
 
-  .sidebar-#{$theme} .list-hidden .link-current {
+  .sidebar-#{$theme} .list-hidden .list-link:hover {
+    background-color: map-get($map, list-hidden-hover);
+  }
+
+  .sidebar-#{$theme} .list-hidden .link-current,
+  .sidebar-#{$theme} .list-hidden .link-current.list-link:hover {
     background-color: map-get($map, list-hidden-curent);
   }
 

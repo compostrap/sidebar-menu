@@ -11,7 +11,9 @@ $theme-colors: (
                 'list-hidden':          lighten($dark, 10),
                 'list-hidden-curent':   lighten($dark, 18),
                 'list-hidden-link':     lighten($dark, 10),
-                'list-link-bg':         lighten($dark, 3),
+                'list-hidden-hover':    lighten($dark, 6),
+                'list-link-bg':         lighten($dark, 4),
+                'list-link-current':    lighten($dark, 2),
                 'scrollbar-bg':         lighten($dark, 18),
                 'sidebar-bg':           $dark
         )

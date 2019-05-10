@@ -160,9 +160,15 @@ body {
   color: #fbfcfc;
 }
 
-.sidebar-dark .link-current,
 .sidebar-dark .list-link:hover {
-  background-color: #3e454a;
+  background-color: #40474d;
+}
+
+.sidebar-dark .link-current,
+.sidebar-dark .link-current.list-link .fa,
+.sidebar-dark .link-current.list-link:hover {
+  background-color: #3c4248;
+  opacity: 1.0;
 }
 
 .sidebar-dark .link-arrow:before,
@@ -179,7 +185,12 @@ body {
   background-color: #4e575e;
 }
 
-.sidebar-dark .list-hidden .link-current {
+.sidebar-dark .list-hidden .list-link:hover {
+  background-color: #454c53;
+}
+
+.sidebar-dark .list-hidden .link-current,
+.sidebar-dark .list-hidden .link-current.list-link:hover {
   background-color: #616b74;
 }
 
