@@ -4,33 +4,29 @@
 
 .list {
   max-height: 80vh;
-  padding: 0 rem(20) 0 rem(17);
   @include font-size($font-size);
 }
 
 .list-item {
   padding: 0;
   margin-top: rem(10);
-  line-height: rem(34);
+  line-height: rem(35);
 }
 
 .list-title {
   margin-bottom: 0;
+  margin-left: rem(17);
   @include font-size($font-size-sm);
 }
 
 .list-hidden {
   display: none;
-  padding-left: rem(10);
-  margin: rem(15) 0 rem(15) rem(10);
   overflow: hidden;
 }
 
 .list-link {
   display: block;
-  padding: 0 rem(10);
-  margin-bottom: rem(2);
-  @include border-radius($border-radius);
+  padding: 0 rem(10) 0 rem(17);
   @include hover {
     text-decoration: none;
 

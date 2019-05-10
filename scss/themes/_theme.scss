@@ -36,7 +36,11 @@
   }
 
   .sidebar-#{$theme} .list-hidden {
-    border-left: rem(1) solid map-get($map, list-border);
+    background-color: map-get($map, list-hidden);
+  }
+
+  .sidebar-#{$theme} .list-hidden .link-current {
+    background-color: map-get($map, list-hidden-curent);
   }
 
   .sidebar-#{$theme} .ps__rail-y.ps--clicking .ps__thumb-y,

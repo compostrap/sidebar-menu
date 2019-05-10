@@ -2,34 +2,18 @@
 // theme colors
 //
 
-$white: rgb(248, 249, 250);
-$dark:  rgb(55, 61, 66);
+$dark: rgb(55, 61, 66);
 $theme-colors: (
-        'white': (
-                'list-color':   darken($white, 35),
-                'list-link':    darken($white, 75),
-                'list-border':  darken($white, 6),
-                'list-notify':  #ff5f5f,
-                'list-link-bg': darken($white, 1),
-                'scrollbar-bg': darken($white, 5),
-                'sidebar-bg':   #fff
-        ),
-        'light': (
-                'list-color':   darken($white, 35),
-                'list-link':    darken($white, 75),
-                'list-border':  darken($white, 6),
-                'list-notify':  #ff5f5f,
-                'list-link-bg': #fff,
-                'scrollbar-bg': darken($white, 5),
-                'sidebar-bg':   $white
-        ),
         'dark': (
-                'list-color':   lighten($dark, 35),
-                'list-link':    lighten($dark, 75),
-                'list-border':  lighten($dark, 6),
-                'list-notify':  #ff5f5f,
-                'list-link-bg': lighten($dark, 2),
-                'scrollbar-bg': lighten($dark, 18),
-                'sidebar-bg':   $dark
+                'list-color':           lighten($dark, 35),
+                'list-link':            lighten($dark, 75),
+                'list-border':          lighten($dark, 6),
+                'list-hidden':          lighten($dark, 10),
+                'list-hidden-curent':   lighten($dark, 18),
+                'list-hidden-link':     lighten($dark, 10),
+                'list-notify':          #ff861a,
+                'list-link-bg':         lighten($dark, 3),
+                'scrollbar-bg':         lighten($dark, 18),
+                'sidebar-bg':           $dark
         )
 );
