@@ -21,7 +21,7 @@ body {
 
 .sidebar {
   min-height: calc(100vh - 3.5rem);
-  margin-left: -16.25rem;
+  margin-left: -15.625rem;
   transition: margin 0.15s ease-out;
   border-top-right-radius: 0.25rem;
 }
@@ -36,12 +36,12 @@ body {
 }
 @media (min-width: 768px) {
   .sidebar-toggle .sidebar {
-    margin-left: -16.25rem;
+    margin-left: -15.625rem;
   }
 }
 
 .sidebar-menu {
-  width: 16.25rem;
+  width: 15.625rem;
 }
 
 .nav-bars {
@@ -145,7 +145,7 @@ body {
   width: 0;
   height: 100%;
   transition: height 0.3s;
-  background-color: #ff861a;
+  background-color: #d93748;
 }
 
 .sidebar-dark {
