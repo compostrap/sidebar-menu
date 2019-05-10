@@ -87,10 +87,6 @@ body {
   transition: 0.5s all;
 }
 
-.list-notify {
-  padding-left: 1.25rem;
-}
-
 .list-icon {
   width: 1.375rem;
   display: inline-block;
@@ -158,10 +154,6 @@ body {
 
 .sidebar-dark .list {
   color: #8c979f;
-}
-
-.sidebar-dark .list-notify {
-  color: #ff861a;
 }
 
 .sidebar-dark .list-link {

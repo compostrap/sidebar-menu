@@ -12,10 +12,6 @@
     color: map-get($map, list-color);
   }
 
-  .sidebar-#{$theme} .list-notify {
-    color: map-get($map, list-notify);
-  }
-
   .sidebar-#{$theme} .list-link {
     color: map-get($map, list-link);
   }
