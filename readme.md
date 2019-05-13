@@ -43,4 +43,7 @@ scss/themes/_colors.scss
 scss/themes/_theme.scss
 ```
 
+## Preview sidebar menu
+![alt text](https://raw.githubusercontent.com/compostrap/sidebar-menu/master/assets/img/sidebar.dark.png)
+
 Enjoy the menu and give it a star if you like it.
