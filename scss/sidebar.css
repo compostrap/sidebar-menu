@@ -1,57 +1,167 @@
-/*
-Error: File to import not found or unreadable: ../node_modules/bootstrap/scss/_functions.
-       Load path: C:/wamp64/www/sidebar-menu-bootstrap/scss
-        on line 8 of C:\wamp64\www\sidebar-menu-bootstrap\scss\sidebar.scss
-
-3:  * Copyright Zdeněk Papučík
-4:  * MIT License
-5: *\/
-6: 
-7: // bootstrap
-8: @import '../node_modules/bootstrap/scss/_functions';
-9: @import '../node_modules/bootstrap/scss/_variables';
-10: @import '../node_modules/bootstrap/scss/_mixins';
-11: 
-12: // sidebar-menu
-13: @import 'utils/_functions';
-
-Backtrace:
-C:\wamp64\www\sidebar-menu-bootstrap\scss\sidebar.scss:8
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+@charset "UTF-8";
+/*!
+ * Sidebar menu for Bootstrap 4
+ * Copyright Zdeněk Papučík
+ * MIT License
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../node_modules/bootstrap/scss/_functions.\A        Load path: C:/wamp64/www/sidebar-menu-bootstrap/scss\A         on line 8 of C:\wamp64\www\sidebar-menu-bootstrap\scss\sidebar.scss\A \A 3:  * Copyright Zdeněk Papučík\A 4:  * MIT License\A 5: */\A 6: \A 7: // bootstrap\A 8: @import '../node_modules/bootstrap/scss/_functions';\A 9: @import '../node_modules/bootstrap/scss/_variables';\A 10: @import '../node_modules/bootstrap/scss/_mixins';\A 11: \A 12: // sidebar-menu\A 13: @import 'utils/_functions';"; }
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif; }
+
+.content {
+  min-width: 100vw; }
+  @media (min-width: 768px) {
+    .content {
+      min-width: 0;
+      width: 100%; } }
+
+.sidebar {
+  min-height: calc(100vh - 3.5rem);
+  margin-left: -15.625rem;
+  transition: margin 0.15s ease-out;
+  border-top-right-radius: 0.25rem; }
+  @media (min-width: 768px) {
+    .sidebar {
+      margin-left: 0; } }
+
+.sidebar-toggle .sidebar {
+  margin-left: 0; }
+  @media (min-width: 768px) {
+    .sidebar-toggle .sidebar {
+      margin-left: -15.625rem; } }
+
+.sidebar-menu {
+  width: 15.625rem; }
+
+.nav-bars {
+  transition: 0.2s all;
+  font-size: 0.875rem; }
+
+.nav-fixed {
+  margin-top: 3.5rem; }
+
+.list {
+  max-height: 80vh;
+  font-size: 0.875rem; }
+
+.list-item {
+  padding: 0;
+  margin-top: 0.625rem;
+  line-height: 2.1875rem; }
+
+.list-title {
+  margin-bottom: 0;
+  margin-left: 1.0625rem;
+  font-size: 0.75rem; }
+
+.list-hidden {
+  display: none;
+  overflow: hidden; }
+
+.list-link {
+  display: block;
+  padding: 0 0.625rem 0 1.0625rem; }
+  .list-link:hover {
+    text-decoration: none; }
+    .list-link:hover .fa {
+      transform: rotate(360deg);
+      transition: 0.5s all; }
+
+.list-icon {
+  width: 1.375rem;
+  display: inline-block; }
+
+.link-arrow:before {
+  font-family: "FontAwesome";
+  margin-right: 0.1875rem;
+  float: right; }
+
+.link-arrow.up:before {
+  content: "\f106"; }
+
+.link-arrow.down:before {
+  content: "\f107"; }
+
+.link-arrow.transition:before {
+  transition: 0.2s all; }
+
+.link-arrow.rotate:before {
+  transform: rotate(180deg); }
+
+.link-arrow.rotate-revert:before {
+  transform: rotate(-180deg); }
+
+.list-scrollbar {
+  position: relative;
+  overflow: hidden; }
+
+.ps__rail-y {
+  margin-top: 0.0625rem; }
+
+.ps__rail-y.ps--clicking .ps__thumb-y,
+.ps__rail-y:focus .ps__thumb-y,
+.ps__rail-y:hover .ps__thumb-y,
+.ps__thumb-y {
+  width: 0.3125rem; }
+
+.nanobar {
+  width: 100%;
+  height: 0.25rem;
+  z-index: 9999;
+  top: 0; }
+
+.nanobar .bar {
+  width: 0;
+  height: 100%;
+  transition: height 0.3s;
+  background-color: #d93748; }
+
+.sidebar-dark {
+  background-color: #373d42; }
+
+.sidebar-dark .list {
+  color: #8c979f; }
+
+.sidebar-dark .list-link {
+  color: #fbfcfc; }
+
+.sidebar-dark .list-link:hover {
+  background-color: #40474d; }
+
+.sidebar-dark .link-current,
+.sidebar-dark .link-current.list-link:hover {
+  background-color: #3c4248; }
+
+.sidebar-dark .link-current.list-link .fa {
+  opacity: 1.0; }
+
+.sidebar-dark .link-arrow:before,
+.sidebar-dark .list-link .fa {
+  opacity: 0.3; }
+
+.sidebar-dark .link-arrow.active:before,
+.sidebar-dark .list-link:hover .fa {
+  opacity: 1.0; }
+
+.sidebar-dark .list-hidden {
+  background-color: #4e575e; }
+
+.sidebar-dark .list-hidden .list-link:hover {
+  background-color: #454c53; }
+
+.sidebar-dark .list-hidden .link-current,
+.sidebar-dark .list-hidden .link-current.list-link:hover {
+  background-color: #616b74; }
+
+.sidebar-dark .ps__rail-y.ps--clicking .ps__thumb-y,
+.sidebar-dark .ps__rail-y:focus .ps__thumb-y,
+.sidebar-dark .ps__rail-y:hover .ps__thumb-y,
+.sidebar-dark .ps__thumb-y {
+  background-color: #616b74; }
+
+.ps .ps__rail-y.ps--clicking,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-y:hover {
+  background: none; }
+
+/*# sourceMappingURL=sidebar.css.map */

@@ -2,19 +2,37 @@
 // theme colors
 //
 
-$dark: rgb(55, 61, 66);
+$dark:  rgb(55,  61,  66);
+$white: rgb(255, 255, 255);
+$light: rgb(248, 249, 250);
+$red:   rgb(214, 57,  75);
 $theme-colors: (
         'dark': (
                 'list-color':           lighten($dark, 35),
                 'list-link':            lighten($dark, 75),
-                'list-border':          lighten($dark, 6),
+                'list-link-color':      $white,
+                'list-link-hover':      lighten($dark, 4),
+                'list-link-current':    lighten($dark, 2),
                 'list-hidden':          lighten($dark, 10),
-                'list-hidden-curent':   lighten($dark, 18),
+                'list-hidden-color':    lighten($dark, 60),
                 'list-hidden-link':     lighten($dark, 10),
                 'list-hidden-hover':    lighten($dark, 6),
-                'list-link-bg':         lighten($dark, 4),
-                'list-link-current':    lighten($dark, 2),
+                'list-hidden-curent':   lighten($dark, 18),
                 'scrollbar-bg':         lighten($dark, 18),
                 'sidebar-bg':           $dark
+        ),
+        'white': (
+                'list-color':           darken($white, 35),
+                'list-link':            darken($white, 75),
+                'list-link-color':      darken($white, 75),
+                'list-link-hover':      darken($light, 0),
+                'list-link-current':    darken($light, 2),
+                'list-hidden':          darken($light, 4),
+                'list-hidden-color':    darken($light, 50),
+                'list-hidden-link':     darken($light, 6),
+                'list-hidden-hover':    darken($light, 1),
+                'list-hidden-curent':   darken($light, 9),
+                'scrollbar-bg':         darken($light, 18),
+                'sidebar-bg':           $white
         )
 );
