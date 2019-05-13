@@ -15,6 +15,10 @@ npm install --save sidebar-menu-compostrap
 - Open Sans @font-face kit
 - Nanobar
 
+## Live preview
+
+- https://compostrap.github.io/sidebar.menu
+
 ## Themes
 The Sidebar is basically a light and dark theme.
 
@@ -42,8 +46,5 @@ If you want to add more topics or customize the theme colors, edit the following
 scss/themes/_colors.scss
 scss/themes/_theme.scss
 ```
-
-## Preview sidebar menu
-![alt text](https://raw.githubusercontent.com/compostrap/sidebar-menu/master/assets/img/sidebar.dark.png)
 
 Enjoy the menu and give it a star if you like it.
