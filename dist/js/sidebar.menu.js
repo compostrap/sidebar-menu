@@ -6,10 +6,10 @@
 (function($) {
 
   // class with arrow icon
-  const linkArrow   = '.link-arrow';
+  var linkArrow   = '.link-arrow';
 
   // class to hide the list
-  const listHidden  = '.list-hidden';
+  var listHidden  = '.list-hidden';
 
   // toggle sidebar menu
   $('#sidebar-toggle').on('click', function() {
@@ -19,14 +19,14 @@
   // list init
   $('.list-item').each(function() {
 
-    const el = $(this);
-    const parent  = el.parent();
+    var el = $(this);
+    var parent  = el.parent();
 
     // current link class
-    const current = parent.find('.link-current');
+    var current = parent.find('.link-current');
 
     // class active link with icon
-    const active  = current.addClass('active down');
+    var active  = current.addClass('active down');
 
     // change up arrow icon
     parent.find(linkArrow).addClass('up');
@@ -40,7 +40,7 @@
   // list open hidden
   $('.list-link').on('click', function() {
 
-    const el = $(this);
+    var el = $(this);
 
     // switch the class on the current link
     el.parent().find(linkArrow).toggleClass('active');
@@ -53,7 +53,7 @@
   // list transition arrow
   $('.link-arrow').on('click', function() {
 
-    const el = $(this);
+    var el = $(this);
 
     // adding rotation effect to arrows icons
     el.addClass('transition').toggleClass('rotate');
