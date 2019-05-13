@@ -2,10 +2,14 @@
 // theme colors
 //
 
-$dark:  rgb(55,  61,  66);
-$white: rgb(255, 255, 255);
-$light: rgb(248, 249, 250);
-$red:   rgb(214, 57,  75);
+$dark:          rgb(55,  61,   66);
+$white:         rgb(255, 255, 255);
+$light:         rgb(248, 249, 250);
+$magenta:       rgb(220,  53,  69);
+$cyan:          rgb(0,   123, 255);
+$purple:        rgb(111, 66,  193);
+$green:         rgb(40,  167,  69);
+$orange:        rgb(253, 126,  20);
 $theme-colors: (
         'dark': (
                 'list-color':           lighten($dark, 35),
@@ -34,5 +38,40 @@ $theme-colors: (
                 'list-hidden-curent':   darken($light, 9),
                 'scrollbar-bg':         darken($light, 18),
                 'sidebar-bg':           $white
+        ),
+        'menu-magenta': (
+                'list-link-color':      $white,
+                'list-hidden':          $magenta,
+                'list-hidden-color':    lighten($magenta, 35),
+                'list-hidden-curent':   darken($magenta, 6),
+                'list-hidden-hover':    lighten($magenta, 3),
+        ),
+        'menu-cyan': (
+                'list-link-color':      $white,
+                'list-hidden':          $cyan,
+                'list-hidden-color':    lighten($cyan, 35),
+                'list-hidden-curent':   darken($cyan, 6),
+                'list-hidden-hover':    lighten($cyan, 3),
+        ),
+        'menu-purple': (
+                'list-link-color':      $white,
+                'list-hidden':          $purple,
+                'list-hidden-color':    lighten($purple, 35),
+                'list-hidden-curent':   darken($purple, 6),
+                'list-hidden-hover':    lighten($purple, 3),
+        ),
+        'menu-green': (
+                'list-link-color':      $white,
+                'list-hidden':          $green,
+                'list-hidden-color':    lighten($green, 35),
+                'list-hidden-curent':   darken($green, 6),
+                'list-hidden-hover':    lighten($green, 3),
+        ),
+        'menu-orange': (
+                'list-link-color':      $white,
+                'list-hidden':          $orange,
+                'list-hidden-color':    lighten($orange, 35),
+                'list-hidden-curent':   darken($orange, 6),
+                'list-hidden-hover':    lighten($orange, 3),
         )
 );
