@@ -6,10 +6,16 @@
 (function($) {
 
   // class with arrow icon
-  var linkArrow   = '.link-arrow';
+  var linkArrow     = '.link-arrow';
+
+  // class current link
+  var linkCurrent   = '.link-current';
 
   // class to hide the list
-  var listHidden  = '.list-hidden';
+  var listHidden    = '.list-hidden';
+
+  // class list item
+  var listItem      = '.list-item';
 
   // toggle sidebar menu
   $('#sidebar-toggle').on('click', function() {
@@ -17,46 +23,39 @@
   });
 
   // list init
-  $('.list-item').each(function() {
+  $(listItem).each(function() {
 
     var el = $(this);
     var parent  = el.parent();
 
     // current link class
-    var current = parent.find('.link-current');
+    var current = parent.find(linkArrow + linkCurrent);
 
-    // class active link with icon
-    var active  = current.addClass('active down');
-
-    // change up arrow icon
+    // default icon menu
     parent.find(linkArrow).addClass('up');
 
     // view the list above the current link
+    console.log(current.length);
     if (current.length > 0) {
-      active.next(listHidden).show();
+
+      // active down icon
+      current.addClass('active down');
+
+      // show hidden list
+      current.next(listHidden).show();
     }
   });
 
-  // list open hidden
-  $('.list-link').on('click', function() {
-
-    var el = $(this);
-
-    // switch the class on the current link
-    el.parent().find(linkArrow).toggleClass('active');
-
-    // view a hidden list
-    el.next(listHidden).slideToggle('fast');
-
-  });
-
   // list transition arrow
-  $('.link-arrow').on('click', function() {
+  $(linkArrow).on('click', function() {
 
     var el = $(this);
 
     // adding rotation effect to arrows icons
-    el.addClass('transition').toggleClass('rotate');
+    el.addClass('transition').toggleClass('active rotate');
+
+    // show hidden list
+    el.next(listHidden).slideToggle('fast');
 
     // rotate the direction of rotation of the arrow
     if (el.parent().find(linkArrow).hasClass('down')) {
