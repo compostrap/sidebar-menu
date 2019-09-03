@@ -10,8 +10,8 @@ npm install --save sidebar-menu-compostrap
 
 - Bootstrap 4
 - jQuery 3
-- Font Awesome 4.7
-- Perfect scrollbar 1.4
+- Font Awesome 5
+- Perfect scrollbar
 - Open Sans @font-face kit
 - Nanobar
 
