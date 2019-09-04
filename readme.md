@@ -1,5 +1,5 @@
 ## Sidebar menu
-Simple and fast sidebar multi-level menu on Bootstrap 4
+Simple and fast multi-level sidebar menu on Bootstrap 4
 
 ## Installation
 ```
