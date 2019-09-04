@@ -54,7 +54,7 @@
     el.addClass('transition').toggleClass('active rotate');
 
     // adding link current on click link
-	!(el.hasClass('link-current')) ? el.addClass('link-current') : el.removeClass('link-current');
+    !(el.hasClass('link-current')) ? el.addClass('link-current') : el.removeClass('link-current');
 
     // show hidden list
     el.next(listHidden).slideToggle('fast');
