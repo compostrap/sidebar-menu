@@ -1,7 +1,7 @@
 {
   "name": "sidebar-menu-compostrap",
-  "version": "1.0.2",
-  "description": "Simple and fast sidebar multi-level menu on Bootstrap 4",
+  "version": "1.0.5",
+  "description": "Simple and fast multi-level sidebar menu on Bootstrap 4",
   "main": "Gruntfile.js",
   "dependencies": {
     "bootstrap": "^4.3.1",
