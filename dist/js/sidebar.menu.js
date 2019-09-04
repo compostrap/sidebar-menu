@@ -11,7 +11,7 @@
   // class current link
   var linkCurrent   = '.link-current';
 
-  // class to hide the list
+  // class hidden list
   var listHidden    = '.list-hidden';
 
   // class list item
@@ -35,7 +35,6 @@
     parent.find(linkArrow).addClass('up');
 
     // view the list above the current link
-    console.log(current.length);
     if (current.length > 0) {
 
       // active down icon
@@ -53,6 +52,9 @@
 
     // adding rotation effect to arrows icons
     el.addClass('transition').toggleClass('active rotate');
+
+    // adding link current on click link
+	!(el.hasClass('link-current')) ? el.addClass('link-current') : el.removeClass('link-current');
 
     // show hidden list
     el.next(listHidden).slideToggle('fast');
