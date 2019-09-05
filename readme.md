@@ -34,11 +34,11 @@ Dark style
 
 It is also possible to color the menu
 ```html
-<nav role="navigation" class="sidebar-menu-magenta">
-<nav role="navigation" class="sidebar-menu-purple">
-<nav role="navigation" class="sidebar-menu-orange">
-<nav role="navigation" class="sidebar-menu-cyan">
-<nav role="navigation" class="sidebar-menu-green">
+<div class="sidebar-menu sidebar-menu-magenta">
+<div class="sidebar-menu sidebar-menu-purple">
+<div class="sidebar-menu sidebar-menu-orange">
+<div class="sidebar-menu sidebar-menu-cyan">
+<div class="sidebar-menu sidebar-menu-green">
 ```
 
 If you want to add more topics or customize the theme colors, edit the following sass files.
