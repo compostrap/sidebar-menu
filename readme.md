@@ -1,8 +1,9 @@
-<div align="center">
+<p align="center">
   <img src="https://avatars0.githubusercontent.com/u/50230834?s=400&u=3551f498f489486fb0ee563171d5fb2d43892a17&v=4" width="100" alt="logo">
-  <h1>Compostrap Project</h1>
-  <p>Components for Bootstrap 4</p>
-</div>
+</p>
+
+<h1 align="center">Compostrap Project</h1>
+<p align="center">Components for Bootstrap 4</p>
 
 ## Info
 Simple and fast multi-level sidebar menu on Bootstrap 4
