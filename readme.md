@@ -5,10 +5,10 @@
 <h3 align="center">Compostrap</h3>
 <p align="center">Simple and fast components build on Bootstrap 4</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## Info
 Simple and fast multi-level sidebar menu.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
 ```
