@@ -26,32 +26,46 @@ npm install --save sidebar-menu-compostrap
 
 - https://compostrap.github.io/sidebar.menu
 
-## Themes
-The Sidebar is basically a light and dark theme.
+## Documentation
 
-White style
 ```html
-<nav role="navigation" class="sidebar-white">
-```
 
-Dark style
-```html
-<nav role="navigation" class="sidebar-dark">
-```
+  <!-- flex -->
+	<div class="d-flex nav-fixed" id="wrapper">
+    
+    <!-- sidebar -->
+		<nav role="navigation" class="sidebar sidebar-dark rounded-0">
+      
+      <!-- sidebar menu -->
+			<div class="sidebar-menu">
+        <!-- sidebar list -->
+      </div>
+      
+		</nav>
 
-It is also possible to color the menu
-```html
-<div class="sidebar-menu sidebar-menu-magenta">
-<div class="sidebar-menu sidebar-menu-purple">
-<div class="sidebar-menu sidebar-menu-orange">
-<div class="sidebar-menu sidebar-menu-cyan">
-<div class="sidebar-menu sidebar-menu-green">
-```
+		<!-- content -->
+		<div class="content">
 
-If you want to add more topics or customize the theme colors, edit the following sass files.
-```
-scss/themes/_colors.scss
-scss/themes/_theme.scss
-```
+			<!-- navbar -->
+			<nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
 
-Enjoy the menu and give it a star if you like it.
+				<!-- navbar title -->
+				<a class="navbar-brand" href="#">Sidebar menu</a>
+
+				<!-- navbar icon click for show/hide sidebar menu -->
+				<div class="navbar-nav">
+					<a class="nav-item nav-link nav-bars" id="sidebar-toggle" href="#">
+						<i class="fas fa-bars"><!-- font awesome icon --></i>
+					</a>
+				</div>
+
+			</nav>
+
+      <!-- main content -->
+			<main role="main" class="container-fluid">
+        ...
+      </main>
+      
+		</div>
+	</div>
+```
