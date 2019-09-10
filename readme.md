@@ -1,6 +1,7 @@
 <div align="center">
   <h1>Compostrap Project</h1>
   <p>Components for Bootstrap</p>
+  ![Image](https://avatars0.githubusercontent.com/u/50230834?s=400&u=3551f498f489486fb0ee563171d5fb2d43892a17&v=4){ width="100" style="display: block; margin: 0 auto" }
 </div>
 
 ## Sidebar menu
