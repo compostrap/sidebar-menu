@@ -1,7 +1,7 @@
 <div align="center">
   # Compostrap Project
   Components for Bootstrap
-</div
+</div>
 
 ## Sidebar menu
 Simple and fast multi-level sidebar menu on Bootstrap 4
