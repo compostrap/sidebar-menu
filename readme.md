@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Compostrap Project</h1>
+  <h1>Compostrap</h1>
   <p>Components for Bootstrap</p>
   <img src="https://avatars0.githubusercontent.com/u/50230834?s=400&u=3551f498f489486fb0ee563171d5fb2d43892a17&v=4" width="100" alt="logo">
 </div>
