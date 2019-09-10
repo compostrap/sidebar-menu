@@ -4,7 +4,7 @@
   <p>Components for Bootstrap 4</p>
 </div>
 
-## Sidebar menu
+## Info
 Simple and fast multi-level sidebar menu on Bootstrap 4
 
 ## Installation
