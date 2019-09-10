@@ -28,7 +28,7 @@ npm install --save sidebar-menu-compostrap
 
 ## Quick start
 
-**Use CSS:
+**Use CSS:**
 
 ```html
 <!-- external -->
@@ -41,7 +41,7 @@ npm install --save sidebar-menu-compostrap
 <link rel="stylesheet" href="dist/css/sidebar.css">
 ```
 
-**Use JS:
+**Use JS:**
 
 ```html
 <!-- external -->
