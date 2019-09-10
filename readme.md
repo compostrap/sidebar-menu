@@ -10,6 +10,8 @@ Simple and fast multi-level sidebar menu.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/compostrap/sidebar-menu/master/license.md)
 
+[![npm version](https://badge.fury.io/js/sidebar-menu-compostrap.svg)](https://badge.fury.io/js/sidebar-menu-compostrap)
+
 ## Installation
 ```
 npm install --save sidebar-menu-compostrap
