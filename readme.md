@@ -22,6 +22,6 @@ npm install --save sidebar-menu-compostrap
 - [Open Sans @font-face kit](https://github.com/FontFaceKit/open-sans)
 - [Nanobar](https://github.com/jacoborus/nanobar)
 
-## Live preview
+## View demo
 
 - https://compostrap.github.io/sidebar.menu
