@@ -8,7 +8,7 @@ npm install --save sidebar-menu-compostrap
 
 ## Built on
 
-- Bootstrap 4
+- @Bootstrap 4
 - jQuery 3
 - Font Awesome 5
 - Perfect scrollbar
