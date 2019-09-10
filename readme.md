@@ -1,6 +1,6 @@
 <div align="center">
-  # Compostrap Project
-  Components for Bootstrap
+  <h1>Compostrap Project</h1>
+  <p>Components for Bootstrap</p>
 </div>
 
 ## Sidebar menu
