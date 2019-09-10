@@ -57,10 +57,10 @@ npm install --save sidebar-menu-compostrap
 <script>
   $(function() {
   
-    <!-- perfect scrollbar -->
+    // perfect scrollbar
     new PerfectScrollbar('.list-scrollbar');
   
-    <!-- nanobar -->
+    // nanobar
     const nanobar = new Nanobar();
     nanobar.go(100);
   });
