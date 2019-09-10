@@ -2,7 +2,7 @@
   <img src="https://avatars0.githubusercontent.com/u/50230834?s=400&u=3551f498f489486fb0ee563171d5fb2d43892a17&v=4" width="100" alt="logo">
 </p>
 
-<h1 align="center">Compostrap Project</h1>
+<h3 align="center">Compostrap Project</h3>
 <p align="center">Components for Bootstrap 4</p>
 
 ## Info
