@@ -28,44 +28,5 @@ npm install --save sidebar-menu-compostrap
 
 ## Documentation
 
-```html
-
-  <!-- flex -->
-	<div class="d-flex nav-fixed" id="wrapper">
-    
-    <!-- sidebar -->
-		<nav role="navigation" class="sidebar sidebar-dark rounded-0">
-      
-      <!-- sidebar menu -->
-			<div class="sidebar-menu">
-        <!-- sidebar list -->
-      </div>
-      
-		</nav>
-
-		<!-- content -->
-		<div class="content">
-
-			<!-- navbar -->
-			<nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
-
-				<!-- navbar title -->
-				<a class="navbar-brand" href="#">Sidebar menu</a>
-
-				<!-- navbar icon click for show/hide sidebar menu -->
-				<div class="navbar-nav">
-					<a class="nav-item nav-link nav-bars" id="sidebar-toggle" href="#">
-						<i class="fas fa-bars"><!-- font awesome icon --></i>
-					</a>
-				</div>
-
-			</nav>
-
-      <!-- main content -->
-			<main role="main" class="container-fluid">
-        ...
-      </main>
-      
-		</div>
-	</div>
-```
+- Base layout
+- Sidebar menu
