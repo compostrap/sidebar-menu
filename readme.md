@@ -29,3 +29,6 @@ npm install --save sidebar-menu-compostrap
 ## View demo
 
 - https://compostrap.github.io/sidebar.menu
+
+## Documentation
+- https://github.com/compostrap/sidebar-menu/wiki/Getting-started
