@@ -8,7 +8,7 @@
 ## Info
 Simple and fast multi-level sidebar menu.
 
-[![License: MIT](https://raw.githubusercontent.com/compostrap/sidebar-menu/master/license.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/compostrap/sidebar-menu/master/license.md)
 
 ## Installation
 ```
