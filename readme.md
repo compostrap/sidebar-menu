@@ -6,7 +6,7 @@
 <p align="center">Simple and fast components build on Bootstrap 4</p>
 
 ## Info
-Simple and fast multi-level sidebar menu
+Simple and fast multi-level sidebar menu.
 
 ## Installation
 ```
