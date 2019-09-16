@@ -19,8 +19,7 @@ npm install --save sidebar-menu-compostrap
 
 ## Built on
 
-- [Bootstrap 4](https://getbootstrap.com)
-- [jQuery](https://jquery.com)
+- [Sidebar skeleton](https://github.com/compostrap/sidebar-skeleton)
 - [Font Awesome 5](https://fontawesome.com)
 - [Perfect scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
 - [Open Sans @font-face kit](https://github.com/FontFaceKit/open-sans)
