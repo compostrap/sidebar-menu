@@ -6,7 +6,7 @@
 <p align="center">Simple and fast components build on Bootstrap 4</p>
 
 ## Info
-Simple and fast multi-level sidebar menu.
+Simple and fast multi-level menu for sidebar.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/compostrap/sidebar-menu/master/license.md)
 [![npm version](https://badge.fury.io/js/sidebar-menu-compostrap.svg)](https://badge.fury.io/js/sidebar-menu-compostrap)
