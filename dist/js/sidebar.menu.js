@@ -1,5 +1,5 @@
 /*!
- * Sidebar menu for Bootstrap 4
+ * Sidebar menu
  * Copyright Zdeněk Papučík
  * MIT License
  */

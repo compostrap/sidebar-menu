@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 				options: {
 					style: 'expanded'
 				},
-				files: {'dist/css/sidebar.css': ['scss/sidebar.scss']}
+				files: {'dist/css/sidebar.menu.css': ['scss/sidebar.menu.scss']}
 			}
 		}
 	});

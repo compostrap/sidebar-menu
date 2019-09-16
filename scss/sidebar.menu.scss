@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Sidebar menu for Bootstrap 4
+ * Sidebar menu
  * Copyright Zdeněk Papučík
  * MIT License
 */
@@ -10,16 +10,14 @@
 @import '../node_modules/bootstrap/scss/_variables';
 @import '../node_modules/bootstrap/scss/_mixins';
 
-// sidebar-menu
-@import 'utils/_functions';
-@import 'utils/_variables';
+// sidebar skeleton
+@import '../node_modules/sidebar-skeleton-compostrap/scss/utils/_functions';
+@import '../node_modules/sidebar-skeleton-compostrap/scss/utils/_variables';
 
+// sidebar menu
+@import 'utils/_variables';
 @import 'base/_body';
 
-@import 'layout/_content';
-@import 'layout/_sidebar';
-
-@import 'components/_navbar';
 @import 'components/_list';
 @import 'components/_scrollbar';
 @import 'components/_nanobar';

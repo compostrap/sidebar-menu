@@ -1,46 +1,46 @@
 //
-// list for sidebar-menu
+// list component for sidebar skeleton
 //
 
 .list {
-  max-height: 80vh;
+  width: $sm-width;
   @include font-size($font-size);
-}
 
-.list-item {
-  padding: 0;
-  margin-top: rem(10);
-  line-height: rem(36);
-}
+  &-item {
+    padding: 0;
+    margin-top: rem(10);
+    line-height: rem(36);
+  }
 
-.list-title {
-  margin-bottom: 0;
-  margin-left: rem(17);
-  font-weight: 600;
-  @include font-size($font-size-sm);
-}
+  &-title {
+    margin-bottom: 0;
+    margin-left: rem(17);
+    font-weight: 600;
+    @include font-size($font-size-sm);
+  }
 
-.list-hidden {
-  display: none;
-  overflow: hidden;
-}
+  &-hidden {
+    display: none;
+    overflow: hidden;
+  }
 
-.list-link {
-  display: block;
-  padding: 0 rem(10) 0 rem(19);
-  @include hover {
-    text-decoration: none;
+  &-link {
+    display: block;
+    padding: 0 rem(10) 0 rem(19);
+    @include hover {
+      text-decoration: none;
 
-    .fas {
-      transform: rotate(360deg);
-      transition: 0.5s all;
+      .fas {
+        transform: rotate(360deg);
+        transition: 0.5s all;
+      }
     }
   }
-}
 
-.list-icon {
-  width: rem(25);
-  display: inline-block;
+  &-icon {
+    width: rem(25);
+    display: inline-block;
+  }
 }
 
 // arrow icon up and down in menu

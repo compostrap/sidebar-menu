@@ -4,74 +4,70 @@
 
 @each $theme, $map in $theme-colors {
 
-  .sidebar-#{$theme} {
-    background-color: map-get($map, sidebar-bg);
-  }
-
-  // item list
-  .sidebar-#{$theme} .list {
+  // list
+  .list-#{$theme} {
     color: map-get($map, list-color);
   }
 
   // item list hyperlink
-  .sidebar-#{$theme} .list-link {
+  .list-#{$theme} .list-link {
     color: map-get($map, link-color);
   }
 
-  .sidebar-#{$theme} .list-link:hover {
+  .list-#{$theme} .list-link:hover {
     background-color: map-get($map, link-bg);
   }
 
   // item list hyperlink current
-  .sidebar-#{$theme} .link-current,
-  .sidebar-#{$theme} .link-current:hover {
+  .list-#{$theme} .link-current,
+  .list-#{$theme} .link-current:hover {
     background-color: map-get($map, link-bg-current);
   }
 
-  .sidebar-#{$theme} .list-link.link-current .fas {
+  .list-#{$theme} .list-link.link-current .fas {
     opacity: 1.0;
   }
 
   // hidden list
-  .sidebar-#{$theme} .list-hidden {
+  .list-#{$theme} .list-hidden {
     background-color: map-get($map, hide-bg);
   }
 
-  .sidebar-#{$theme} .list-hidden .list-link {
+  .list-#{$theme} .list-hidden .list-link {
     color: map-get($map, hide-link-color);
   }
 
-  .sidebar-#{$theme} .list-hidden .list-link:hover {
+  .list-#{$theme} .list-hidden .list-link:hover {
     background-color: map-get($map, hide-link-bg);
   }
 
-  .sidebar-#{$theme} .list-hidden .link-current,
-  .sidebar-#{$theme} .list-hidden .link-current:hover {
+  .list-#{$theme} .list-hidden .link-current,
+  .list-#{$theme} .list-hidden .link-current:hover {
     background-color: map-get($map, hide-link-bg-current);
     color: map-get($map, hide-link-color-current);
   }
 
-  .sidebar-#{$theme} .list-hidden .link-arrow.link-current,
-  .sidebar-#{$theme} .list-hidden .link-arrow.link-current:hover {
+  .list-#{$theme} .list-hidden .link-arrow.link-current,
+  .list-#{$theme} .list-hidden .link-arrow.link-current:hover {
     background-color: map-get($map, hide-link-arrow-current);
   }
 
   // icons
-  .sidebar-#{$theme} .link-arrow:before,
-  .sidebar-#{$theme} .list-link .fas {
+  .list-#{$theme} .link-arrow:before,
+  .list-#{$theme} .list-link .fas {
     opacity: 0.3;
   }
 
-  .sidebar-#{$theme} .link-arrow.active:before,
-  .sidebar-#{$theme} .list-link:hover .fas {
+  .list-#{$theme} .link-arrow.active:before,
+  .list-#{$theme} .list-link:hover .fas {
     opacity: 1.0;
   }
 
   // scrollbar
-  .sidebar-#{$theme} .ps__rail-y.ps--clicking .ps__thumb-y,
-  .sidebar-#{$theme} .ps__rail-y:focus .ps__thumb-y,
-  .sidebar-#{$theme} .ps__rail-y:hover .ps__thumb-y,
-  .sidebar-#{$theme} .ps__thumb-y {
+  .list-#{$theme} .ps__rail-y.ps--clicking .ps__thumb-y,
+  .list-#{$theme} .ps__rail-y:focus .ps__thumb-y,
+  .list-#{$theme} .ps__rail-y:hover .ps__thumb-y,
+  .list-#{$theme} .ps__thumb-y {
     background-color: map-get($map, scrollbar-bg);
   }
 

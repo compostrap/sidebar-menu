@@ -1,17 +1,17 @@
 //
-// progress bars
+// nanobar component
 //
 
 .nanobar {
   width: 100%;
-  height: rem(4);
+  height: $sm-nanobar;
   z-index: 9999;
   top: 0;
-}
 
-.nanobar .bar {
-  width: 0;
-  height: 100%;
-  transition: height 0.3s;
-  background-color: #d93748;
+  & .bar {
+    width: 0;
+    height: 100%;
+    transition: height 0.3s;
+    background-color: #d93748;
+  }
 }

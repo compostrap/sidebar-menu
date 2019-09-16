@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -5,24 +6,38 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+	<link rel="stylesheet" href="node_modules/sidebar-skeleton-compostrap/dist/css/sidebar.css">
 	<link rel="stylesheet" href="node_modules/open-sans-fontface/open-sans.css">
+	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 	<link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
-	<link rel="stylesheet" href="dist/css/sidebar.css">
-	<title>Sidebar menu on bootstrap 4</title>
+	<link rel="stylesheet" href="dist/css/sidebar.menu.css">
+	<title>Sidebar</title>
 </head>
 
-<body class="bg-light">
-	<div class="d-flex nav-fixed" id="wrapper">
+<body>
+
+<header>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+		<!-- title -->
+		<a class="navbar-brand" href="#">Sidebar navigation</a>
+
+		<!-- sidebar toggle -->
+		<button class="navbar-toggler btn btn-link border-0" type="button" id="sidebar" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</nav>
+</header>
+
+<div class="d-flex wrapper wrapper-navbar-used wrapper-navbar-fixed">
+	<nav role="navigation" class="sidebar sidebar-bg-light" id="navigation">
 
 		<!-- sidebar -->
-		<nav role="navigation" class="sidebar sidebar-dark rounded-0">
-
-			<!-- sidebar menu -->
-			<div class="sidebar-menu">
+		<div class="sidebar-menu">
+			<div class="sidebar-menu-fixed scrollbar">
 
 				<!-- menu -->
-				<ul class="list list-unstyled list-scrollbar">
+				<ul class="list list-unstyled list-bg-light">
 
 					<!-- simple menu -->
 					<li class="list-item">
@@ -112,49 +127,29 @@
 					</li>
 				</ul>
 			</div>
-		</nav>
-
-		<!-- content wrapper -->
-		<div class="content">
-
-			<!-- navbar -->
-			<nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
-
-				<!-- navbar title -->
-				<a class="navbar-brand" href="#">Sidebar menu</a>
-
-				<!-- navbar nav -->
-				<div class="navbar-nav">
-					<a class="nav-item nav-link nav-bars" id="sidebar-toggle" href="#">
-						<i class="fas fa-bars"></i>
-					</a>
-				</div>
-
-			</nav>
-
-			<!-- main content -->
-			<main role="main" class="container-fluid">
-				<h2>Sidebar menu build on Bootstrap 4</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				</p>
-			</main>
 		</div>
+	</nav>
+
+	<div class="container-fluid">
+
+		<!-- content -->
+		<main role="main"></main>
 	</div>
+</div>
 
-	<!-- javascript library -->
-	<script src="node_modules/jquery/dist/jquery.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-	<script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
-	<script src="node_modules/nanobar/nanobar.js"></script>
-	<script src="dist/js/sidebar.menu.js"></script>
-	<script>
-		$(function() {
-			new PerfectScrollbar('.list-scrollbar');
-			const nanobar = new Nanobar();
-			nanobar.go(100);
-		});
-	</script>
+<!-- javascript library -->
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/sidebar-skeleton-compostrap/dist/js/sidebar.js"></script>
+<script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
+<script src="node_modules/nanobar/nanobar.js"></script>
+<script src="dist/js/sidebar.menu.js"></script>
+<script>
+	$(function() {
+		new Nanobar().go(100);
+		new PerfectScrollbar('.scrollbar');
+	});
+</script>
+
 </body>
-
 </html>

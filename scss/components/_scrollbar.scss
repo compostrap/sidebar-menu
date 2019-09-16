@@ -1,8 +1,9 @@
 //
-// scrollbar for list
+// scrollbar component for list
 //
 
-.list-scrollbar {
+.scrollbar {
+  max-height: 80vh;
   position: relative;
   overflow: hidden;
 }
