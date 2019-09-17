@@ -71,7 +71,7 @@ body {
 }
 
 .scrollbar {
-  max-height: 80vh;
+  max-height: 85vh;
   position: relative;
   overflow: hidden;
 }
@@ -154,11 +154,11 @@ body {
   opacity: 1.0;
 }
 
-.list-bg-white .ps__rail-y.ps--clicking .ps__thumb-y,
-.list-bg-white .ps__rail-y:focus .ps__thumb-y,
-.list-bg-white .ps__rail-y:hover .ps__thumb-y,
-.list-bg-white .ps__thumb-y {
-  background-color: #d9d9d9;
+.scrollbar-bg-white .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-white .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-white .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-white .ps__thumb-y {
+  background-color: #e6e6e6;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -221,11 +221,11 @@ body {
   opacity: 1.0;
 }
 
-.list-bg-light .ps__rail-y.ps--clicking .ps__thumb-y,
-.list-bg-light .ps__rail-y:focus .ps__thumb-y,
-.list-bg-light .ps__rail-y:hover .ps__thumb-y,
-.list-bg-light .ps__thumb-y {
-  background-color: #cbd3da;
+.scrollbar-bg-light .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-light .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-light .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-light .ps__thumb-y {
+  background-color: #dae0e5;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -288,11 +288,11 @@ body {
   opacity: 1.0;
 }
 
-.list-bg-dark .ps__rail-y.ps--clicking .ps__thumb-y,
-.list-bg-dark .ps__rail-y:focus .ps__thumb-y,
-.list-bg-dark .ps__rail-y:hover .ps__thumb-y,
-.list-bg-dark .ps__thumb-y {
-  background-color: #56606a;
+.scrollbar-bg-dark .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-dark .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-dark .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-dark .ps__thumb-y {
+  background-color: #4b545c;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -355,11 +355,11 @@ body {
   opacity: 1.0;
 }
 
-.list-bg-blue .ps__rail-y.ps--clicking .ps__thumb-y,
-.list-bg-blue .ps__rail-y:focus .ps__thumb-y,
-.list-bg-blue .ps__rail-y:hover .ps__thumb-y,
-.list-bg-blue .ps__thumb-y {
-  background-color: #0056b3;
+.scrollbar-bg-blue .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-blue .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-blue .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-blue .ps__thumb-y {
+  background-color: #0062cc;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -422,11 +422,11 @@ body {
   opacity: 1.0;
 }
 
-.list-bg-purple .ps__rail-y.ps--clicking .ps__thumb-y,
-.list-bg-purple .ps__rail-y:focus .ps__thumb-y,
-.list-bg-purple .ps__rail-y:hover .ps__thumb-y,
-.list-bg-purple .ps__thumb-y {
-  background-color: #4e2d89;
+.scrollbar-bg-purple .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-purple .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-purple .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-purple .ps__thumb-y {
+  background-color: #59339d;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -489,11 +489,11 @@ body {
   opacity: 1.0;
 }
 
-.list-bg-pink .ps__rail-y.ps--clicking .ps__thumb-y,
-.list-bg-pink .ps__rail-y:focus .ps__thumb-y,
-.list-bg-pink .ps__rail-y:hover .ps__thumb-y,
-.list-bg-pink .ps__thumb-y {
-  background-color: #c21766;
+.scrollbar-bg-pink .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-pink .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-pink .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-pink .ps__thumb-y {
+  background-color: #d91a72;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -556,11 +556,11 @@ body {
   opacity: 1.0;
 }
 
-.list-bg-red .ps__rail-y.ps--clicking .ps__thumb-y,
-.list-bg-red .ps__rail-y:focus .ps__thumb-y,
-.list-bg-red .ps__rail-y:hover .ps__thumb-y,
-.list-bg-red .ps__thumb-y {
-  background-color: #a71d2a;
+.scrollbar-bg-red .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-red .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-red .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-red .ps__thumb-y {
+  background-color: #bd2130;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -623,11 +623,11 @@ body {
   opacity: 1.0;
 }
 
-.list-bg-orange .ps__rail-y.ps--clicking .ps__thumb-y,
-.list-bg-orange .ps__rail-y:focus .ps__thumb-y,
-.list-bg-orange .ps__rail-y:hover .ps__thumb-y,
-.list-bg-orange .ps__thumb-y {
-  background-color: #c35a02;
+.scrollbar-bg-orange .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-orange .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-orange .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-orange .ps__thumb-y {
+  background-color: #dc6502;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -690,11 +690,11 @@ body {
   opacity: 1.0;
 }
 
-.list-bg-green .ps__rail-y.ps--clicking .ps__thumb-y,
-.list-bg-green .ps__rail-y:focus .ps__thumb-y,
-.list-bg-green .ps__rail-y:hover .ps__thumb-y,
-.list-bg-green .ps__thumb-y {
-  background-color: #19692c;
+.scrollbar-bg-green .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-green .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-green .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-green .ps__thumb-y {
+  background-color: #1e7e34;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -757,11 +757,11 @@ body {
   opacity: 1.0;
 }
 
-.list-bg-teal .ps__rail-y.ps--clicking .ps__thumb-y,
-.list-bg-teal .ps__rail-y:focus .ps__thumb-y,
-.list-bg-teal .ps__rail-y:hover .ps__thumb-y,
-.list-bg-teal .ps__thumb-y {
-  background-color: #158765;
+.scrollbar-bg-teal .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-teal .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-teal .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-teal .ps__thumb-y {
+  background-color: #199d76;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -824,11 +824,11 @@ body {
   opacity: 1.0;
 }
 
-.list-bg-cyan .ps__rail-y.ps--clicking .ps__thumb-y,
-.list-bg-cyan .ps__rail-y:focus .ps__thumb-y,
-.list-bg-cyan .ps__rail-y:hover .ps__thumb-y,
-.list-bg-cyan .ps__thumb-y {
-  background-color: #0f6674;
+.scrollbar-bg-cyan .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-cyan .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-cyan .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-cyan .ps__thumb-y {
+  background-color: #117a8b;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -1172,6 +1172,26 @@ body {
 
 .list-bg-menu-cyan .link-arrow.active:before,
 .list-bg-menu-cyan .list-link:hover .fas {
+  opacity: 1.0;
+}
+
+.ps .ps__rail-y.ps--clicking,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-y:hover {
+  background: none;
+}
+
+.list-bg-nanobar-cyan .list-link.link-current .fas {
+  opacity: 1.0;
+}
+
+.list-bg-nanobar-cyan .link-arrow:before,
+.list-bg-nanobar-cyan .list-link .fas {
+  opacity: 0.3;
+}
+
+.list-bg-nanobar-cyan .link-arrow.active:before,
+.list-bg-nanobar-cyan .list-link:hover .fas {
   opacity: 1.0;
 }
 

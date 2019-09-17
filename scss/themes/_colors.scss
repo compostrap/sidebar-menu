@@ -13,7 +13,7 @@ $theme-colors: (
                 'hide-link-bg': darken($white, 10),
                 'hide-link-bg-current': darken($white, 13),
                 'hide-link-arrow-current': darken($white, 16),
-                'scrollbar-bg': darken($white, 15),
+                'scrollbar-bg': darken($white, 10),
         ),
         'bg-light': (
                 'list-color': darken($gray-100, 35),
@@ -26,7 +26,7 @@ $theme-colors: (
                 'hide-link-bg': darken($gray-100, 10),
                 'hide-link-bg-current': darken($gray-100, 13),
                 'hide-link-arrow-current': darken($gray-100, 16),
-                'scrollbar-bg': darken($gray-100, 15),
+                'scrollbar-bg': darken($gray-100, 10),
         ),
         'bg-dark': (
                 'list-color': lighten($gray-800, 35),
@@ -39,7 +39,7 @@ $theme-colors: (
                 'hide-link-bg': lighten($gray-800, 13),
                 'hide-link-bg-current': lighten($gray-800, 15),
                 'hide-link-arrow-current': lighten($gray-800, 20),
-                'scrollbar-bg': lighten($gray-800, 15),
+                'scrollbar-bg': lighten($gray-800, 10),
         ),
         'bg-blue': (
                 'list-color': lighten($blue, 35),
@@ -52,7 +52,7 @@ $theme-colors: (
                 'hide-link-bg': darken($blue, 13),
                 'hide-link-bg-current': darken($blue, 15),
                 'hide-link-arrow-current': darken($blue, 20),
-                'scrollbar-bg': darken($blue, 15),
+                'scrollbar-bg': darken($blue, 10),
         ),
         'bg-purple': (
                 'list-color': lighten($purple, 35),
@@ -65,7 +65,7 @@ $theme-colors: (
                 'hide-link-bg': darken($purple, 13),
                 'hide-link-bg-current': darken($purple, 15),
                 'hide-link-arrow-current': darken($purple, 20),
-                'scrollbar-bg': darken($purple, 15),
+                'scrollbar-bg': darken($purple, 10),
         ),
         'bg-pink': (
                 'list-color': lighten($pink, 35),
@@ -78,7 +78,7 @@ $theme-colors: (
                 'hide-link-bg': darken($pink, 13),
                 'hide-link-bg-current': darken($pink, 15),
                 'hide-link-arrow-current': darken($pink, 20),
-                'scrollbar-bg': darken($pink, 15),
+                'scrollbar-bg': darken($pink, 10),
         ),
         'bg-red': (
                 'list-color': lighten($red, 35),
@@ -91,7 +91,7 @@ $theme-colors: (
                 'hide-link-bg': darken($red, 13),
                 'hide-link-bg-current': darken($red, 15),
                 'hide-link-arrow-current': darken($red, 20),
-                'scrollbar-bg': darken($red, 15),
+                'scrollbar-bg': darken($red, 10),
         ),
         'bg-orange': (
                 'list-color': lighten($orange, 35),
@@ -104,7 +104,7 @@ $theme-colors: (
                 'hide-link-bg': darken($orange, 13),
                 'hide-link-bg-current': darken($orange, 15),
                 'hide-link-arrow-current': darken($orange, 20),
-                'scrollbar-bg': darken($orange, 15),
+                'scrollbar-bg': darken($orange, 10),
         ),
         'bg-green': (
                 'list-color': lighten($green, 35),
@@ -117,7 +117,7 @@ $theme-colors: (
                 'hide-link-bg': darken($green, 13),
                 'hide-link-bg-current': darken($green, 15),
                 'hide-link-arrow-current': darken($green, 20),
-                'scrollbar-bg': darken($green, 15),
+                'scrollbar-bg': darken($green, 10),
         ),
         'bg-teal': (
                 'list-color': lighten($teal, 35),
@@ -130,7 +130,7 @@ $theme-colors: (
                 'hide-link-bg': darken($teal, 13),
                 'hide-link-bg-current': darken($teal, 15),
                 'hide-link-arrow-current': darken($teal, 20),
-                'scrollbar-bg': darken($teal, 15),
+                'scrollbar-bg': darken($teal, 10),
         ),
         'bg-cyan': (
                 'list-color': lighten($cyan, 35),
@@ -143,7 +143,7 @@ $theme-colors: (
                 'hide-link-bg': darken($cyan, 13),
                 'hide-link-bg-current': darken($cyan, 15),
                 'hide-link-arrow-current': darken($cyan, 20),
-                'scrollbar-bg': darken($cyan, 15),
+                'scrollbar-bg': darken($cyan, 10),
         ),
         'bg-menu-blue': (
                 'hide-bg': $blue,
@@ -208,5 +208,8 @@ $theme-colors: (
                 'hide-link-bg': darken($cyan, 13),
                 'hide-link-bg-current': darken($cyan, 15),
                 'hide-link-arrow-current': darken($cyan, 20),
+        ),
+        'bg-nanobar-cyan': (
+                'nanobar-bg': $cyan,
         ),
 );

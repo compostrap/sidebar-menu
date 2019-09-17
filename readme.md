@@ -6,7 +6,7 @@
 <p align="center">Simple and fast components build on Bootstrap 4</p>
 
 ## Info
-Simple and fast multi-level menu for sidebar.
+Simple and fast multi-level sidebar menu.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/compostrap/sidebar-menu/master/license.md)
 [![npm version](https://badge.fury.io/js/sidebar-menu-compostrap.svg)](https://badge.fury.io/js/sidebar-menu-compostrap)
@@ -19,7 +19,8 @@ npm install --save sidebar-menu-compostrap
 
 ## Built on
 
-- [Sidebar skeleton](https://github.com/compostrap/sidebar-skeleton)
+- [Bootstrap 4](https://getbootstrap.com)
+- [jQuery](https://jquery.com)
 - [Font Awesome 5](https://fontawesome.com)
 - [Perfect scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
 - [Open Sans @font-face kit](https://github.com/FontFaceKit/open-sans)

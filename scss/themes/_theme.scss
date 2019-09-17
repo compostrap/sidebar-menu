@@ -64,10 +64,10 @@
   }
 
   // scrollbar
-  .list-#{$theme} .ps__rail-y.ps--clicking .ps__thumb-y,
-  .list-#{$theme} .ps__rail-y:focus .ps__thumb-y,
-  .list-#{$theme} .ps__rail-y:hover .ps__thumb-y,
-  .list-#{$theme} .ps__thumb-y {
+  .scrollbar-#{$theme} .ps__rail-y.ps--clicking .ps__thumb-y,
+  .scrollbar-#{$theme} .ps__rail-y:focus .ps__thumb-y,
+  .scrollbar-#{$theme} .ps__rail-y:hover .ps__thumb-y,
+  .scrollbar-#{$theme} .ps__thumb-y {
     background-color: map-get($map, scrollbar-bg);
   }
 
@@ -76,5 +76,4 @@
   .ps .ps__rail-y:hover {
     background: none;
   }
-
 }
