@@ -19,7 +19,6 @@ npm install --save sidebar-menu-compostrap
 ```
 
 ## Built on
-
 - [Bootstrap 4](https://getbootstrap.com)
 - [jQuery](https://jquery.com)
 - [Font Awesome 5](https://fontawesome.com)
@@ -28,7 +27,6 @@ npm install --save sidebar-menu-compostrap
 - [Nanobar](https://github.com/jacoborus/nanobar)
 
 ## View demo
-
 - https://compostrap.github.io/sidebar.menu
 
 ## Documentation
