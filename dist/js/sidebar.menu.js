@@ -17,11 +17,6 @@
   // class list item
   var listItem      = '.list-item';
 
-  // toggle sidebar menu
-  $('#sidebar-toggle').on('click', function() {
-    $('#wrapper').toggleClass('sidebar-toggle');
-  });
-
   // list init
   $(listItem).each(function() {
 
