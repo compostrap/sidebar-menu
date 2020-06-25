@@ -126,7 +126,7 @@ body {
 }
 
 .ps__rail-y {
-  margin-top: 0.0625rem;
+  margin-top: 0.125rem;
 }
 
 .ps__rail-y.ps--clicking .ps__thumb-y,
