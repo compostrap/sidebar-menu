@@ -2,11 +2,11 @@
 // theme colors
 //
 $theme-colors: (
-        'bg-white': (
+        'bg-light': (
                 'list-color': darken($white, 30),
                 'link-color': darken($white, 48),
                 'link-hover': darken($white, 88),
-                'hide-bg': darken($gray-100, 1),
+                'hide-bg': darken($gray-100, 2),
                 'hide-color': darken($white, 74),
                 'hide-hover': darken($white, 88),
                 'arrow-color': darken($white, 48),
@@ -14,6 +14,19 @@ $theme-colors: (
                 'icon-color': darken($white, 28),
                 'icon-hover': darken($white, 88),
                 'scrollbar-bg': darken($white, 10),
+        ),
+        'bg-dark': (
+                'list-color': lighten($gray-800, 30),
+                'link-color': lighten($gray-800, 48),
+                'link-hover': lighten($gray-800, 88),
+                'hide-bg': lighten($gray-800, 2),
+                'hide-color': lighten($gray-800, 74),
+                'hide-hover': lighten($gray-800, 88),
+                'arrow-color': lighten($gray-800, 48),
+                'arrow-hover': lighten($gray-800, 88),
+                'icon-color': lighten($gray-800, 28),
+                'icon-hover': lighten($gray-800, 88),
+                'scrollbar-bg': lighten($gray-800, 10),
         ),
         'icon-blue': (
                 'icon-hover': lighten($blue, 5),

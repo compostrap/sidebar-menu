@@ -10,7 +10,6 @@ body {
 
 .list {
   width: 15.625rem;
-  font-weight: 500;
   font-size: 0.875rem;
 }
 .list-item {
@@ -22,6 +21,8 @@ body {
   margin-bottom: 0;
   margin-left: 1.0625rem;
   letter-spacing: 0.0625rem;
+  font-weight: 600;
+  font-size: 0.75rem;
 }
 .list-hidden {
   display: none;
@@ -93,11 +94,11 @@ body {
 }
 
 .link-arrow.up:before {
-  content: "\f105";
+  content: "";
 }
 
 .link-arrow.down:before {
-  content: "\f107";
+  content: "";
 }
 
 .link-arrow.transition:before {
@@ -114,9 +115,14 @@ body {
 
 .scrollbar {
   width: 15.625rem;
-  height: 37.5rem;
+  height: 31.25rem;
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .scrollbar {
+    height: 50rem;
+  }
 }
 
 .ps__rail-y {
@@ -140,113 +146,179 @@ body {
   width: 0;
   height: 100%;
   transition: height 0.3s;
-  background-color: #d93748;
+  background-color: #007bff;
 }
 
 .shadow-box {
   box-shadow: 18px 0 20px -6px #eee;
 }
 
-.sidebar-user {
-  padding: 1.25rem 0 0.3125rem;
-  text-align: center;
-  font-weight: 600;
-  font-size: 0.875rem;
-}
-.sidebar-user-avatar {
-  display: block;
-  margin: 0 auto;
-  width: 4.0625rem;
-  height: 4.0625rem;
-  margin-bottom: 0.625rem;
-}
-.sidebar-user-item {
-  display: inline;
-  padding-right: 0.625rem;
-}
-.sidebar-user-link:hover {
-  text-decoration: none;
-}
-
-.list-bg-white {
+.list-bg-light {
   color: #b3b3b3;
 }
 
-.list-bg-white .list-link {
+.list-bg-light .list-link {
   color: #858585;
 }
 
-.list-bg-white .link-current,
-.list-bg-white .list-link:hover,
-.list-bg-white .link-current:hover {
+.list-bg-light .link-current,
+.list-bg-light .list-link:hover,
+.list-bg-light .link-current:hover {
   color: #1f1f1f;
 }
 
-.list-bg-white .list-hidden {
-  background-color: #f5f6f8;
+.list-bg-light .list-hidden {
+  background-color: #f2f4f6;
 }
 
-.list-bg-white .list-hidden .list-link {
+.list-bg-light .list-hidden .list-link {
   color: #424242;
   opacity: 0.6;
 }
 
-.list-bg-white .list-hidden .link-current,
-.list-bg-white .list-hidden .link-current:hover,
-.list-bg-white .list-hidden .list-link:hover {
+.list-bg-light .list-hidden .link-current,
+.list-bg-light .list-hidden .link-current:hover,
+.list-bg-light .list-hidden .list-link:hover {
   color: #1f1f1f;
-  opacity: 1.0;
+  opacity: 1;
 }
 
-.list-bg-white .link-arrow:before {
+.list-bg-light .link-arrow:before {
   opacity: 0.3;
 }
 
-.list-bg-white .link-arrow.active:before {
-  opacity: 1.0;
+.list-bg-light .link-arrow.active:before {
+  opacity: 1;
 }
 
-.list-bg-white .list-link .fa,
-.list-bg-white .list-link .fas,
-.list-bg-white .list-link .far,
-.list-bg-white .list-link .fal,
-.list-bg-white .list-link .fad,
-.list-bg-white .list-link .fab {
+.list-bg-light .list-link .fa,
+.list-bg-light .list-link .fas,
+.list-bg-light .list-link .far,
+.list-bg-light .list-link .fal,
+.list-bg-light .list-link .fad,
+.list-bg-light .list-link .fab {
   color: #b8b8b8;
 }
 
-.list-bg-white .list-link.link-current .fa,
-.list-bg-white .list-link:hover .fa,
-.list-bg-white .list-link.link-current .fas,
-.list-bg-white .list-link:hover .fas,
-.list-bg-white .list-link.link-current .far,
-.list-bg-white .list-link:hover .far,
-.list-bg-white .list-link.link-current .fal,
-.list-bg-white .list-link:hover .fal,
-.list-bg-white .list-link.link-current .fad,
-.list-bg-white .list-link:hover .fad,
-.list-bg-white .list-link.link-current .fab,
-.list-bg-white .list-link:hover .fab {
+.list-bg-light .list-link.link-current .fa,
+.list-bg-light .list-link:hover .fa,
+.list-bg-light .list-link.link-current .fas,
+.list-bg-light .list-link:hover .fas,
+.list-bg-light .list-link.link-current .far,
+.list-bg-light .list-link:hover .far,
+.list-bg-light .list-link.link-current .fal,
+.list-bg-light .list-link:hover .fal,
+.list-bg-light .list-link.link-current .fad,
+.list-bg-light .list-link:hover .fad,
+.list-bg-light .list-link.link-current .fab,
+.list-bg-light .list-link:hover .fab {
   color: #1f1f1f;
 }
 
-.sidebar-user-bg-white {
-  background-color: #f5f6f8;
+.sidebar-user-bg-light {
+  background-color: #f2f4f6;
 }
 
-.sidebar-user-bg-white .sidebar-user-link {
+.sidebar-user-bg-light .sidebar-user-link {
   color: #858585;
 }
 
-.sidebar-user-bg-white .sidebar-user-link:hover {
+.sidebar-user-bg-light .sidebar-user-link:hover {
   color: #1f1f1f;
 }
 
-.scrollbar-bg-white .ps__rail-y.ps--clicking .ps__thumb-y,
-.scrollbar-bg-white .ps__rail-y:focus .ps__thumb-y,
-.scrollbar-bg-white .ps__rail-y:hover .ps__thumb-y,
-.scrollbar-bg-white .ps__thumb-y {
+.scrollbar-bg-light .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-light .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-light .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-light .ps__thumb-y {
   background-color: #e6e6e6;
+}
+
+.ps .ps__rail-y.ps--clicking,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-y:hover {
+  background: none;
+}
+
+.list-bg-dark {
+  color: #7a8793;
+}
+
+.list-bg-dark .list-link {
+  color: #adb4bc;
+}
+
+.list-bg-dark .link-current,
+.list-bg-dark .list-link:hover,
+.list-bg-dark .link-current:hover {
+  color: white;
+}
+
+.list-bg-dark .list-hidden {
+  background-color: #393f46;
+}
+
+.list-bg-dark .list-hidden .list-link {
+  color: #f6f7f8;
+  opacity: 0.6;
+}
+
+.list-bg-dark .list-hidden .link-current,
+.list-bg-dark .list-hidden .link-current:hover,
+.list-bg-dark .list-hidden .list-link:hover {
+  color: white;
+  opacity: 1;
+}
+
+.list-bg-dark .link-arrow:before {
+  opacity: 0.3;
+}
+
+.list-bg-dark .link-arrow.active:before {
+  opacity: 1;
+}
+
+.list-bg-dark .list-link .fa,
+.list-bg-dark .list-link .fas,
+.list-bg-dark .list-link .far,
+.list-bg-dark .list-link .fal,
+.list-bg-dark .list-link .fad,
+.list-bg-dark .list-link .fab {
+  color: #74818e;
+}
+
+.list-bg-dark .list-link.link-current .fa,
+.list-bg-dark .list-link:hover .fa,
+.list-bg-dark .list-link.link-current .fas,
+.list-bg-dark .list-link:hover .fas,
+.list-bg-dark .list-link.link-current .far,
+.list-bg-dark .list-link:hover .far,
+.list-bg-dark .list-link.link-current .fal,
+.list-bg-dark .list-link:hover .fal,
+.list-bg-dark .list-link.link-current .fad,
+.list-bg-dark .list-link:hover .fad,
+.list-bg-dark .list-link.link-current .fab,
+.list-bg-dark .list-link:hover .fab {
+  color: white;
+}
+
+.sidebar-user-bg-dark {
+  background-color: #393f46;
+}
+
+.sidebar-user-bg-dark .sidebar-user-link {
+  color: #adb4bc;
+}
+
+.sidebar-user-bg-dark .sidebar-user-link:hover {
+  color: white;
+}
+
+.scrollbar-bg-dark .ps__rail-y.ps--clicking .ps__thumb-y,
+.scrollbar-bg-dark .ps__rail-y:focus .ps__thumb-y,
+.scrollbar-bg-dark .ps__rail-y:hover .ps__thumb-y,
+.scrollbar-bg-dark .ps__thumb-y {
+  background-color: #4b545c;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -262,7 +334,7 @@ body {
 .list-icon-blue .list-hidden .link-current,
 .list-icon-blue .list-hidden .link-current:hover,
 .list-icon-blue .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-blue .link-arrow:before {
@@ -270,7 +342,7 @@ body {
 }
 
 .list-icon-blue .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-blue .list-link.link-current .fa,
@@ -301,7 +373,7 @@ body {
 .list-icon-purple .list-hidden .link-current,
 .list-icon-purple .list-hidden .link-current:hover,
 .list-icon-purple .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-purple .link-arrow:before {
@@ -309,7 +381,7 @@ body {
 }
 
 .list-icon-purple .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-purple .list-link.link-current .fa,
@@ -340,7 +412,7 @@ body {
 .list-icon-pink .list-hidden .link-current,
 .list-icon-pink .list-hidden .link-current:hover,
 .list-icon-pink .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-pink .link-arrow:before {
@@ -348,7 +420,7 @@ body {
 }
 
 .list-icon-pink .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-pink .list-link.link-current .fa,
@@ -379,7 +451,7 @@ body {
 .list-icon-red .list-hidden .link-current,
 .list-icon-red .list-hidden .link-current:hover,
 .list-icon-red .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-red .link-arrow:before {
@@ -387,7 +459,7 @@ body {
 }
 
 .list-icon-red .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-red .list-link.link-current .fa,
@@ -418,7 +490,7 @@ body {
 .list-icon-orange .list-hidden .link-current,
 .list-icon-orange .list-hidden .link-current:hover,
 .list-icon-orange .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-orange .link-arrow:before {
@@ -426,7 +498,7 @@ body {
 }
 
 .list-icon-orange .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-orange .list-link.link-current .fa,
@@ -457,7 +529,7 @@ body {
 .list-icon-green .list-hidden .link-current,
 .list-icon-green .list-hidden .link-current:hover,
 .list-icon-green .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-green .link-arrow:before {
@@ -465,7 +537,7 @@ body {
 }
 
 .list-icon-green .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-green .list-link.link-current .fa,

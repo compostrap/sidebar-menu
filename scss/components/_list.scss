@@ -4,7 +4,6 @@
 
 .list {
   width: $sm-width;
-  font-weight: 500;
   @include font-size($font-size);
 
   &-item {
@@ -17,6 +16,8 @@
     margin-bottom: 0;
     margin-left: rem(17);
     letter-spacing: rem(1);
+    font-weight: 600;
+    @include font-size($font-size-sm);
   }
 
   &-hidden {
