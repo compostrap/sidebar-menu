@@ -3,7 +3,8 @@
 //
 
 .scrollbar {
-  max-height: 85vh;
+  width: $sm-width;
+  height: rem(600);
   position: relative;
   overflow: hidden;
 }

@@ -13,13 +13,15 @@
 	<title>Sidebar</title>
 </head>
 
-<body>
+<body class="bg-light">
 
 <header>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
 
 		<!-- title -->
-		<a class="navbar-brand" href="#">Sidebar navigation</a>
+		<a class="navbar-brand" href="#"><i class="fab fa-bootstrap mr-1 text-danger"></i>
+			<span class="text-danger">Bootstrap menu</span>
+		</a>
 
 		<!-- sidebar toggle -->
 		<button class="navbar-toggler btn btn-link border-0" type="button" id="sidebar" aria-label="Toggle navigation">
@@ -29,7 +31,7 @@
 </header>
 
 <div class="d-flex wrapper wrapper-navbar-used wrapper-navbar-fixed">
-	<nav role="navigation" class="sidebar sidebar-bg-light" id="navigation">
+	<nav role="navigation" class="sidebar shadow-box sidebar-bg-white" id="navigation">
 
 		<!-- sidebar -->
 		<div class="sidebar-menu">
@@ -38,39 +40,48 @@
 			<div class="sidebar-menu-fixed">
 
 				<!-- menu scrollbar -->
-				<div class="scrollbar scrollbar-bg-light">
+				<div class="scrollbar scrollbar-bg-white">
 
 					<!-- menu -->
-					<ul class="list list-unstyled list-bg-light mb-0">
+					<ul class="list list-unstyled list-bg-white mb-0">
 
-						<!-- simple menu -->
 						<li class="list-item">
 
 							<!-- list title -->
-							<p class="list-title text-uppercase">Translate</p>
+							<p class="list-title text-uppercase">User logged</p>
 
-							<!-- list items -->
+							<!-- list items, first level -->
 							<ul class="list-unstyled">
-								<li><a href="#" class="list-link">Czech</a></li>
-								<li><a href="#" class="list-link link-current">English</a></li>
+								<li><a href="#" class="list-link link-arrow text-uppercase"><span class="list-icon"><i class="far fa-user"></i></span>S. Karlos</a>
+
+									<!-- list items, second level -->
+									<ul class="list-unstyled list-hidden">
+										<li><a href="#" class="list-link">Your profil</a></li>
+										<li><a href="#" class="list-link">Logout</a></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
+					</ul>
+
+					<!-- menu -->
+					<ul class="list list-unstyled list-bg-white list-icon-red mb-0">
 
 						<!-- multi-level dropdown menu -->
 						<li class="list-item">
 
 							<!-- list title -->
-							<p class="list-title text-uppercase">Dashboard</p>
+							<p class="list-title text-uppercase">System</p>
 
 							<!-- list items, first level -->
 							<ul class="list-unstyled">
-								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-home"></i></span>Home</a></li>
-								<li><a href="#" class="list-link link-arrow link-current"><span class="list-icon"><i class="fas fa-tools"></i></span>Settings</a>
+								<li><a href="#" class="list-link link-current"><span class="list-icon"><i class="fas fa-mug-hot"></i></span>Dashboard</a></li>
+								<li><a href="#" class="list-link link-arrow"><span class="list-icon"><i class="fas fa-hammer"></i></span>Settings</a>
 
 									<!-- list items, second level -->
 									<ul class="list-unstyled list-hidden">
 										<li><a href="#" class="list-link">Timezone</a></li>
-										<li><a href="#" class="list-link link-current">Permissions</a></li>
+										<li><a href="#" class="list-link">Permissions</a></li>
 										<li><a href="#" class="list-link link-arrow">Maintenance</a>
 
 											<!-- list items, third level -->
@@ -86,9 +97,9 @@
 								<li>
 									<a href="#" class="list-link">
 										<div class="clearfix">
-											<div class="float-left"><span class="list-icon"><i class="fas fa-bell"></i></span>Notice</div>
+											<div class="float-left"><span class="list-icon"><i class="far fa-bell"></i></span>Notice</div>
 											<div class="float-right">
-												<span class="badge badge-danger">New</span>
+												<span class="badge badge-dark">New</span>
 												<span class="badge badge-secondary">4</span>
 											</div>
 										</div>
@@ -106,7 +117,7 @@
 							<!-- list items, first level -->
 							<ul class="list-unstyled">
 								<li><a href="#" class="list-link"><span class="list-icon"><i class="fas fa-plus"></i></span>New</a></li>
-								<li><a href="#" class="list-link link-arrow"><span class="list-icon"><i class="fas fa-comment"></i></span>Settings comments</a>
+								<li><a href="#" class="list-link link-arrow"><span class="list-icon"><i class="far fa-comment"></i></span>Comments</a>
 
 									<!-- list items, second level -->
 									<ul class="list-unstyled list-hidden">

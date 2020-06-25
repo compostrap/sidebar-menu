@@ -4,6 +4,7 @@
 
 .list {
   width: $sm-width;
+  font-weight: 500;
   @include font-size($font-size);
 
   &-item {
@@ -15,26 +16,51 @@
   &-title {
     margin-bottom: 0;
     margin-left: rem(17);
-    font-weight: 600;
-    @include font-size($font-size-sm);
+    letter-spacing: rem(1);
   }
 
   &-hidden {
     display: none;
     overflow: hidden;
+    padding: rem(10) 0 rem(10) rem(25);
+  }
+
+  &-hidden &-link {
+    font-weight: 500;
+    line-height: rem(30);
   }
 
   &-link {
     display: block;
     padding: 0 rem(10) 0 rem(19);
+    margin: 0;
+    font-weight: 600;
     @include hover {
       text-decoration: none;
 
-      .fas {
-        transform: rotate(360deg);
-        transition: 0.5s all;
+      .fa,
+      .fas,
+      .far,
+      .fal,
+      .fad,
+      .fab {
+        animation: bellshake .5s cubic-bezier(.36,.07,.19,.97) both;
+        backface-visibility: hidden;
+        transform-origin: top right;
       }
     }
+  }
+
+  @keyframes bellshake {
+    0% { transform: rotate(0); }
+    15% { transform: rotate(5deg); }
+    30% { transform: rotate(-5deg); }
+    45% { transform: rotate(4deg); }
+    60% { transform: rotate(-4deg); }
+    75% { transform: rotate(2deg); }
+    85% { transform: rotate(-2deg); }
+    92% { transform: rotate(1deg); }
+    100% { transform: rotate(0); }
   }
 
   &-icon {
@@ -47,12 +73,12 @@
 .link-arrow:before {
   font-family: $font-awesome;
   font-weight: 900;
-  margin-right: rem(3);
+  margin-right: rem(5);
   float: right;
 }
 
 .link-arrow.up:before {
-  content: "\f106";
+  content: "\f105";
 }
 
 .link-arrow.down:before {
@@ -64,9 +90,9 @@
 }
 
 .link-arrow.rotate:before {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 
 .link-arrow.rotate-revert:before {
-  transform: rotate(-180deg);
+  transform: rotate(-90deg);
 }
