@@ -46,20 +46,28 @@ See the menu in the template.
 | Marks the drop-down menu icon   | `link-arrow`   |
 | Marks the hidden drop-down menu | `list-hidden`  |
 
-## Color combination of side panel and menu
+## Sidebar colors
 Colors are the same as bootstrap. Add more colors in [colors.scss](https://github.com/compostrap/sidebar-menu/blob/master/scss/themes/_colors.scss)
 
-| Sidebar color class | Menu color class | Hidden menu color class | Scrollbar color class  |
-| --------------------| -----------------| ----------------------- | ---------------------- |
-| `sidebar-bg-white`  | `list-bg-white`  | `list-bg-menu-*`        |  `scrollbar-bg-white`  |
-| `sidebar-bg-light`  | `list-bg-light`  | `list-bg-menu-*`        |  `scrollbar-bg-light`  |
-| `sidebar-bg-dark`   | `list-bg-dark`   | `list-bg-menu-*`        |  `scrollbar-bg-dark`   |
-| `sidebar-bg-blue`   | `list-bg-blue`   | -                       |  `scrollbar-bg-blue`   |
-| `sidebar-bg-purple` | `list-bg-purple` | -                       |  `scrollbar-bg-purple` |
-| `sidebar-bg-pink`   | `list-bg-pink`   | -                       |  `scrollbar-bg-pink`   |
-| `sidebar-bg-red`    | `list-bg-red`    | -                       |  `scrollbar-bg-red`    |
-| `sidebar-bg-orange` | `list-bg-orange` | -                       |  `scrollbar-bg-orange` |
-| `sidebar-bg-green`  | `list-bg-green`  | -                       |  `scrollbar-bg-green`  |
-| `sidebar-bg-teal`   | `list-bg-teal`   | -                       |  `scrollbar-bg-teal`   |
-| `sidebar-bg-cyan`   | `list-bg-cyan`   | -                       |  `scrollbar-bg-cyan`   |
+| Sidebar color class | List color class | Scrollbar color class  |
+| --------------------| -----------------| ---------------------- |
+| `sidebar-bg-white`  | `list-bg-white`  |  `scrollbar-bg-white`  |
+| `sidebar-bg-light`  | `list-bg-light`  |  `scrollbar-bg-light`  |
+| `sidebar-bg-dark`   | `list-bg-dark`   |  `scrollbar-bg-dark`   |
+| `sidebar-bg-blue`   | `list-bg-blue`   |  `scrollbar-bg-blue`   |
+| `sidebar-bg-purple` | `list-bg-purple` |  `scrollbar-bg-purple` |
+| `sidebar-bg-pink`   | `list-bg-pink`   |  `scrollbar-bg-pink`   |
+| `sidebar-bg-red`    | `list-bg-red`    |  `scrollbar-bg-red`    |
+| `sidebar-bg-orange` | `list-bg-orange` |  `scrollbar-bg-orange` |
+| `sidebar-bg-green`  | `list-bg-green`  |  `scrollbar-bg-green`  |
 
+## List icon color
+
+| class              |
+| ------------------ |
+| `list-icon-blue`   |
+| `list-icon-purple` |
+| `list-icon-pink`   |
+| `list-icon-red`    |
+| `list-icon-orange` |
+| `list-icon-green`  |
