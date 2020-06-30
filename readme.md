@@ -49,18 +49,6 @@ See the menu in the template.
 ## Sidebar colors
 Colors are the same as bootstrap. Add more colors in [colors.scss](https://github.com/compostrap/sidebar-menu/blob/master/scss/themes/_colors.scss)
 
-| Sidebar color class | List color class | Scrollbar color class  |
-| --------------------| -----------------| ---------------------- |
-| `sidebar-bg-white`  | `list-bg-white`  |  `scrollbar-bg-white`  |
-| `sidebar-bg-light`  | `list-bg-light`  |  `scrollbar-bg-light`  |
-| `sidebar-bg-dark`   | `list-bg-dark`   |  `scrollbar-bg-dark`   |
-| `sidebar-bg-blue`   | `list-bg-blue`   |  `scrollbar-bg-blue`   |
-| `sidebar-bg-purple` | `list-bg-purple` |  `scrollbar-bg-purple` |
-| `sidebar-bg-pink`   | `list-bg-pink`   |  `scrollbar-bg-pink`   |
-| `sidebar-bg-red`    | `list-bg-red`    |  `scrollbar-bg-red`    |
-| `sidebar-bg-orange` | `list-bg-orange` |  `scrollbar-bg-orange` |
-| `sidebar-bg-green`  | `list-bg-green`  |  `scrollbar-bg-green`  |
-
 | Color                                                              | Sidebar             | List             | List icons         | Scrollbar             |
 | ------------------------------------------------------------------ | ------------------- | ---------------- | ------------------ | --------------------- |
 | ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff` | `sidebar-bg-white`  | `list-bg-white`  | -                  | `scrollbar-bg-white`  |
