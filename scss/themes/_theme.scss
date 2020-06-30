@@ -10,22 +10,14 @@
   }
 
   // item list hyperlink
-  .list-#{$theme} .list-link {
+  .list-#{$theme} .list-link, {
     color: map-get($map, link-color);
   }
 
-  .list-#{$theme} .list-link:hover {
-    background-color: map-get($map, link-bg);
-  }
-
-  // item list hyperlink current
   .list-#{$theme} .link-current,
+  .list-#{$theme} .list-link:hover,
   .list-#{$theme} .link-current:hover {
-    background-color: map-get($map, link-bg-current);
-  }
-
-  .list-#{$theme} .list-link.link-current .fas {
-    opacity: 1.0;
+    color: map-get($map, link-hover);
   }
 
   // hidden list
@@ -34,33 +26,67 @@
   }
 
   .list-#{$theme} .list-hidden .list-link {
-    color: map-get($map, hide-link-color);
-  }
-
-  .list-#{$theme} .list-hidden .list-link:hover {
-    background-color: map-get($map, hide-link-bg);
+    color: map-get($map, hide-color);
+    opacity: 0.6;
   }
 
   .list-#{$theme} .list-hidden .link-current,
-  .list-#{$theme} .list-hidden .link-current:hover {
-    background-color: map-get($map, hide-link-bg-current);
-    color: map-get($map, hide-link-color-current);
+  .list-#{$theme} .list-hidden .link-current:hover,
+  .list-#{$theme} .list-hidden .list-link:hover {
+    color: map-get($map, hide-hover);
+    opacity: 1.0;
   }
 
-  .list-#{$theme} .list-hidden .link-arrow.link-current,
-  .list-#{$theme} .list-hidden .link-arrow.link-current:hover {
-    background-color: map-get($map, hide-link-arrow-current);
-  }
-
-  // icons
-  .list-#{$theme} .link-arrow:before,
-  .list-#{$theme} .list-link .fas {
+  // arrow
+  .list-#{$theme} .link-arrow:before {
     opacity: 0.3;
   }
 
-  .list-#{$theme} .link-arrow.active:before,
-  .list-#{$theme} .list-link:hover .fas {
+  .list-#{$theme} .link-arrow.active:before {
     opacity: 1.0;
+  }
+
+  // icons
+  .list-#{$theme} .list-link .fa,
+  .list-#{$theme} .list-link .fas,
+  .list-#{$theme} .list-link .far,
+  .list-#{$theme} .list-link .fal,
+  .list-#{$theme} .list-link .fad,
+  .list-#{$theme} .list-link .fab {
+    color: map-get($map, icon-color);
+  }
+
+  .list-#{$theme} .list-link.link-current .fa,
+  .list-#{$theme} .list-link:hover .fa,
+
+  .list-#{$theme} .list-link.link-current .fas,
+  .list-#{$theme} .list-link:hover .fas,
+
+  .list-#{$theme} .list-link.link-current .far,
+  .list-#{$theme} .list-link:hover .far,
+
+  .list-#{$theme} .list-link.link-current .fal,
+  .list-#{$theme} .list-link:hover .fal,
+
+  .list-#{$theme} .list-link.link-current .fad,
+  .list-#{$theme} .list-link:hover .fad,
+
+  .list-#{$theme} .list-link.link-current .fab,
+  .list-#{$theme} .list-link:hover .fab {
+    color: map-get($map, icon-hover);
+  }
+
+  // sidebar user
+  .sidebar-user-#{$theme} {
+    background-color: map-get($map, hide-bg);
+  }
+
+  .sidebar-user-#{$theme} .sidebar-user-link {
+    color: map-get($map, link-color);
+  }
+
+  .sidebar-user-#{$theme} .sidebar-user-link:hover {
+    color: map-get($map, link-hover);
   }
 
   // scrollbar

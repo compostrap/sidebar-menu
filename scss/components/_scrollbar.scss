@@ -3,14 +3,18 @@
 //
 
 .scrollbar {
-  max-height: 85vh;
+  width: $sm-width;
+  height: rem(500);
   position: relative;
   overflow: hidden;
+  @include media-breakpoint-up('md') {
+    height: rem(800);
+  }
 }
 
 // customize
 .ps__rail-y {
-  margin-top: rem(1);
+  margin-top: rem(2);
 }
 
 .ps__rail-y.ps--clicking .ps__thumb-y,
