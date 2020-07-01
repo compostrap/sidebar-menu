@@ -35,9 +35,6 @@ Simple and fast multi-level sidebar menu on Bootstrap. So you should be aware of
 
 **The sidebar menu is built on the sidebar skeleton. I recommend you [look at it](https://github.com/compostrap/sidebar-skeleton).**
 
-## See the html template code
-https://raw.githubusercontent.com/compostrap/sidebar-menu/master/demo.html
-
 ## Important classes in the menu
 See the menu in the template.
 
