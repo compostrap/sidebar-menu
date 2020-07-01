@@ -27,7 +27,8 @@ npm install --save sidebar-menu-compostrap
 - [Nanobar](https://github.com/jacoborus/nanobar)
 
 ## Demo
-[https://compostrap.github.io/sidebar.menu](https://compostrap.github.io/sidebar.menu)
+[Dark](https://compostrap.github.io/sidebar.dark)
+[White](https://compostrap.github.io/sidebar.white)
 
 ## Introduction
 Simple and fast multi-level sidebar menu on Bootstrap. So you should be aware of how Bootstrap itself is used. The advantage is also knowledge of sass, npm, grunt.
