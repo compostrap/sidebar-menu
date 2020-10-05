@@ -94,11 +94,11 @@ body {
 }
 
 .link-arrow.up:before {
-  content: "\f105";
+  content: "";
 }
 
 .link-arrow.down:before {
-  content: "\f107";
+  content: "";
 }
 
 .link-arrow.transition:before {
@@ -115,18 +115,19 @@ body {
 
 .scrollbar {
   width: 14.375rem;
-  height: 31.25rem;
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
-@media (min-width: 768px) {
-  .scrollbar {
-    height: 50rem;
-  }
+.scrollbar-not-navbar {
+  height: calc(100vh);
+}
+.scrollbar-use-navbar {
+  height: calc(100vh - 3.5rem);
 }
 
 .ps__rail-y {
   margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
 }
 
 .ps__rail-y.ps--clicking .ps__thumb-y,
@@ -147,10 +148,6 @@ body {
   height: 100%;
   transition: height 0.3s;
   background-color: #343a40;
-}
-
-.shadow-box {
-  box-shadow: 18px 0 20px -6px #eee;
 }
 
 .list-bg-white {
@@ -180,7 +177,7 @@ body {
 .list-bg-white .list-hidden .link-current:hover,
 .list-bg-white .list-hidden .list-link:hover {
   color: #1f1f1f;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-white .link-arrow:before {
@@ -188,7 +185,7 @@ body {
 }
 
 .list-bg-white .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-white .list-link .fa,
@@ -267,7 +264,7 @@ body {
 .list-bg-light .list-hidden .link-current:hover,
 .list-bg-light .list-hidden .list-link:hover {
   color: #15191d;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-light .link-arrow:before {
@@ -275,7 +272,7 @@ body {
 }
 
 .list-bg-light .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-light .list-link .fa,
@@ -354,7 +351,7 @@ body {
 .list-bg-dark .list-hidden .link-current:hover,
 .list-bg-dark .list-hidden .list-link:hover {
   color: white;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-dark .link-arrow:before {
@@ -362,7 +359,7 @@ body {
 }
 
 .list-bg-dark .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-dark .list-link .fa,
@@ -441,7 +438,7 @@ body {
 .list-bg-blue .list-hidden .link-current:hover,
 .list-bg-blue .list-hidden .list-link:hover {
   color: white;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-blue .link-arrow:before {
@@ -449,7 +446,7 @@ body {
 }
 
 .list-bg-blue .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-blue .list-link .fa,
@@ -528,7 +525,7 @@ body {
 .list-bg-purple .list-hidden .link-current:hover,
 .list-bg-purple .list-hidden .list-link:hover {
   color: white;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-purple .link-arrow:before {
@@ -536,7 +533,7 @@ body {
 }
 
 .list-bg-purple .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-purple .list-link .fa,
@@ -615,7 +612,7 @@ body {
 .list-bg-pink .list-hidden .link-current:hover,
 .list-bg-pink .list-hidden .list-link:hover {
   color: white;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-pink .link-arrow:before {
@@ -623,7 +620,7 @@ body {
 }
 
 .list-bg-pink .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-pink .list-link .fa,
@@ -702,7 +699,7 @@ body {
 .list-bg-red .list-hidden .link-current:hover,
 .list-bg-red .list-hidden .list-link:hover {
   color: white;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-red .link-arrow:before {
@@ -710,7 +707,7 @@ body {
 }
 
 .list-bg-red .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-red .list-link .fa,
@@ -789,7 +786,7 @@ body {
 .list-bg-orange .list-hidden .link-current:hover,
 .list-bg-orange .list-hidden .list-link:hover {
   color: white;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-orange .link-arrow:before {
@@ -797,7 +794,7 @@ body {
 }
 
 .list-bg-orange .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-orange .list-link .fa,
@@ -876,7 +873,7 @@ body {
 .list-bg-green .list-hidden .link-current:hover,
 .list-bg-green .list-hidden .list-link:hover {
   color: white;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-green .link-arrow:before {
@@ -884,7 +881,7 @@ body {
 }
 
 .list-bg-green .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-bg-green .list-link .fa,
@@ -943,7 +940,7 @@ body {
 .list-icon-blue .list-hidden .link-current,
 .list-icon-blue .list-hidden .link-current:hover,
 .list-icon-blue .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-blue .link-arrow:before {
@@ -951,7 +948,7 @@ body {
 }
 
 .list-icon-blue .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-blue .list-link.link-current .fa,
@@ -982,7 +979,7 @@ body {
 .list-icon-purple .list-hidden .link-current,
 .list-icon-purple .list-hidden .link-current:hover,
 .list-icon-purple .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-purple .link-arrow:before {
@@ -990,7 +987,7 @@ body {
 }
 
 .list-icon-purple .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-purple .list-link.link-current .fa,
@@ -1021,7 +1018,7 @@ body {
 .list-icon-pink .list-hidden .link-current,
 .list-icon-pink .list-hidden .link-current:hover,
 .list-icon-pink .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-pink .link-arrow:before {
@@ -1029,7 +1026,7 @@ body {
 }
 
 .list-icon-pink .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-pink .list-link.link-current .fa,
@@ -1060,7 +1057,7 @@ body {
 .list-icon-red .list-hidden .link-current,
 .list-icon-red .list-hidden .link-current:hover,
 .list-icon-red .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-red .link-arrow:before {
@@ -1068,7 +1065,7 @@ body {
 }
 
 .list-icon-red .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-red .list-link.link-current .fa,
@@ -1099,7 +1096,7 @@ body {
 .list-icon-orange .list-hidden .link-current,
 .list-icon-orange .list-hidden .link-current:hover,
 .list-icon-orange .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-orange .link-arrow:before {
@@ -1107,7 +1104,7 @@ body {
 }
 
 .list-icon-orange .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-orange .list-link.link-current .fa,
@@ -1138,7 +1135,7 @@ body {
 .list-icon-green .list-hidden .link-current,
 .list-icon-green .list-hidden .link-current:hover,
 .list-icon-green .list-hidden .list-link:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-green .link-arrow:before {
@@ -1146,7 +1143,7 @@ body {
 }
 
 .list-icon-green .link-arrow.active:before {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .list-icon-green .list-link.link-current .fa,

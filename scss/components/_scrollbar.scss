@@ -5,11 +5,21 @@
 .scrollbar {
   width: $sm-width;
   overflow: hidden;
+  position: relative;
+
+  &-not-navbar {
+    height: calc(100vh);
+  }
+
+  &-use-navbar {
+    height: calc(100vh - #{$sm-top});
+  }
 }
 
 // customize
 .ps__rail-y {
   margin-top: rem(2);
+  margin-bottom: rem(2);
 }
 
 .ps__rail-y.ps--clicking .ps__thumb-y,
