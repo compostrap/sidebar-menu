@@ -4,12 +4,7 @@
 
 .scrollbar {
   width: $sm-width;
-  height: rem(500);
-  position: relative;
   overflow: hidden;
-  @include media-breakpoint-up('md') {
-    height: rem(800);
-  }
 }
 
 // customize
