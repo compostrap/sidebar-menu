@@ -4,8 +4,7 @@
  * MIT License
  */
 !function(exports, $, undefined) {
-	let Sidebar = function()
-	{
+	let Sidebar = function() {
 		$('.list-item').each(function() {
 			let el = $(this);
 			let linkHasClass = (className) => {
