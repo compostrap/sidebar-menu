@@ -3,60 +3,39 @@
  * Copyright Zdeněk Papučík
  * MIT License
  */
-(function($) {
+!function(exports, $, undefined) {
+	let Sidebar = function()
+	{
+		$('.list-item').each(function() {
+			let el = $(this);
+			let linkHasClass = (className) => {
+				return el.parent().find('a')
+					.hasClass(className);
+			}
+			if (linkHasClass('link-arrow')) {
+				el.find('a').addClass('up');
+				if (linkHasClass('link-current')) {
+					let current = $('.link-current');
+					current.addClass('active down');
+					current.next('ul').show();
+				}
+			}
+		});
+		$('.link-arrow').on('click', function() {
+			let el = $(this);
+			el.addClass('transition')
+				.toggleClass('active rotate');
 
-  // class with arrow icon
-  const linkArrow = '.link-arrow';
+			!(el.hasClass('link-current'))
+				? el.addClass('link-current')
+				: el.removeClass('link-current');
 
-  // class current link
-  const linkCurrent = '.link-current';
-
-  // class hidden list
-  const listHidden = '.list-hidden';
-
-  // class list item
-  const listItem = '.list-item';
-
-  // list init
-  $(listItem).each(function() {
-
-    const el = $(this);
-    const parent = el.parent();
-    const link = parent.find(linkArrow + linkCurrent);
-
-    // default icon menu
-    parent.find(linkArrow).addClass('up');
-
-    // view the list above the current link
-    if (link.length > 0) {
-
-      // active down icon
-      link.addClass('active down');
-
-      // show hidden list
-      link.next(listHidden).show();
-    }
-  });
-
-  // list transition arrow
-  $(linkArrow).on('click', function() {
-
-    const el = $(this);
-    const linkCurrent = 'link-current';
-
-    // adding rotation effect to arrows icons
-    el.addClass('transition').toggleClass('active rotate');
-
-    // adding link current on click link
-    !(el.hasClass(linkCurrent)) ? el.addClass(linkCurrent) : el.removeClass(linkCurrent);
-
-    // show hidden list
-    el.next(listHidden).slideToggle('fast');
-
-    // rotate the direction of rotation of the arrow
-    if (el.parent().find(linkArrow).hasClass('down')) {
-      el.toggleClass('rotate-revert');
-    }
-  });
-
-}(jQuery));
+			el.next('.list-hidden').slideToggle('fast');
+			if (el.parent().find('a').hasClass('down')) {
+				el.toggleClass('rotate-revert')
+			}
+		});
+		return Sidebar;
+	}
+	exports.Sidebar = Sidebar;
+}(this, jQuery);
