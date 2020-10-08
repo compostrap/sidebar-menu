@@ -103,3 +103,14 @@
     background: none;
   }
 }
+
+// gradient background
+.sidebar-bg-dark-gradient {
+  background: rgb(52,58,64);
+  background: linear-gradient(0, rgba(52,58,64,1) 0%, rgba(52,58,64,0.90) 100%);
+}
+
+.sidebar-bg-white-gradient {
+  background: rgb(255,255,255);
+  background: linear-gradient(0, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
