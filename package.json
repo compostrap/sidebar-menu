@@ -1,6 +1,6 @@
 {
   "name": "sidebar-menu-compostrap",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Simple and fast multi-level sidebar menu on Bootstrap 4",
   "main": "dist/js/sidebar.menu.js",
   "dependencies": {
