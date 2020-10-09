@@ -1,3 +1,8 @@
+/*!
+ * Sidebar menu
+ * Copyright Zdeněk Papučík
+ * MIT License
+*/
 (function (factory) {
 	if (typeof define === 'function' && define.amd) {
 		define(['jquery'], factory);
