@@ -16,7 +16,6 @@
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
     "clean-css-cli": "^4.2.3",
-    "npm-run-all": "^4.1.5",
     "uglify-js-es6": "^2.8.9"
   },
   "scripts": {
@@ -24,8 +23,7 @@
     "scss": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss -o dist/css/",
     "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/sidebar.menu.min.css dist/css/sidebar.menu.css",
     "uglify": "uglifyjs -o dist/js/sidebar.menu.min.js dist/js/sidebar.menu.js",
-    "watch:css": "nodemon -e scss -x \"npm run scss\"",
-    "watch": "npm-run-all --parallel watch:*",
+    "watch": "nodemon -e scss -x \"npm run scss\"",
     "server": "serve --listen 3000"
   },
   "author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",
