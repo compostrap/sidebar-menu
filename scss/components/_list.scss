@@ -6,6 +6,17 @@
   width: $sm-width;
   @include font-size($font-size);
 
+  & &-hidden {
+    display: none;
+    overflow: hidden;
+    padding: rem(10) 0 rem(10) rem(25);
+  }
+
+  &-hidden &-link {
+    font-weight: 500;
+    line-height: rem(30);
+  }
+
   &-item {
     padding: 0;
     margin-top: rem(10);
@@ -18,17 +29,6 @@
     letter-spacing: rem(1);
     font-weight: 600;
     @include font-size($font-size-sm);
-  }
-
-  &-hidden {
-    display: none;
-    overflow: hidden;
-    padding: rem(10) 0 rem(10) rem(25);
-  }
-
-  &-hidden &-link {
-    font-weight: 500;
-    line-height: rem(30);
   }
 
   &-link {

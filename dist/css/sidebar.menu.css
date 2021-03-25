@@ -13,6 +13,17 @@ body {
   font-size: 0.875rem;
 }
 
+.list .list-hidden {
+  display: none;
+  overflow: hidden;
+  padding: 0.625rem 0 0.625rem 1.5625rem;
+}
+
+.list-hidden .list-link {
+  font-weight: 500;
+  line-height: 1.875rem;
+}
+
 .list-item {
   padding: 0;
   margin-top: 0.625rem;
@@ -25,17 +36,6 @@ body {
   letter-spacing: 0.0625rem;
   font-weight: 600;
   font-size: 0.75rem;
-}
-
-.list-hidden {
-  display: none;
-  overflow: hidden;
-  padding: 0.625rem 0 0.625rem 1.5625rem;
-}
-
-.list-hidden .list-link {
-  font-weight: 500;
-  line-height: 1.875rem;
 }
 
 .list-link {
