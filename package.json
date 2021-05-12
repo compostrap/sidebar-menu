@@ -4,24 +4,24 @@
   "description": "Simple and fast multi-level sidebar menu on Bootstrap 4",
   "main": "dist/js/sidebar.menu.js",
   "dependencies": {
-    "jquery": "^3.5.1",
-    "@fortawesome/fontawesome-free": "^5.15.0",
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "jquery": "^3.6.0",
     "nanobar": "^0.4.2",
     "open-sans-fontface": "^1.4.0",
-    "perfect-scrollbar": "^1.5.0",
-    "sidebar-skeleton-compostrap": "^1.0.16"
+    "perfect-scrollbar": "^1.5.1",
+    "sidebar-skeleton-compostrap": "^1.0.18"
   },
   "devDependencies": {
+    "clean-css-cli": "^5.3.0",
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7",
     "serve": "^11.3.2",
-    "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4",
-    "clean-css-cli": "^4.2.3",
     "uglify-js-es6": "^2.8.9"
   },
   "scripts": {
     "build": "npm run scss && npm run css-minify && npm run uglify",
-    "scss": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss -o dist/css/",
-    "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/sidebar.menu.min.css dist/css/sidebar.menu.css",
+    "scss": "node-sass -O1 --output-style expanded --source-map true --source-map-contents true --precision 6 scss --output dist/css/",
+    "css-minify": "cleancss --source-map --source-map-inline-sources -o dist/css/sidebar.menu.min.css dist/css/sidebar.menu.css",
     "uglify": "uglifyjs -o dist/js/sidebar.menu.min.js dist/js/sidebar.menu.js",
     "watch": "nodemon -e scss -x \"npm run scss\"",
     "server": "serve --listen 3000"
