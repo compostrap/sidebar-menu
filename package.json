@@ -20,8 +20,8 @@
   },
   "scripts": {
     "build": "npm run scss && npm run css-minify && npm run uglify",
-    "scss": "node-sass -O1 --output-style expanded --source-map true --source-map-contents true --precision 6 scss --output dist/css/",
-    "css-minify": "cleancss --source-map --source-map-inline-sources -o dist/css/sidebar.menu.min.css dist/css/sidebar.menu.css",
+    "scss": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss --output dist/css/",
+    "css-minify": "cleancss -O1 --source-map --source-map-inline-sources -o dist/css/sidebar.menu.min.css dist/css/sidebar.menu.css",
     "uglify": "uglifyjs -o dist/js/sidebar.menu.min.js dist/js/sidebar.menu.js",
     "watch": "nodemon -e scss -x \"npm run scss\"",
     "server": "serve --listen 3000"
