@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">Compostrap</h3>
-<p align="center">Simple and fast components build on Bootstrap 4</p>
+<p align="center">Simple and fast components build on Bootstrap 4 and 5</p>
 
 ## Sidebar menu
 Simple and fast multi-level sidebar menu.
