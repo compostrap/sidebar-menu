@@ -4,7 +4,7 @@
 
 .list {
   width: $sm-width;
-  @include font-size($font-size);
+  @include font-size($font-size-sm);
 
   & &-hidden {
     display: none;
@@ -36,9 +36,8 @@
     padding: 0 rem(10) 0 rem(19);
     margin: 0;
     font-weight: 600;
-    @include hover {
-      text-decoration: none;
-
+    text-decoration: none;
+    &:hover {
       .fa,
       .fas,
       .far,
