@@ -51,7 +51,7 @@ Colors are the same as bootstrap. Add more colors in [colors.scss](https://githu
 
 | Color                                                              | Sidebar             | List             | List icons         | Scrollbar             |
 | ------------------------------------------------------------------ | ------------------- | ---------------- | ------------------ | --------------------- |
-| ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff` | `sidebar-bg-white`  | `list-bg-white`  | -                  | `scrollbar-bg-white`  |
+| ![#ffffff](https://via.placeholder.com/15/f03c15/000000?text=+) `#ffffff` | `sidebar-bg-white`  | `list-bg-white`  | -                  | `scrollbar-bg-white`  |
 | ![#f8f9fa](https://placehold.it/15/f8f9fa/000000?text=+) `#f8f9fa` | `sidebar-bg-light`  | `list-bg-light`  | -                  | `scrollbar-bg-light`  |
 | ![#212529](https://placehold.it/15/212529/000000?text=+) `#212529` | `sidebar-bg-dark`   | `list-bg-dark`   | -                  | `scrollbar-bg-dark`   |
 | ![#007bff](https://placehold.it/15/007bff/000000?text=+) `#007bff` | `sidebar-bg-blue`   | `list-bg-blue`   | `list-icon-blue`   | `scrollbar-bg-blue`   |
