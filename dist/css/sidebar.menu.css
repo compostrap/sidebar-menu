@@ -35,7 +35,7 @@ body {
   margin-left: 1.0625rem;
   letter-spacing: 0.0625rem;
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .list-link {
@@ -43,9 +43,6 @@ body {
   padding: 0 0.625rem 0 1.1875rem;
   margin: 0;
   font-weight: 600;
-}
-
-.list-link:hover {
   text-decoration: none;
 }
 
@@ -159,7 +156,7 @@ body {
   width: 0;
   height: 100%;
   transition: height 0.3s;
-  background-color: #343a40;
+  background-color: #212529;
 }
 
 .list-bg-white {
@@ -424,11 +421,11 @@ body {
 }
 
 .list-bg-blue {
-  color: #70b5ff;
+  color: #7cb1fe;
 }
 
 .list-bg-blue .list-link {
-  color: #d6eaff;
+  color: #e1edff;
 }
 
 .list-bg-blue .link-current,
@@ -438,7 +435,7 @@ body {
 }
 
 .list-bg-blue .list-hidden {
-  background-color: #006fe6;
+  background-color: #0262ef;
 }
 
 .list-bg-blue .list-hidden .list-link {
@@ -467,7 +464,7 @@ body {
 .list-bg-blue .list-link .fal,
 .list-bg-blue .list-link .fad,
 .list-bg-blue .list-link .fab {
-  color: #8fc5ff;
+  color: #9bc3fe;
 }
 
 .list-bg-blue .list-link.link-current .fa,
@@ -486,11 +483,11 @@ body {
 }
 
 .sidebar-user-bg-blue {
-  background-color: #006fe6;
+  background-color: #0262ef;
 }
 
 .sidebar-user-bg-blue .sidebar-user-link {
-  color: #d6eaff;
+  color: #e1edff;
 }
 
 .sidebar-user-bg-blue .sidebar-user-link:hover {
@@ -501,7 +498,7 @@ body {
 .scrollbar-bg-blue .ps__rail-y:focus .ps__thumb-y,
 .scrollbar-bg-blue .ps__rail-y:hover .ps__thumb-y,
 .scrollbar-bg-blue .ps__thumb-y {
-  background-color: #b8daff;
+  background-color: #c3dbff;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -598,11 +595,11 @@ body {
 }
 
 .list-bg-pink {
-  color: #f4a2c8;
+  color: #e990bc;
 }
 
 .list-bg-pink .list-link {
-  color: #fce2ee;
+  color: #f5cce0;
 }
 
 .list-bg-pink .link-current,
@@ -612,7 +609,7 @@ body {
 }
 
 .list-bg-pink .list-hidden {
-  background-color: #e5277e;
+  background-color: #c72877;
 }
 
 .list-bg-pink .list-hidden .list-link {
@@ -641,7 +638,7 @@ body {
 .list-bg-pink .list-link .fal,
 .list-bg-pink .list-link .fad,
 .list-bg-pink .list-link .fab {
-  color: #f7bed8;
+  color: #eeaacc;
 }
 
 .list-bg-pink .list-link.link-current .fa,
@@ -660,11 +657,11 @@ body {
 }
 
 .sidebar-user-bg-pink {
-  background-color: #e5277e;
+  background-color: #c72877;
 }
 
 .sidebar-user-bg-pink .sidebar-user-link {
-  color: #fce2ee;
+  color: #f5cce0;
 }
 
 .sidebar-user-bg-pink .sidebar-user-link:hover {
@@ -675,7 +672,7 @@ body {
 .scrollbar-bg-pink .ps__rail-y:focus .ps__thumb-y,
 .scrollbar-bg-pink .ps__rail-y:hover .ps__thumb-y,
 .scrollbar-bg-pink .ps__thumb-y {
-  background-color: #fce2ee;
+  background-color: #f5cce0;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -859,11 +856,11 @@ body {
 }
 
 .list-bg-green {
-  color: #65da80;
+  color: #36da8e;
 }
 
 .list-bg-green .list-link {
-  color: #d8f6df;
+  color: #aff0d2;
 }
 
 .list-bg-green .link-current,
@@ -873,7 +870,7 @@ body {
 }
 
 .list-bg-green .list-hidden {
-  background-color: #259b40;
+  background-color: #177a4c;
 }
 
 .list-bg-green .list-hidden .list-link {
@@ -902,7 +899,7 @@ body {
 .list-bg-green .list-link .fal,
 .list-bg-green .list-link .fad,
 .list-bg-green .list-link .fab {
-  color: #7ee094;
+  color: #50df9d;
 }
 
 .list-bg-green .list-link.link-current .fa,
@@ -921,11 +918,11 @@ body {
 }
 
 .sidebar-user-bg-green {
-  background-color: #259b40;
+  background-color: #177a4c;
 }
 
 .sidebar-user-bg-green .sidebar-user-link {
-  color: #d8f6df;
+  color: #aff0d2;
 }
 
 .sidebar-user-bg-green .sidebar-user-link:hover {
@@ -936,7 +933,7 @@ body {
 .scrollbar-bg-green .ps__rail-y:focus .ps__thumb-y,
 .scrollbar-bg-green .ps__rail-y:hover .ps__thumb-y,
 .scrollbar-bg-green .ps__thumb-y {
-  background-color: #e1f8e6;
+  background-color: #b7f2d7;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -975,7 +972,7 @@ body {
 .list-icon-blue .list-link:hover .fad,
 .list-icon-blue .list-link.link-current .fab,
 .list-icon-blue .list-link:hover .fab {
-  color: #1a88ff;
+  color: #267dfd;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -1053,7 +1050,7 @@ body {
 .list-icon-pink .list-link:hover .fad,
 .list-icon-pink .list-link.link-current .fab,
 .list-icon-pink .list-link:hover .fab {
-  color: #eb559a;
+  color: #da4891;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -1170,7 +1167,7 @@ body {
 .list-icon-green .list-link:hover .fad,
 .list-icon-green .list-link.link-current .fab,
 .list-icon-green .list-link:hover .fab {
-  color: #2dbc4e;
+  color: #1d9d61;
 }
 
 .ps .ps__rail-y.ps--clicking,

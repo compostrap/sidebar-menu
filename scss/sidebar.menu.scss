@@ -6,21 +6,21 @@
 */
 
 // bootstrap
-@import '../node_modules/bootstrap/scss/_functions';
-@import '../node_modules/bootstrap/scss/_variables';
-@import '../node_modules/bootstrap/scss/_mixins';
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
 
 // sidebar skeleton
-@import '../node_modules/sidebar-skeleton-compostrap/scss/utils/_functions';
-@import '../node_modules/sidebar-skeleton-compostrap/scss/utils/_variables';
+@import '../node_modules/sidebar-skeleton-compostrap/scss/utils/functions';
+@import '../node_modules/sidebar-skeleton-compostrap/scss/utils/variables';
 
 // sidebar menu
-@import 'utils/_variables';
-@import 'base/_body';
+@import 'utils/variables';
+@import 'base/body';
 
-@import 'components/_list';
-@import 'components/_scrollbar';
-@import 'components/_nanobar';
+@import 'components/list';
+@import 'components/scrollbar';
+@import 'components/nanobar';
 
-@import 'themes/_colors';
-@import 'themes/_theme';
+@import 'themes/colors';
+@import 'themes/theme';

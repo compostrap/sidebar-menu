@@ -1,26 +1,26 @@
 {
   "name": "sidebar-menu-compostrap",
-  "version": "1.0.23",
-  "description": "Simple and fast multi-level sidebar menu on Bootstrap 4",
+  "version": "2.0.0",
+  "description": "Simple and fast multi-level sidebar menu on Bootstrap 5",
   "main": "dist/js/sidebar.menu.js",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "jquery": "^3.6.0",
     "nanobar": "^0.4.2",
     "open-sans-fontface": "^1.4.0",
-    "perfect-scrollbar": "^1.5.1",
-    "sidebar-skeleton-compostrap": "^1.0.18"
+    "perfect-scrollbar": "^1.5.2",
+    "sidebar-skeleton-compostrap": "^2.0.0"
   },
   "devDependencies": {
-    "clean-css-cli": "^5.3.0",
-    "node-sass": "^6.0.0",
-    "nodemon": "^2.0.7",
-    "serve": "^11.3.2",
+    "clean-css-cli": "^5.3.3",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "serve": "^12.0.0",
     "uglify-js-es6": "^2.8.9"
   },
   "scripts": {
     "build": "npm run scss && npm run css-minify && npm run uglify",
-    "scss": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss --output dist/css/",
+    "scss": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss -o dist/css/",
     "css-minify": "cleancss -O1 --source-map --source-map-inline-sources -o dist/css/sidebar.menu.min.css dist/css/sidebar.menu.css",
     "uglify": "uglifyjs -o dist/js/sidebar.menu.min.js dist/js/sidebar.menu.js",
     "watch": "nodemon -e scss -x \"npm run scss\"",

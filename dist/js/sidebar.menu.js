@@ -1,44 +1,99 @@
-/*!
- * Sidebar menu
- * Copyright Zdeněk Papučík
- * MIT License
-*/
-(function (factory) {
-	if (typeof define === 'function' && define.amd) {
-		define(['jquery'], factory);
-	} else if (typeof exports === 'object') {
-		module.exports = factory(require('jquery'));
-	} else {
-		factory(jQuery);
-	}
-}(function($) {
-	$('.list-item').each(function() {
-		let el = $(this);
-		let linkHasClass = (className) => {
-			return el.parent().find('a')
-				.hasClass(className);
-		}
-		if (linkHasClass('link-arrow')) {
-			el.find('a').addClass('up');
-			if (linkHasClass('link-current')) {
-				let current = $('.link-current');
-				current.addClass('active down');
-				current.next('ul').show();
+document.addEventListener('DOMContentLoaded', () => {
+	let elements = document.querySelectorAll('.list-item');
+	Array.prototype.forEach.call(elements, function (el) {
+		let all = el.querySelectorAll('a.link-arrow');
+
+		all.forEach((value, key) => {
+			value.classList.add('up');
+			if (value.classList.contains('link-current')) {
+				value.classList.add('active', 'down');
+				value.nextElementSibling.style.display = 'block';
 			}
-		}
-	});
-	$('.link-arrow').on('click', function() {
-		let el = $(this);
-		el.addClass('transition')
-			.toggleClass('active rotate');
 
-		!(el.hasClass('link-current'))
-			? el.addClass('link-current')
-			: el.removeClass('link-current');
+			value.addEventListener('click', (event) => {
+				event.preventDefault();
 
-		el.next('.list-hidden').slideToggle('fast');
-		if (el.parent().find('a').hasClass('down')) {
-			el.toggleClass('rotate-revert')
-		}
+				let slideToggle = (target, duration = 500) => {
+					if (window.getComputedStyle(target).display === 'none') {
+						return slideDown(target, duration);
+					} else {
+						return slideUp(target, duration);
+					}
+				};
+
+				slideToggle(value.nextElementSibling, 200);
+				if (value.classList.contains('down')) {
+					value.classList.toggle('rotate-revert');
+				}
+
+				value.classList.add('transition');
+				value.classList.toggle('active');
+				value.classList.toggle('rotate');
+
+				!(value.classList.contains('link-current'))
+					? value.classList.add('link-current')
+					: value.classList.remove('link-current');
+
+			});
+		});
 	});
-}));
+
+
+	let slideUp = (target, duration= 500) => {
+		target.style.transitionProperty = 'height, margin, padding';
+		target.style.transitionDuration = duration + 'ms';
+		target.style.boxSizing = 'border-box';
+		target.style.height = target.offsetHeight + 'px';
+		target.offsetHeight;
+		target.style.overflow = 'hidden';
+		target.style.height = 0;
+		target.style.paddingTop = 0;
+		target.style.paddingBottom = 0;
+		target.style.marginTop = 0;
+		target.style.marginBottom = 0;
+		window.setTimeout( () => {
+			target.style.display = 'none';
+			target.style.removeProperty('height');
+			target.style.removeProperty('padding-top');
+			target.style.removeProperty('padding-bottom');
+			target.style.removeProperty('margin-top');
+			target.style.removeProperty('margin-bottom');
+			target.style.removeProperty('overflow');
+			target.style.removeProperty('transition-duration');
+			target.style.removeProperty('transition-property');
+		}, duration);
+	}
+
+
+	let slideDown = (target, duration= 500) => {
+		target.style.removeProperty('display');
+		let display = window.getComputedStyle(target).display;
+
+		if (display === 'none')
+			display = 'block';
+
+		target.style.display = display;
+		let height = target.offsetHeight;
+		target.style.overflow = 'hidden';
+		target.style.height = 0;
+		target.style.paddingTop = 0;
+		target.style.paddingBottom = 0;
+		target.style.marginTop = 0;
+		target.style.marginBottom = 0;
+		target.offsetHeight;
+		target.style.boxSizing = 'border-box';
+		target.style.transitionProperty = 'height, margin, padding';
+		target.style.transitionDuration = duration + 'ms';
+		target.style.height = height + 'px';
+		target.style.removeProperty('padding-top');
+		target.style.removeProperty('padding-bottom');
+		target.style.removeProperty('margin-top');
+		target.style.removeProperty('margin-bottom');
+		window.setTimeout( () => {
+			target.style.removeProperty('height');
+			target.style.removeProperty('overflow');
+			target.style.removeProperty('transition-duration');
+			target.style.removeProperty('transition-property');
+		}, duration);
+	}
+});
