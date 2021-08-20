@@ -1,6 +1,6 @@
 {
   "name": "sidebar-menu-compostrap",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Simple and fast multi-level sidebar menu on Bootstrap",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
@@ -8,19 +8,19 @@
     "nanobar": "^0.4.2",
     "open-sans-fontface": "^1.4.0",
     "perfect-scrollbar": "^1.5.2",
-    "sidebar-skeleton-compostrap": "^2.0.0"
+    "sidebar-skeleton-compostrap": "^2.0.5"
   },
   "devDependencies": {
     "clean-css-cli": "^5.3.3",
-    "node-sass": "^6.0.1",
+    "sass": "^1.38.0",
     "nodemon": "^2.0.12",
     "serve": "^12.0.0",
     "uglify-js-es6": "^2.8.9"
   },
   "scripts": {
     "build": "npm run scss && npm run css-minify && npm run uglify",
-    "scss": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss -o dist/css/",
-    "css-minify": "cleancss -O1 --source-map --source-map-inline-sources -o dist/css/sidebar.menu.min.css dist/css/sidebar.menu.css",
+    "scss": "sass scss/sidebar.menu.scss dist/css/sidebar.menu.css",
+    "css-minify": "cleancss -O1 -o dist/css/sidebar.menu.min.css dist/css/sidebar.menu.css",
     "uglify": "uglifyjs -o dist/js/sidebar.menu.min.js dist/js/sidebar.menu.js",
     "watch": "nodemon -e scss -x \"npm run scss\"",
     "server": "serve --listen 3000"
