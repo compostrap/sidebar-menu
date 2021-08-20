@@ -1,8 +1,7 @@
 {
   "name": "sidebar-menu-compostrap",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Simple and fast multi-level sidebar menu on Bootstrap",
-  "main": "dist/js/sidebar.menu.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "jquery": "^3.6.0",
@@ -33,6 +32,9 @@
     "menu",
     "bootstrap"
   ],
+  "style": "dist/css/sidebar.menu.css",
+  "sass": "scss/sidebar.menu.scss",
+  "main": "dist/js/sidebar.menu.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/compostrap/sidebar-menu.git"
