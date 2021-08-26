@@ -184,14 +184,13 @@
 </div>
 
 <!-- javascript library -->
-<script src="../node_modules/jquery/dist/jquery.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="../node_modules/sidebar-skeleton-compostrap/dist/js/sidebar.js"></script>
 <script src="../node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
 <script src="../node_modules/nanobar/nanobar.js"></script>
 <script src="../dist/js/sidebar.menu.js"></script>
 <script>
-	$(function() {
+	document.addEventListener('DOMContentLoaded', () => {
 		new Nanobar().go(100);
 		new PerfectScrollbar('.scrollbar', {
 			wheelSpeed: 0.3

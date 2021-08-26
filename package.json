@@ -1,10 +1,9 @@
 {
   "name": "sidebar-menu-compostrap",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Simple and fast multi-level sidebar menu on Bootstrap",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "jquery": "^3.6.0",
     "nanobar": "^0.4.2",
     "open-sans-fontface": "^1.4.0",
     "perfect-scrollbar": "^1.5.2",
