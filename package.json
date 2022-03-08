@@ -5,14 +5,14 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.0.0",
     "nanobar": "^0.4.2",
-    "perfect-scrollbar": "^1.5.2",
-    "sidebar-skeleton-compostrap": "^2.0.5"
+    "perfect-scrollbar": "^1.5.5",
+    "sidebar-skeleton-compostrap": "^2.0.6"
   },
   "devDependencies": {
-    "clean-css-cli": "^5.3.3",
-    "sass": "^1.38.0",
-    "nodemon": "^2.0.12",
-    "serve": "^12.0.0",
+    "clean-css-cli": "^5.5.2",
+    "sass": "^1.49.9",
+    "nodemon": "^2.0.15",
+    "serve": "^13.0.2",
     "uglify-js-es6": "^2.8.9"
   },
   "scripts": {
