@@ -26,7 +26,6 @@ Version 2x built on Bootstrap 5
 - [jQuery](https://jquery.com)
 - [Font Awesome 5](https://fontawesome.com)
 - [Perfect scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
-- [Open Sans @font-face kit](https://github.com/FontFaceKit/open-sans)
 - [Nanobar](https://github.com/jacoborus/nanobar)
 
 ## Demo
