@@ -13,7 +13,6 @@
   }
 
   &-hidden &-link {
-    font-weight: 500;
     line-height: rem(30);
   }
 
@@ -27,7 +26,6 @@
     margin-bottom: 0;
     margin-left: rem(17);
     letter-spacing: rem(1);
-    font-weight: 600;
     font-size: rem(12);
   }
 
@@ -35,7 +33,6 @@
     display: block;
     padding: 0 rem(10) 0 rem(19);
     margin: 0;
-    font-weight: 600;
     text-decoration: none;
     &:hover {
       .fa,
@@ -67,12 +64,17 @@
     width: rem(25);
     display: inline-block;
   }
+
+  .link-current {
+    font-weight: 600;
+  }
 }
 
 // arrow icon up and down in menu
 .link-arrow:before {
   font-family: $font-awesome, sans-serif;
-  font-weight: 900;
+  font-weight: 600;
+  font-size: rem(12);
   margin-right: rem(5);
   float: right;
 }

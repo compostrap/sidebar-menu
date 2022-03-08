@@ -4,10 +4,6 @@
  * Copyright Zdeněk Papučík
  * MIT License
 */
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
 .list {
   width: 14.375rem;
   font-size: 0.875rem;
@@ -18,7 +14,6 @@ body {
   padding: 0.625rem 0 0.625rem 1.5625rem;
 }
 .list-hidden .list-link {
-  font-weight: 500;
   line-height: 1.875rem;
 }
 .list-item {
@@ -30,14 +25,12 @@ body {
   margin-bottom: 0;
   margin-left: 1.0625rem;
   letter-spacing: 0.0625rem;
-  font-weight: 600;
   font-size: 0.75rem;
 }
 .list-link {
   display: block;
   padding: 0 0.625rem 0 1.1875rem;
   margin: 0;
-  font-weight: 600;
   text-decoration: none;
 }
 .list-link:hover .fa,
@@ -83,10 +76,14 @@ body {
   width: 1.5625rem;
   display: inline-block;
 }
+.list .link-current {
+  font-weight: 600;
+}
 
 .link-arrow:before {
   font-family: "Font Awesome 5 Free", sans-serif;
-  font-weight: 900;
+  font-weight: 600;
+  font-size: 0.75rem;
   margin-right: 0.3125rem;
   float: right;
 }
@@ -117,7 +114,7 @@ body {
   position: relative;
 }
 .scrollbar-not-navbar {
-  height: calc(100vh);
+  height: 100vh;
 }
 .scrollbar-use-navbar {
   height: calc(100vh - 3.5rem);
