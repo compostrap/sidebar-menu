@@ -4,7 +4,7 @@
 
 .list {
   width: $sm-width;
-  @include font-size($font-size-sm);
+  font-size: rem(15);
 
   & &-hidden {
     display: none;
