@@ -1,6 +1,6 @@
 {
   "name": "sidebar-menu-compostrap",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "Simple and fast multi-level sidebar menu on Bootstrap",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.0.0",
