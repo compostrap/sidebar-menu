@@ -44,14 +44,14 @@ See the menu in the template.
 ## Sidebar colors
 Colors are the same as bootstrap. Add more colors in [colors.scss](https://github.com/compostrap/sidebar-menu/blob/master/scss/themes/_colors.scss)
 
-| Color                                                           | Sidebar             | List             | List icons         | Scrollbar             |
-| ----------------------------------------------------------------| ------------------- | ---------------- | ------------------ | --------------------- |
-| ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+) | `sidebar-bg-white`  | `list-bg-white`  | -                  | `scrollbar-bg-white`  |
-| ![#f8f9fa](https://via.placeholder.com/15/f8f9fa/000000?text=+) | `sidebar-bg-light`  | `list-bg-light`  | -                  | `scrollbar-bg-light`  |
-| ![#212529](https://via.placeholder.com/15/212529/000000?text=+) | `sidebar-bg-dark`   | `list-bg-dark`   | -                  | `scrollbar-bg-dark`   |
-| ![#007bff](https://via.placeholder.com/15/007bff/000000?text=+) | `sidebar-bg-blue`   | `list-bg-blue`   | `list-icon-blue`   | `scrollbar-bg-blue`   |
-| ![#6f42c1](https://via.placeholder.com/15/6f42c1/000000?text=+) | `sidebar-bg-purple` | `list-bg-purple` | `list-icon-purple` | `scrollbar-bg-purple` |
-| ![#e83e8c](https://via.placeholder.com/15/e83e8c/000000?text=+) | `sidebar-bg-pink`   | `list-bg-pink`   | `list-icon-pink`   | `scrollbar-bg-pink`   |
-| ![#dc3545](https://via.placeholder.com/15/dc3545/000000?text=+) | `sidebar-bg-red`    | `list-bg-red`    | `list-icon-red`    | `scrollbar-bg-red`    |
-| ![#fd7e14](https://via.placeholder.com/15/fd7e14/000000?text=+) | `sidebar-bg-orange` | `list-bg-orange` | `list-icon-orange` | `scrollbar-bg-orange` |
-| ![#28a745](https://via.placeholder.com/15/28a745/000000?text=+) | `sidebar-bg-green`  | `list-bg-green`  | `list-icon-green`  | `scrollbar-bg-green`  |
+| Color                                                        | Sidebar             | List             | List icons         | Scrollbar             |
+| -------------------------------------------------------------| ------------------- | ---------------- | ------------------ | --------------------- |
+| ![#ffffff](https://via.placeholder.com/15/ffffff/ffffff.png) | `sidebar-bg-white`  | `list-bg-white`  | -                  | `scrollbar-bg-white`  |
+| ![#f8f9fa](https://via.placeholder.com/15/f8f9fa/f8f9fa.png) | `sidebar-bg-light`  | `list-bg-light`  | -                  | `scrollbar-bg-light`  |
+| ![#212529](https://via.placeholder.com/15/212529/212529.png) | `sidebar-bg-dark`   | `list-bg-dark`   | -                  | `scrollbar-bg-dark`   |
+| ![#007bff](https://via.placeholder.com/15/007bff/007bff.png) | `sidebar-bg-blue`   | `list-bg-blue`   | `list-icon-blue`   | `scrollbar-bg-blue`   |
+| ![#6f42c1](https://via.placeholder.com/15/6f42c1/6f42c1.png) | `sidebar-bg-purple` | `list-bg-purple` | `list-icon-purple` | `scrollbar-bg-purple` |
+| ![#e83e8c](https://via.placeholder.com/15/e83e8c/e83e8c.png) | `sidebar-bg-pink`   | `list-bg-pink`   | `list-icon-pink`   | `scrollbar-bg-pink`   |
+| ![#dc3545](https://via.placeholder.com/15/dc3545/dc3545.png) | `sidebar-bg-red`    | `list-bg-red`    | `list-icon-red`    | `scrollbar-bg-red`    |
+| ![#fd7e14](https://via.placeholder.com/15/fd7e14/fd7e14.png) | `sidebar-bg-orange` | `list-bg-orange` | `list-icon-orange` | `scrollbar-bg-orange` |
+| ![#28a745](https://via.placeholder.com/15/28a745/28a745.png) | `sidebar-bg-green`  | `list-bg-green`  | `list-icon-green`  | `scrollbar-bg-green`  |
