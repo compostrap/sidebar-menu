@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 
-	let slideUp = (target, duration= 500) => {
+	let slideUp = (target, duration = 500) => {
 		target.style.transitionProperty = 'height, margin, padding';
 		target.style.transitionDuration = duration + 'ms';
 		target.style.boxSizing = 'border-box';
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 
-	let slideDown = (target, duration= 500) => {
+	let slideDown = (target, duration = 500) => {
 		target.style.removeProperty('display');
 		let display = window.getComputedStyle(target).display;
 
