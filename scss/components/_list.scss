@@ -10,6 +10,10 @@
     display: none;
     overflow: hidden;
     padding: rem(10) 0 rem(10) rem(25);
+
+    & .list-hidden {
+      padding-left: rem(12);
+    }
   }
 
   &-hidden &-link {

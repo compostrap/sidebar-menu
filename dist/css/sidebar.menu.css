@@ -13,6 +13,9 @@
   overflow: hidden;
   padding: 0.625rem 0 0.625rem 1.5625rem;
 }
+.list .list-hidden .list-hidden {
+  padding-left: 0.75rem;
+}
 .list-hidden .list-link {
   line-height: 1.875rem;
 }
