@@ -39,12 +39,7 @@
     margin: 0;
     text-decoration: none;
     &:hover {
-      .fa,
-      .fas,
-      .far,
-      .fal,
-      .fad,
-      .fab {
+      .bell {
         animation: bellshake .5s cubic-bezier(.36,.07,.19,.97) both;
         backface-visibility: hidden;
         transform-origin: top right;

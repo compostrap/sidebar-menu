@@ -36,12 +36,7 @@
   margin: 0;
   text-decoration: none;
 }
-.list-link:hover .fa,
-.list-link:hover .fas,
-.list-link:hover .far,
-.list-link:hover .fal,
-.list-link:hover .fad,
-.list-link:hover .fab {
+.list-link:hover .bell {
   animation: bellshake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   backface-visibility: hidden;
   transform-origin: top right;
@@ -186,27 +181,12 @@
   opacity: 1;
 }
 
-.list-bg-white .list-link .fa,
-.list-bg-white .list-link .fas,
-.list-bg-white .list-link .far,
-.list-bg-white .list-link .fal,
-.list-bg-white .list-link .fad,
-.list-bg-white .list-link .fab {
+.list-bg-white .list-link .list-icon {
   color: #b8b8b8;
 }
 
-.list-bg-white .list-link.link-current .fa,
-.list-bg-white .list-link:hover .fa,
-.list-bg-white .list-link.link-current .fas,
-.list-bg-white .list-link:hover .fas,
-.list-bg-white .list-link.link-current .far,
-.list-bg-white .list-link:hover .far,
-.list-bg-white .list-link.link-current .fal,
-.list-bg-white .list-link:hover .fal,
-.list-bg-white .list-link.link-current .fad,
-.list-bg-white .list-link:hover .fad,
-.list-bg-white .list-link.link-current .fab,
-.list-bg-white .list-link:hover .fab {
+.list-bg-white .list-link.link-current .list-icon,
+.list-bg-white .list-link:hover .list-icon {
   color: #1f1f1f;
 }
 
@@ -273,27 +253,12 @@
   opacity: 1;
 }
 
-.list-bg-light .list-link .fa,
-.list-bg-light .list-link .fas,
-.list-bg-light .list-link .far,
-.list-bg-light .list-link .fal,
-.list-bg-light .list-link .fad,
-.list-bg-light .list-link .fab {
+.list-bg-light .list-link .list-icon {
   color: #a5b2bf;
 }
 
-.list-bg-light .list-link.link-current .fa,
-.list-bg-light .list-link:hover .fa,
-.list-bg-light .list-link.link-current .fas,
-.list-bg-light .list-link:hover .fas,
-.list-bg-light .list-link.link-current .far,
-.list-bg-light .list-link:hover .far,
-.list-bg-light .list-link.link-current .fal,
-.list-bg-light .list-link:hover .fal,
-.list-bg-light .list-link.link-current .fad,
-.list-bg-light .list-link:hover .fad,
-.list-bg-light .list-link.link-current .fab,
-.list-bg-light .list-link:hover .fab {
+.list-bg-light .list-link.link-current .list-icon,
+.list-bg-light .list-link:hover .list-icon {
   color: #15191d;
 }
 
@@ -360,27 +325,12 @@
   opacity: 1;
 }
 
-.list-bg-dark .list-link .fa,
-.list-bg-dark .list-link .fas,
-.list-bg-dark .list-link .far,
-.list-bg-dark .list-link .fal,
-.list-bg-dark .list-link .fad,
-.list-bg-dark .list-link .fab {
+.list-bg-dark .list-link .list-icon {
   color: #74818e;
 }
 
-.list-bg-dark .list-link.link-current .fa,
-.list-bg-dark .list-link:hover .fa,
-.list-bg-dark .list-link.link-current .fas,
-.list-bg-dark .list-link:hover .fas,
-.list-bg-dark .list-link.link-current .far,
-.list-bg-dark .list-link:hover .far,
-.list-bg-dark .list-link.link-current .fal,
-.list-bg-dark .list-link:hover .fal,
-.list-bg-dark .list-link.link-current .fad,
-.list-bg-dark .list-link:hover .fad,
-.list-bg-dark .list-link.link-current .fab,
-.list-bg-dark .list-link:hover .fab {
+.list-bg-dark .list-link.link-current .list-icon,
+.list-bg-dark .list-link:hover .list-icon {
   color: white;
 }
 
@@ -447,27 +397,12 @@
   opacity: 1;
 }
 
-.list-bg-blue .list-link .fa,
-.list-bg-blue .list-link .fas,
-.list-bg-blue .list-link .far,
-.list-bg-blue .list-link .fal,
-.list-bg-blue .list-link .fad,
-.list-bg-blue .list-link .fab {
+.list-bg-blue .list-link .list-icon {
   color: #9bc3fe;
 }
 
-.list-bg-blue .list-link.link-current .fa,
-.list-bg-blue .list-link:hover .fa,
-.list-bg-blue .list-link.link-current .fas,
-.list-bg-blue .list-link:hover .fas,
-.list-bg-blue .list-link.link-current .far,
-.list-bg-blue .list-link:hover .far,
-.list-bg-blue .list-link.link-current .fal,
-.list-bg-blue .list-link:hover .fal,
-.list-bg-blue .list-link.link-current .fad,
-.list-bg-blue .list-link:hover .fad,
-.list-bg-blue .list-link.link-current .fab,
-.list-bg-blue .list-link:hover .fab {
+.list-bg-blue .list-link.link-current .list-icon,
+.list-bg-blue .list-link:hover .list-icon {
   color: white;
 }
 
@@ -534,27 +469,12 @@
   opacity: 1;
 }
 
-.list-bg-purple .list-link .fa,
-.list-bg-purple .list-link .fas,
-.list-bg-purple .list-link .far,
-.list-bg-purple .list-link .fal,
-.list-bg-purple .list-link .fad,
-.list-bg-purple .list-link .fab {
+.list-bg-purple .list-link .list-icon {
   color: #c1aee4;
 }
 
-.list-bg-purple .list-link.link-current .fa,
-.list-bg-purple .list-link:hover .fa,
-.list-bg-purple .list-link.link-current .fas,
-.list-bg-purple .list-link:hover .fas,
-.list-bg-purple .list-link.link-current .far,
-.list-bg-purple .list-link:hover .far,
-.list-bg-purple .list-link.link-current .fal,
-.list-bg-purple .list-link:hover .fal,
-.list-bg-purple .list-link.link-current .fad,
-.list-bg-purple .list-link:hover .fad,
-.list-bg-purple .list-link.link-current .fab,
-.list-bg-purple .list-link:hover .fab {
+.list-bg-purple .list-link.link-current .list-icon,
+.list-bg-purple .list-link:hover .list-icon {
   color: white;
 }
 
@@ -621,27 +541,12 @@
   opacity: 1;
 }
 
-.list-bg-pink .list-link .fa,
-.list-bg-pink .list-link .fas,
-.list-bg-pink .list-link .far,
-.list-bg-pink .list-link .fal,
-.list-bg-pink .list-link .fad,
-.list-bg-pink .list-link .fab {
+.list-bg-pink .list-link .list-icon {
   color: #eeaacc;
 }
 
-.list-bg-pink .list-link.link-current .fa,
-.list-bg-pink .list-link:hover .fa,
-.list-bg-pink .list-link.link-current .fas,
-.list-bg-pink .list-link:hover .fas,
-.list-bg-pink .list-link.link-current .far,
-.list-bg-pink .list-link:hover .far,
-.list-bg-pink .list-link.link-current .fal,
-.list-bg-pink .list-link:hover .fal,
-.list-bg-pink .list-link.link-current .fad,
-.list-bg-pink .list-link:hover .fad,
-.list-bg-pink .list-link.link-current .fab,
-.list-bg-pink .list-link:hover .fab {
+.list-bg-pink .list-link.link-current .list-icon,
+.list-bg-pink .list-link:hover .list-icon {
   color: white;
 }
 
@@ -708,27 +613,12 @@
   opacity: 1;
 }
 
-.list-bg-red .list-link .fa,
-.list-bg-red .list-link .fas,
-.list-bg-red .list-link .far,
-.list-bg-red .list-link .fal,
-.list-bg-red .list-link .fad,
-.list-bg-red .list-link .fab {
+.list-bg-red .list-link .list-icon {
   color: #f1afb5;
 }
 
-.list-bg-red .list-link.link-current .fa,
-.list-bg-red .list-link:hover .fa,
-.list-bg-red .list-link.link-current .fas,
-.list-bg-red .list-link:hover .fas,
-.list-bg-red .list-link.link-current .far,
-.list-bg-red .list-link:hover .far,
-.list-bg-red .list-link.link-current .fal,
-.list-bg-red .list-link:hover .fal,
-.list-bg-red .list-link.link-current .fad,
-.list-bg-red .list-link:hover .fad,
-.list-bg-red .list-link.link-current .fab,
-.list-bg-red .list-link:hover .fab {
+.list-bg-red .list-link.link-current .list-icon,
+.list-bg-red .list-link:hover .list-icon {
   color: white;
 }
 
@@ -795,27 +685,12 @@
   opacity: 1;
 }
 
-.list-bg-orange .list-link .fa,
-.list-bg-orange .list-link .fas,
-.list-bg-orange .list-link .far,
-.list-bg-orange .list-link .fal,
-.list-bg-orange .list-link .fad,
-.list-bg-orange .list-link .fab {
+.list-bg-orange .list-link .list-icon {
   color: #fecca2;
 }
 
-.list-bg-orange .list-link.link-current .fa,
-.list-bg-orange .list-link:hover .fa,
-.list-bg-orange .list-link.link-current .fas,
-.list-bg-orange .list-link:hover .fas,
-.list-bg-orange .list-link.link-current .far,
-.list-bg-orange .list-link:hover .far,
-.list-bg-orange .list-link.link-current .fal,
-.list-bg-orange .list-link:hover .fal,
-.list-bg-orange .list-link.link-current .fad,
-.list-bg-orange .list-link:hover .fad,
-.list-bg-orange .list-link.link-current .fab,
-.list-bg-orange .list-link:hover .fab {
+.list-bg-orange .list-link.link-current .list-icon,
+.list-bg-orange .list-link:hover .list-icon {
   color: white;
 }
 
@@ -882,27 +757,12 @@
   opacity: 1;
 }
 
-.list-bg-green .list-link .fa,
-.list-bg-green .list-link .fas,
-.list-bg-green .list-link .far,
-.list-bg-green .list-link .fal,
-.list-bg-green .list-link .fad,
-.list-bg-green .list-link .fab {
+.list-bg-green .list-link .list-icon {
   color: #50df9d;
 }
 
-.list-bg-green .list-link.link-current .fa,
-.list-bg-green .list-link:hover .fa,
-.list-bg-green .list-link.link-current .fas,
-.list-bg-green .list-link:hover .fas,
-.list-bg-green .list-link.link-current .far,
-.list-bg-green .list-link:hover .far,
-.list-bg-green .list-link.link-current .fal,
-.list-bg-green .list-link:hover .fal,
-.list-bg-green .list-link.link-current .fad,
-.list-bg-green .list-link:hover .fad,
-.list-bg-green .list-link.link-current .fab,
-.list-bg-green .list-link:hover .fab {
+.list-bg-green .list-link.link-current .list-icon,
+.list-bg-green .list-link:hover .list-icon {
   color: white;
 }
 
@@ -949,18 +809,8 @@
   opacity: 1;
 }
 
-.list-icon-blue .list-link.link-current .fa,
-.list-icon-blue .list-link:hover .fa,
-.list-icon-blue .list-link.link-current .fas,
-.list-icon-blue .list-link:hover .fas,
-.list-icon-blue .list-link.link-current .far,
-.list-icon-blue .list-link:hover .far,
-.list-icon-blue .list-link.link-current .fal,
-.list-icon-blue .list-link:hover .fal,
-.list-icon-blue .list-link.link-current .fad,
-.list-icon-blue .list-link:hover .fad,
-.list-icon-blue .list-link.link-current .fab,
-.list-icon-blue .list-link:hover .fab {
+.list-icon-blue .list-link.link-current .list-icon,
+.list-icon-blue .list-link:hover .list-icon {
   color: #267dfd;
 }
 
@@ -988,18 +838,8 @@
   opacity: 1;
 }
 
-.list-icon-purple .list-link.link-current .fa,
-.list-icon-purple .list-link:hover .fa,
-.list-icon-purple .list-link.link-current .fas,
-.list-icon-purple .list-link:hover .fas,
-.list-icon-purple .list-link.link-current .far,
-.list-icon-purple .list-link:hover .far,
-.list-icon-purple .list-link.link-current .fal,
-.list-icon-purple .list-link:hover .fal,
-.list-icon-purple .list-link.link-current .fad,
-.list-icon-purple .list-link:hover .fad,
-.list-icon-purple .list-link.link-current .fab,
-.list-icon-purple .list-link:hover .fab {
+.list-icon-purple .list-link.link-current .list-icon,
+.list-icon-purple .list-link:hover .list-icon {
   color: #7e55c7;
 }
 
@@ -1027,18 +867,8 @@
   opacity: 1;
 }
 
-.list-icon-pink .list-link.link-current .fa,
-.list-icon-pink .list-link:hover .fa,
-.list-icon-pink .list-link.link-current .fas,
-.list-icon-pink .list-link:hover .fas,
-.list-icon-pink .list-link.link-current .far,
-.list-icon-pink .list-link:hover .far,
-.list-icon-pink .list-link.link-current .fal,
-.list-icon-pink .list-link:hover .fal,
-.list-icon-pink .list-link.link-current .fad,
-.list-icon-pink .list-link:hover .fad,
-.list-icon-pink .list-link.link-current .fab,
-.list-icon-pink .list-link:hover .fab {
+.list-icon-pink .list-link.link-current .list-icon,
+.list-icon-pink .list-link:hover .list-icon {
   color: #da4891;
 }
 
@@ -1066,18 +896,8 @@
   opacity: 1;
 }
 
-.list-icon-red .list-link.link-current .fa,
-.list-icon-red .list-link:hover .fa,
-.list-icon-red .list-link.link-current .fas,
-.list-icon-red .list-link:hover .fas,
-.list-icon-red .list-link.link-current .far,
-.list-icon-red .list-link:hover .far,
-.list-icon-red .list-link.link-current .fal,
-.list-icon-red .list-link:hover .fal,
-.list-icon-red .list-link.link-current .fad,
-.list-icon-red .list-link:hover .fad,
-.list-icon-red .list-link.link-current .fab,
-.list-icon-red .list-link:hover .fab {
+.list-icon-red .list-link.link-current .list-icon,
+.list-icon-red .list-link:hover .list-icon {
   color: #e04b59;
 }
 
@@ -1105,18 +925,8 @@
   opacity: 1;
 }
 
-.list-icon-orange .list-link.link-current .fa,
-.list-icon-orange .list-link:hover .fa,
-.list-icon-orange .list-link.link-current .fas,
-.list-icon-orange .list-link:hover .fas,
-.list-icon-orange .list-link.link-current .far,
-.list-icon-orange .list-link:hover .far,
-.list-icon-orange .list-link.link-current .fal,
-.list-icon-orange .list-link:hover .fal,
-.list-icon-orange .list-link.link-current .fad,
-.list-icon-orange .list-link:hover .fad,
-.list-icon-orange .list-link.link-current .fab,
-.list-icon-orange .list-link:hover .fab {
+.list-icon-orange .list-link.link-current .list-icon,
+.list-icon-orange .list-link:hover .list-icon {
   color: #fd8c2d;
 }
 
@@ -1144,18 +954,8 @@
   opacity: 1;
 }
 
-.list-icon-green .list-link.link-current .fa,
-.list-icon-green .list-link:hover .fa,
-.list-icon-green .list-link.link-current .fas,
-.list-icon-green .list-link:hover .fas,
-.list-icon-green .list-link.link-current .far,
-.list-icon-green .list-link:hover .far,
-.list-icon-green .list-link.link-current .fal,
-.list-icon-green .list-link:hover .fal,
-.list-icon-green .list-link.link-current .fad,
-.list-icon-green .list-link:hover .fad,
-.list-icon-green .list-link.link-current .fab,
-.list-icon-green .list-link:hover .fab {
+.list-icon-green .list-link.link-current .list-icon,
+.list-icon-green .list-link:hover .list-icon {
   color: #1d9d61;
 }
 
@@ -1166,13 +966,13 @@
 }
 
 .sidebar-bg-dark-gradient {
-  background: #343a40;
-  background: linear-gradient(0, #343a40 0%, rgba(52, 58, 64, 0.9) 100%);
+  background: rgb(52, 58, 64);
+  background: linear-gradient(0, rgb(52, 58, 64) 0%, rgba(52, 58, 64, 0.9) 100%);
 }
 
 .sidebar-bg-white-gradient {
-  background: white;
-  background: linear-gradient(0, white 0%, rgba(255, 255, 255, 0) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 /*# sourceMappingURL=sidebar.menu.css.map */

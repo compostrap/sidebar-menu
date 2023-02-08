@@ -36,8 +36,9 @@ Simple and fast multi-level sidebar menu on Bootstrap. So you should be aware of
 See the menu in the template.
 
 | Description                     | Class          |
-| ------------------------------- | ---------------|
+|---------------------------------|----------------|
 | Marks the active item           | `link-current` |
+| Icon animation                  | `bell`         |
 | Marks the drop-down menu icon   | `link-arrow`   |
 | Marks the hidden drop-down menu | `list-hidden`  |
 

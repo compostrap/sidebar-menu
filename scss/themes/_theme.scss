@@ -47,32 +47,12 @@
   }
 
   // icons
-  .list-#{$theme} .list-link .fa,
-  .list-#{$theme} .list-link .fas,
-  .list-#{$theme} .list-link .far,
-  .list-#{$theme} .list-link .fal,
-  .list-#{$theme} .list-link .fad,
-  .list-#{$theme} .list-link .fab {
+  .list-#{$theme} .list-link .list-icon {
     color: map-get($map, icon-color);
   }
 
-  .list-#{$theme} .list-link.link-current .fa,
-  .list-#{$theme} .list-link:hover .fa,
-
-  .list-#{$theme} .list-link.link-current .fas,
-  .list-#{$theme} .list-link:hover .fas,
-
-  .list-#{$theme} .list-link.link-current .far,
-  .list-#{$theme} .list-link:hover .far,
-
-  .list-#{$theme} .list-link.link-current .fal,
-  .list-#{$theme} .list-link:hover .fal,
-
-  .list-#{$theme} .list-link.link-current .fad,
-  .list-#{$theme} .list-link:hover .fad,
-
-  .list-#{$theme} .list-link.link-current .fab,
-  .list-#{$theme} .list-link:hover .fab {
+  .list-#{$theme} .list-link.link-current .list-icon,
+  .list-#{$theme} .list-link:hover .list-icon {
     color: map-get($map, icon-hover);
   }
 
