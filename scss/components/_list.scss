@@ -4,38 +4,38 @@
 
 .list {
   width: $sm-width;
-  font-size: rem(15);
+  font-size: toRem(15);
 
   & &-hidden {
     display: none;
     overflow: hidden;
-    padding: rem(10) 0 rem(10) rem(25);
+    padding: toRem(10) 0 toRem(10) toRem(25);
 
     & .list-hidden {
-      padding-left: rem(12);
+      padding-left: toRem(12);
     }
   }
 
   &-hidden &-link {
-    line-height: rem(30);
+    line-height: toRem(30);
   }
 
   &-item {
     padding: 0;
-    margin-top: rem(10);
-    line-height: rem(36);
+    margin-top: toRem(10);
+    line-height: toRem(36);
   }
 
   &-title {
     margin-bottom: 0;
-    margin-left: rem(17);
-    letter-spacing: rem(1);
-    font-size: rem(12);
+    margin-left: toRem(17);
+    letter-spacing: toRem(1);
+    font-size: toRem(12);
   }
 
   &-link {
     display: block;
-    padding: 0 rem(10) 0 rem(19);
+    padding: 0 toRem(10) 0 toRem(19);
     margin: 0;
     text-decoration: none;
     &:hover {
@@ -60,7 +60,7 @@
   }
 
   &-icon {
-    width: rem(25);
+    width: toRem(25);
     display: inline-block;
   }
 
@@ -73,8 +73,8 @@
 .link-arrow:before {
   font-family: $font-awesome, sans-serif;
   font-weight: 600;
-  font-size: rem(12);
-  margin-right: rem(5);
+  font-size: toRem(12);
+  margin-right: toRem(5);
   float: right;
 }
 

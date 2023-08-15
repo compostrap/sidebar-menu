@@ -18,8 +18,8 @@
 
 // customize
 .ps__rail-y {
-  margin-top: rem(2);
-  margin-bottom: rem(2);
+  margin-top: toRem(2);
+  margin-bottom: toRem(2);
 }
 
 .ps__rail-y.ps--clicking .ps__thumb-y,
