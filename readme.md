@@ -16,7 +16,6 @@ Version 2x built on Bootstrap 5
 
 ## Built on
 - [Bootstrap](https://getbootstrap.com)
-- [jQuery](https://jquery.com)
 - [Font Awesome 6](https://fontawesome.com)
 - [Perfect scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
 - [Nanobar](https://github.com/jacoborus/nanobar)
