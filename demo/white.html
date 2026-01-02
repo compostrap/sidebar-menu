@@ -192,11 +192,10 @@
 <script src="../node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
 <script src="../node_modules/nanobar/nanobar.js"></script>
 <script src="../dist/sidebar.menu.js"></script>
-<script>
+<script type="module">
+	import PerfectScrollbar from "perfect-scrollbar";
 	document.addEventListener('DOMContentLoaded', () => {
 		new Nanobar().go(100);
-
-		/* global PerfectScrollbar */
 		new PerfectScrollbar('.scrollbar', {
 			wheelSpeed: 0.3
 		});
