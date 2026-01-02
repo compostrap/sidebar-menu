@@ -18,7 +18,6 @@
   "style": "dist/sidebar.menu.css",
   "sass": "src/scss/sidebar.menu.scss",
   "devDependencies": {
-    "rollup-plugin-postcss": "^4.0.2",
     "sass": "^1.97.1",
     "vite": "^7.3.0"
   },
