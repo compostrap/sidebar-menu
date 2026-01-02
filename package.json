@@ -15,7 +15,7 @@
     "bootstrap"
   ],
   "main": "dist/sidebar.menu.js",
-  "style": "distsidebar.menu.css",
+  "style": "dist/sidebar.menu.css",
   "sass": "src/scss/sidebar.menu.scss",
   "devDependencies": {
     "rollup-plugin-postcss": "^4.0.2",
