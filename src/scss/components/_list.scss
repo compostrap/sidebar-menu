@@ -2,52 +2,55 @@
 // list component for sidebar skeleton
 //
 
+@use "../utils/index" as utils;
+@use "sidebar-skeleton-compostrap/src/scss/utils/index" as var;
+
 .list {
-  width: $sm-width;
-  font-size: toRem(15);
+  width: var.$sm-width;
+  font-size: .938rem;
 
   & &-hidden {
     display: none;
     overflow: hidden;
-    padding: toRem(10) 0 toRem(10) toRem(25);
+    padding: .625rem 0 .625rem 1.563rem;
 
     & .list-hidden {
-      padding-left: toRem(12);
+      padding-left: .75rem;
     }
   }
 
   &-hidden &-link {
-    line-height: toRem(30);
+    line-height: 1.875rem;
   }
 
   &-item {
     padding: 0;
-    margin-top: toRem(10);
-    line-height: toRem(36);
+    margin-top: .625rem;
+    line-height: 2.25rem;
   }
 
   &-title {
     margin-bottom: 0;
-    margin-left: toRem(17);
-    letter-spacing: toRem(1);
-    font-size: toRem(12);
+    margin-left: 1.063rem;
+    letter-spacing: .063rem;
+    font-size: .75rem;
   }
 
   &-link {
     display: block;
-    padding: 0 toRem(10) 0 toRem(19);
+    padding: 0 .625rem 0 1.188rem;
     margin: 0;
     text-decoration: none;
     &:hover {
       .bell {
-        animation: bellshake .5s cubic-bezier(.36,.07,.19,.97) both;
+        animation: bell-shake .5s cubic-bezier(.36,.07,.19,.97) both;
         backface-visibility: hidden;
         transform-origin: top right;
       }
     }
   }
 
-  @keyframes bellshake {
+  @keyframes bell-shake {
     0% { transform: rotate(0); }
     15% { transform: rotate(5deg); }
     30% { transform: rotate(-5deg); }
@@ -60,7 +63,7 @@
   }
 
   &-icon {
-    width: toRem(25);
+    width: 1.563rem;
     display: inline-block;
   }
 
@@ -71,10 +74,10 @@
 
 // arrow icon up and down in menu
 .link-arrow:before {
-  font-family: $font-awesome, sans-serif;
+  font-family: utils.$font-awesome, sans-serif;
   font-weight: 600;
-  font-size: toRem(12);
-  margin-right: toRem(5);
+  font-size: .75rem;
+  margin-right: .313rem;
   float: right;
 }
 

@@ -1,6 +1,10 @@
 //
 // theme colors
 //
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
 $theme-colors: (
         'bg-white': (
                 'list-color': darken($white, 30),
@@ -119,22 +123,10 @@ $theme-colors: (
                 'icon-hover': lighten($green, 88),
                 'scrollbar-bg': lighten($green, 52),
         ),
-        'icon-blue': (
-                'icon-hover': lighten($blue, 5),
-        ),
-        'icon-purple': (
-                'icon-hover': lighten($purple, 5),
-        ),
-        'icon-pink': (
-                'icon-hover': lighten($pink, 5),
-        ),
-        'icon-red': (
-                'icon-hover': lighten($red, 5),
-        ),
-        'icon-orange': (
-                'icon-hover': lighten($orange, 5),
-        ),
-        'icon-green': (
-                'icon-hover': lighten($green, 5),
-        ),
+        'icon-blue': ('icon-hover': lighten($blue, 5)),
+        'icon-purple': ('icon-hover': lighten($purple, 5)),
+        'icon-pink': ('icon-hover': lighten($pink, 5)),
+        'icon-red': ('icon-hover': lighten($red, 5)),
+        'icon-orange': ('icon-hover': lighten($orange, 5)),
+        'icon-green': ('icon-hover': lighten($green, 5)),
 );

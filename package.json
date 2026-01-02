@@ -1,44 +1,33 @@
 {
   "name": "sidebar-menu-compostrap",
-  "version": "2.0.12",
-  "description": "Simple and fast multi-level sidebar menu on Bootstrap",
+  "version": "2.0.15",
+  "description": "Simple and fast multi-level sidebar menu built on Bootstrap 5.",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@fortawesome/fontawesome-free": "^7.1.0",
     "nanobar": "^0.4.2",
-    "perfect-scrollbar": "^1.5.5",
-    "sidebar-skeleton-compostrap": "^2.0.8"
+    "perfect-scrollbar": "^1.5.6",
+    "sidebar-skeleton-compostrap": "^2.0.10"
   },
-  "devDependencies": {
-    "clean-css-cli": "^5.6.2",
-    "sass": "^1.65.1",
-    "nodemon": "^3.0.1",
-    "serve": "^14.2.0",
-    "uglify-js-es6": "^2.8.9"
-  },
-  "scripts": {
-    "build": "npm run scss && npm run css-minify && npm run uglify",
-    "scss": "sass -I node_modules scss/sidebar.menu.scss dist/css/sidebar.menu.css",
-    "css-minify": "cleancss -O1 -o dist/css/sidebar.menu.min.css dist/css/sidebar.menu.css",
-    "uglify": "uglifyjs -o dist/js/sidebar.menu.min.js dist/js/sidebar.menu.js",
-    "watch": "nodemon -e scss -x \"npm run scss\"",
-    "server": "serve --listen 3000"
-  },
-  "author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",
   "license": "MIT",
   "keywords": [
     "sidebar",
     "menu",
     "bootstrap"
   ],
-  "style": "dist/css/sidebar.menu.css",
-  "sass": "scss/sidebar.menu.scss",
-  "main": "dist/js/sidebar.menu.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/compostrap/sidebar-menu.git"
+  "main": "dist/sidebar.menu.js",
+  "style": "distsidebar.menu.css",
+  "sass": "src/scss/sidebar.menu.scss",
+  "devDependencies": {
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.97.1",
+    "vite": "^7.3.0",
+    "vite-plugin-sass": "^0.1.0"
   },
-  "bugs": {
-    "url": "https://github.com/compostrap/sidebar-menu/issues"
+  "peerDependencies": {
+    "bootstrap": "^5.3.0"
   },
-  "homepage": "https://github.com/compostrap/sidebar-menu#readme"
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
 }

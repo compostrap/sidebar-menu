@@ -2,38 +2,41 @@
 // theme default
 //
 
-@each $theme, $map in $theme-colors {
+@use "sass:map";
+@use "colors" as color;
+
+@each $theme, $map in color.$theme-colors {
 
   // list
   .list-#{$theme} {
-    color: map-get($map, list-color);
+    color: map.get($map, list-color);
   }
 
   // item list hyperlink
   .list-#{$theme} .list-link, {
-    color: map-get($map, link-color);
+    color: map.get($map, link-color);
   }
 
   .list-#{$theme} .link-current,
   .list-#{$theme} .list-link:hover,
   .list-#{$theme} .link-current:hover {
-    color: map-get($map, link-hover);
+    color: map.get($map, link-hover);
   }
 
   // hidden list
   .list-#{$theme} .list-hidden {
-    background-color: map-get($map, hide-bg);
+    background-color: map.get($map, hide-bg);
   }
 
   .list-#{$theme} .list-hidden .list-link {
-    color: map-get($map, hide-color);
+    color: map.get($map, hide-color);
     opacity: 0.6;
   }
 
   .list-#{$theme} .list-hidden .link-current,
   .list-#{$theme} .list-hidden .link-current:hover,
   .list-#{$theme} .list-hidden .list-link:hover {
-    color: map-get($map, hide-hover);
+    color: map.get($map, hide-hover);
     opacity: 1.0;
   }
 
@@ -48,25 +51,25 @@
 
   // icons
   .list-#{$theme} .list-link .list-icon {
-    color: map-get($map, icon-color);
+    color: map.get($map, icon-color);
   }
 
   .list-#{$theme} .list-link.link-current .list-icon,
   .list-#{$theme} .list-link:hover .list-icon {
-    color: map-get($map, icon-hover);
+    color: map.get($map, icon-hover);
   }
 
   // sidebar user
   .sidebar-user-#{$theme} {
-    background-color: map-get($map, hide-bg);
+    background-color: map.get($map, hide-bg);
   }
 
   .sidebar-user-#{$theme} .sidebar-user-link {
-    color: map-get($map, link-color);
+    color: map.get($map, link-color);
   }
 
   .sidebar-user-#{$theme} .sidebar-user-link:hover {
-    color: map-get($map, link-hover);
+    color: map.get($map, link-hover);
   }
 
   // scrollbar
@@ -74,7 +77,7 @@
   .scrollbar-#{$theme} .ps__rail-y:focus .ps__thumb-y,
   .scrollbar-#{$theme} .ps__rail-y:hover .ps__thumb-y,
   .scrollbar-#{$theme} .ps__thumb-y {
-    background-color: map-get($map, scrollbar-bg);
+    background-color: map.get($map, scrollbar-bg);
   }
 
   .ps .ps__rail-y.ps--clicking,

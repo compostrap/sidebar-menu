@@ -2,8 +2,11 @@
 // scrollbar component for list
 //
 
+@use "../utils/index" as utils;
+@use "sidebar-skeleton-compostrap/src/scss/utils/index" as var;
+
 .scrollbar {
-  width: $sm-width;
+  width: var.$sm-width;
   overflow: hidden;
   position: relative;
 
@@ -12,19 +15,19 @@
   }
 
   &-use-navbar {
-    height: calc(100vh - #{$sm-top});
+    height: calc(100vh - #{var.$sm-top});
   }
 }
 
 // customize
 .ps__rail-y {
-  margin-top: toRem(2);
-  margin-bottom: toRem(2);
+  margin-top: .125rem;
+  margin-bottom: .125rem;
 }
 
 .ps__rail-y.ps--clicking .ps__thumb-y,
 .ps__rail-y:focus .ps__thumb-y,
 .ps__rail-y:hover .ps__thumb-y,
 .ps__thumb-y {
-  width: $sm-scrollbar;
+  width: utils.$sm-scrollbar;
 }

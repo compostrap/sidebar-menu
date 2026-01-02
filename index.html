@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css">
+
+	<title>Sidebar demos</title>
+
+	<style>
+        .demo-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .75rem 0;
+            text-decoration: none;
+            color: var(--bs-body-color);
+            transition: color .15s ease, padding-left .15s ease;
+        }
+
+        .demo-link {
+            font-size: .875rem;
+            color: var(--bs-secondary-color);
+        }
+
+        .demo-link:hover {
+            color: var(--bs-primary);
+            padding-left: .5rem;
+        }
+	</style>
+</head>
+
+<body>
+
+<div class="container py-5 w-50">
+
+	<h1 class="mb-1 display-6">
+		<i class="fa-brands fa-bootstrap px-1 text-primary"></i>
+		Sidebar menu demos
+	</h1>
+	<p class="text-muted mb-4">
+		Preview available sidebar themes and layouts.
+	</p>
+
+	<nav class="d-flex flex-column gap-2">
+		<a href="demo/dark.html" class="demo-link">
+			<span class="fw-semibold">Dark</span>
+			<span>Default dark theme</span>
+		</a>
+
+		<a href="demo/dark.gradient.html" class="demo-link">
+			<span class="fw-semibold">Dark Gradient</span>
+			<span>Dark with gradient accent</span>
+		</a>
+
+		<a href="demo/white.html" class="demo-link">
+			<span class="fw-semibold">White</span>
+			<span>Light clean layout</span>
+		</a>
+
+		<a href="demo/white.gradient.html" class="demo-link">
+			<span class="fw-semibold">White Gradient</span>
+			<span>Light with subtle gradient</span>
+		</a>
+	</nav>
+
+</div>
+
+</body>
+</html>
