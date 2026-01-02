@@ -1,7 +1,7 @@
 ## Sidebar menu
 Simple and fast multi-level sidebar menu built on Bootstrap 5.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)][(https://raw.githubusercontent.com/compostrap/sidebar-menu/master/license)](https://github.com/compostrap/sidebar-menu/blob/master/license)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/compostrap/sidebar-menu/blob/master/license)
 [![npm version](https://badge.fury.io/js/sidebar-menu-compostrap.svg)](https://badge.fury.io/js/sidebar-menu-compostrap)
 [![Build status](https://github.com/compostrap/sidebar-menu/actions/workflows/build.yml/badge.svg)](https://github.com/compostrap/sidebar-menu/actions/workflows/build.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/compostrap/sidebar-menu/badge)](https://www.codefactor.io/repository/github/compostrap/sidebar-menu)
