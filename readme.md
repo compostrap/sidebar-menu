@@ -40,7 +40,7 @@ See the menu in the template.
 | Marks the hidden drop-down menu | list-hidden  |
 
 ## Sidebar colors
-Colors are the same as bootstrap. Add more colors in [colors.scss](https://github.com/compostrap/sidebar-menu/blob/master/scss/themes/_colors.scss)
+Colors are the same as bootstrap.
 
 | Color                                                    | Sidebar           | List           | List icons       | Scrollbar           |
 |----------------------------------------------------------|-------------------|----------------|------------------|---------------------|
