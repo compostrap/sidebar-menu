@@ -12,7 +12,7 @@ npm install sidebar-menu-compostrap
 ```
 
 ## Built on
-- [Bootstrap 5x](https://getbootstrap.com)
+- [Bootstrap 5](https://getbootstrap.com)
 - [Font Awesome 7](https://fontawesome.com)
 - [Perfect scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
 - [Nanobar](https://github.com/jacoborus/nanobar)
