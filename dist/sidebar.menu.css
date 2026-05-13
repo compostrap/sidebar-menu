@@ -134,7 +134,7 @@
   width: 0;
   height: 100%;
   transition: height 0.3s;
-  background-color: #212529;
+  background-color: var(--bs-dark);
 }
 
 .list-bg-white {
