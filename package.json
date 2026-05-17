@@ -6,7 +6,7 @@
     "@fortawesome/fontawesome-free": "^7.1.0",
     "nanobar": "^0.4.2",
     "perfect-scrollbar": "^1.5.6",
-    "sidebar-skeleton-compostrap": "^2.0.10"
+    "sidebar-skeleton-compostrap": "^2.1.0"
   },
   "license": "MIT",
   "keywords": [
