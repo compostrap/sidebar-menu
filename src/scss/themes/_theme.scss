@@ -5,95 +5,79 @@
 @use "sass:map";
 @use "colors" as color;
 
-@each $theme, $map in color.$theme-colors {
+@each $theme, $map in color.$themes {
 
-  // list
-  .list-#{$theme} {
-    color: map.get($map, list-color);
-  }
-
-  // item list hyperlink
-  .list-#{$theme} .list-link, {
-    color: map.get($map, link-color);
-  }
-
-  .list-#{$theme} .link-current,
-  .list-#{$theme} .list-link:hover,
-  .list-#{$theme} .link-current:hover {
-    color: map.get($map, link-hover);
-  }
-
-  // hidden list
-  .list-#{$theme} .list-hidden {
-    background-color: map.get($map, hide-bg);
-  }
-
-  .list-#{$theme} .list-hidden .list-link {
-    color: map.get($map, hide-color);
-    opacity: 0.6;
-  }
-
-  .list-#{$theme} .list-hidden .link-current,
-  .list-#{$theme} .list-hidden .link-current:hover,
-  .list-#{$theme} .list-hidden .list-link:hover {
-    color: map.get($map, hide-hover);
-    opacity: 1.0;
-  }
-
-  // arrow
-  .list-#{$theme} .link-arrow:before {
-    opacity: 0.3;
-  }
-
-  .list-#{$theme} .link-arrow.active:before {
-    opacity: 1.0;
-  }
-
-  // icons
-  .list-#{$theme} .list-link .list-icon {
-    color: map.get($map, icon-color);
-  }
-
-  .list-#{$theme} .list-link.link-current .list-icon,
-  .list-#{$theme} .list-link:hover .list-icon {
-    color: map.get($map, icon-hover);
-  }
-
-  // sidebar user
-  .sidebar-user-#{$theme} {
-    background-color: map.get($map, hide-bg);
-  }
-
-  .sidebar-user-#{$theme} .sidebar-user-link {
-    color: map.get($map, link-color);
-  }
-
-  .sidebar-user-#{$theme} .sidebar-user-link:hover {
-    color: map.get($map, link-hover);
-  }
-
-  // scrollbar
-  .scrollbar-#{$theme} .ps__rail-y.ps--clicking .ps__thumb-y,
-  .scrollbar-#{$theme} .ps__rail-y:focus .ps__thumb-y,
-  .scrollbar-#{$theme} .ps__rail-y:hover .ps__thumb-y,
-  .scrollbar-#{$theme} .ps__thumb-y {
-    background-color: map.get($map, scrollbar-bg);
-  }
-
-  .ps .ps__rail-y.ps--clicking,
-  .ps .ps__rail-y:focus,
-  .ps .ps__rail-y:hover {
-    background: none;
+  [data-sidebar-theme="#{$theme}"] {
+    --sm-list-color: #{map.get($map, list-color)};
+    --sm-link-color: #{map.get($map, link-color)};
+    --sm-link-hover: #{map.get($map, link-hover)};
+    --sm-hide-bg: #{map.get($map, hide-bg)};
+    --sm-hide-color: #{map.get($map, hide-color)};
+    --sm-hide-hover: #{map.get($map, hide-hover)};
+    --sm-icon-color: #{map.get($map, icon-color)};
+    --sm-icon-hover: #{map.get($map, icon-hover)};
+    --sm-scrollbar-bg: #{map.get($map, scrollbar-bg)};
   }
 }
 
-// gradient background
-.sidebar-bg-dark-gradient {
-  background: rgb(52,58,64);
-  background: linear-gradient(0, rgba(52,58,64,1) 0%, rgba(52,58,64,0.90) 100%);
+.list {
+  color: var(--sm-list-color);
 }
 
-.sidebar-bg-white-gradient {
-  background: rgb(255,255,255);
-  background: linear-gradient(0, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+.list .list-link {
+  color: var(--sm-link-color);
+}
+
+.list .link-current,
+.list .list-link:hover,
+.list .link-current:hover {
+  color: var(--sm-link-hover);
+}
+
+.list .list-hidden {
+  background-color: var(--sm-hide-bg);
+}
+
+.list .list-hidden .list-link {
+  color: var(--sm-hide-color);
+}
+
+.list .list-hidden .link-current,
+.list .list-hidden .link-current:hover,
+.list .list-hidden .list-link:hover {
+  color: var(--sm-hide-hover);
+}
+
+.list .list-link .list-icon {
+  color: var(--sm-icon-color);
+}
+
+.list .list-link.link-current .list-icon,
+.list .list-link:hover .list-icon {
+  color: var(--sm-icon-hover);
+}
+
+.sidebar-user {
+  background-color: var(--sm-hide-bg);
+}
+
+.sidebar-user .sidebar-user-link {
+  color: var(--sm-link-color);
+}
+
+.sidebar-user .sidebar-user-link:hover {
+  color: var(--sm-link-hover);
+}
+
+.ps .ps__rail-y.ps--clicking .ps__thumb-y,
+.ps .ps__rail-y:focus .ps__thumb-y,
+.ps .ps__rail-y:hover .ps__thumb-y,
+.ps .ps__thumb-y {
+  background-color: var(--sm-scrollbar-bg);
+}
+
+.ps .ps__rail-y.ps--clicking,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-y:hover {
+  background: none;
 }

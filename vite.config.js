@@ -30,8 +30,8 @@ export default defineConfig({
 		cssMinify: false,
 		rollupOptions: {
 			output: {
-				assetFileNames: 'sidebar.menu.[ext]',
-				entryFileNames: 'sidebar.menu.js'
+				assetFileNames: 'sidebar-menu.[ext]',
+				entryFileNames: 'sidebar-menu.js'
 			}
 		}
 	}

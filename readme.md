@@ -4,7 +4,6 @@ Simple and fast multi-level sidebar menu built on Bootstrap 5.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/compostrap/sidebar-menu/blob/master/license)
 [![npm version](https://badge.fury.io/js/sidebar-menu-compostrap.svg)](https://badge.fury.io/js/sidebar-menu-compostrap)
 [![Build status](https://github.com/compostrap/sidebar-menu/actions/workflows/build.yml/badge.svg)](https://github.com/compostrap/sidebar-menu/actions/workflows/build.yml)
-[![CodeFactor](https://www.codefactor.io/repository/github/compostrap/sidebar-menu/badge)](https://www.codefactor.io/repository/github/compostrap/sidebar-menu)
 
 ## Installation
 ```
@@ -18,10 +17,7 @@ npm install sidebar-menu-compostrap
 - [Nanobar](https://github.com/jacoborus/nanobar)
 
 ## Demo
-- [Dark](https://compostrap.github.io/sidebar.dark)
-- [Dark gradient](https://compostrap.github.io/sidebar.dark.gradient)
-- [White](https://compostrap.github.io/sidebar.white)
-- [White gradient](https://compostrap.github.io/sidebar.white.gradient)
+- [Live demo](https://compostrap.github.io/sidebar-menu)
 
 ## Introduction
 Simple and fast multi-level sidebar menu built on Bootstrap 5. 
@@ -39,17 +35,20 @@ See the menu in the template.
 | Marks the drop-down menu icon   | link-arrow   |
 | Marks the hidden drop-down menu | list-hidden  |
 
-## Sidebar colors
-Colors are the same as bootstrap.
+## Sidebar themes
+The sidebar natively supports **Light** and **Dark** themes. You can easily switch between them by using the `data-sidebar-theme` attribute on the sidebar element.
 
-| Color                                                    | Sidebar           | List           | List icons       | Scrollbar           |
-|----------------------------------------------------------|-------------------|----------------|------------------|---------------------|
-| ![#ffffff](https://placehold.co/15x15/ffffff/ffffff.png) | sidebar-bg-white  | list-bg-white  | -                | scrollbar-bg-white  |
-| ![#f8f9fa](https://placehold.co/15x15/f8f9fa/f8f9fa.png) | sidebar-bg-light  | list-bg-light  | -                | scrollbar-bg-light  |
-| ![#212529](https://placehold.co/15x15/212529/212529.png) | sidebar-bg-dark   | list-bg-dark   | -                | scrollbar-bg-dark   |
-| ![#007bff](https://placehold.co/15x15/007bff/007bff.png) | sidebar-bg-blue   | list-bg-blue   | list-icon-blue   | scrollbar-bg-blue   |
-| ![#6f42c1](https://placehold.co/15x15/6f42c1/6f42c1.png) | sidebar-bg-purple | list-bg-purple | list-icon-purple | scrollbar-bg-purple |
-| ![#e83e8c](https://placehold.co/15x15/e83e8c/e83e8c.png) | sidebar-bg-pink   | list-bg-pink   | list-icon-pink   | scrollbar-bg-pink   |
-| ![#dc3545](https://placehold.co/15x15/dc3545/dc3545.png) | sidebar-bg-red    | list-bg-red    | list-icon-red    | scrollbar-bg-red    |
-| ![#fd7e14](https://placehold.co/15x15/fd7e14/fd7e14.png) | sidebar-bg-orange | list-bg-orange | list-icon-orange | scrollbar-bg-orange |
-| ![#28a745](https://placehold.co/15x15/28a745/28a745.png) | sidebar-bg-green  | list-bg-green  | list-icon-green  | scrollbar-bg-green  |
+| Theme | Attribute                    |
+|-------|------------------------------|
+| Light | `data-sidebar-theme="light"` |
+| Dark  | `data-sidebar-theme="dark"`  |
+
+## Customization
+If you need to further customize the visual appearance (e.g., custom background colors for menu items, specific icon colors, or unique border radius), we recommend using the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.
+
+The custom package is designed for easy modification of:
+- **Backgrounds:** Subtle tints for first-level menu items.
+- **Icons:** Custom coloring for active or hovered states.
+- **Layout:** Precise alignment of menu elements (like rotating arrows).
+- **Variables:** Global CSS variables for consistent styling (e.g., `--sm-modern-border-radius`).
+

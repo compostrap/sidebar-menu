@@ -12,7 +12,7 @@
   & &-hidden {
     display: none;
     overflow: hidden;
-    padding: .625rem 0 .625rem 1.563rem;
+    padding: .5rem 0 .5rem 1.563rem;
 
     & .list-hidden {
       padding-left: .75rem;
@@ -20,18 +20,18 @@
   }
 
   &-hidden &-link {
-    line-height: 1.875rem;
+    line-height: 1.75rem;
   }
 
   &-item {
     padding: 0;
-    margin-top: .625rem;
-    line-height: 2.25rem;
+    margin-top: .563rem;
+    line-height: 2.125rem;
   }
 
   &-title {
     margin-bottom: 0;
-    margin-left: 1.063rem;
+    margin-left: 1.375rem;
     letter-spacing: .063rem;
     font-size: .75rem;
   }
@@ -63,7 +63,7 @@
   }
 
   &-icon {
-    width: 1.563rem;
+    width: 1.75rem;
     display: inline-block;
   }
 
