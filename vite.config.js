@@ -1,37 +1,40 @@
-import { defineConfig } from 'vite';
-import path from 'path';
+import { defineConfig } from "vite";
+import path from "path";
 
 export default defineConfig({
-	base: '',
-	server: {
-		fs: {
-			allow: ['.', 'dist']
-		}
-	},
+	base: "",
 	css: {
 		preprocessorOptions: {
 			scss: {
+				quietDeps: true,
 				silenceDeprecations: [
-					'import',
-					'if-function',
-					'global-builtin',
-					'color-functions'
+					"import",
+					"if-function",
+					"global-builtin",
+					"color-functions"
 				]
 			}
 		}
 	},
 	build: {
-		outDir: 'dist',
+		outDir: "dist",
 		emptyOutDir: true,
-		lib: {
-			entry: path.resolve(__dirname, 'vite.build.js'),
-			formats: ['es']
-		},
+		cssCodeSplit: false,
 		cssMinify: false,
+		lib: {
+			entry: {
+				index: path.resolve(__dirname, "src/index.js"),
+				"sidebar-menu": path.resolve(__dirname, "src/sidebar-menu.js")
+			},
+			formats: ["es"]
+		},
 		rollupOptions: {
+			external: ["bootstrap"],
 			output: {
-				assetFileNames: 'sidebar-menu.[ext]',
-				entryFileNames: 'sidebar-menu.js'
+				entryFileNames: "[name].js",
+				assetFileNames: (assetInfo) => {
+					return assetInfo.name?.endsWith(".css") ? "sidebar-menu.css" : "assets/[name].[ext]";
+				}
 			}
 		}
 	}

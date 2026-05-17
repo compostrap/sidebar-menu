@@ -1,6 +1,7 @@
 {
   "name": "sidebar-menu-compostrap",
-  "version": "2.1.0",
+  "version": "2.1.1",
+  "type": "module",
   "description": "Simple and fast multi-level sidebar menu built on Bootstrap 5.",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
@@ -14,9 +15,11 @@
     "menu",
     "bootstrap"
   ],
-  "main": "dist/sidebar-menu.js",
-  "style": "dist/sidebar-menu.css",
-  "sass": "src/scss/sidebar-menu.scss",
+  "exports": {
+    ".": "./dist/index.js",
+    "./sidebar-menu": "./dist/sidebar-menu.js",
+    "./sidebar-menu.css": "./dist/sidebar-menu.css"
+  },
   "devDependencies": {
     "sass": "^1.97.1",
     "vite": "^7.3.0"

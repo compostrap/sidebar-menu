@@ -10,6 +10,16 @@ Simple and fast multi-level sidebar menu built on Bootstrap 5.
 npm install sidebar-menu-compostrap
 ```
 
+## Usage
+Import the styles and initialize the menu in your JavaScript entry point:
+
+```javascript
+import 'sidebar-menu-compostrap/sidebar-menu.css';
+import { SidebarMenuApp } from 'sidebar-menu-compostrap';
+
+SidebarMenuApp.init();
+```
+
 ## Built on
 - [Bootstrap 5](https://getbootstrap.com)
 - [Font Awesome 7](https://fontawesome.com)

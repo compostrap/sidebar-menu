@@ -196,14 +196,19 @@
 
 <!-- javascript library -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-<script src="node_modules/sidebar-skeleton-compostrap/dist/sidebar.js"></script>
-<script src="node_modules/sidebar-skeleton-compostrap/dist/theme-switcher.js"></script>
 <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
 <script src="node_modules/nanobar/nanobar.js"></script>
-<script src="dist/sidebar.menu.js"></script>
 <script type="module">
+	import { Sidebar, ThemeSwitcher } from "./node_modules/sidebar-skeleton-compostrap/dist/index.js";
+	import { SidebarMenuApp } from "./dist/index.js";
 	import PerfectScrollbar from "perfect-scrollbar";
+
 	document.addEventListener('DOMContentLoaded', () => {
+
+		Sidebar.init();
+		ThemeSwitcher.init();
+		SidebarMenuApp.init();
+
 		new Nanobar().go(100);
 		new PerfectScrollbar('.scrollbar', {
 			wheelSpeed: 0.3
