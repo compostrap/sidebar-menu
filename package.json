@@ -14,9 +14,9 @@
     "menu",
     "bootstrap"
   ],
-  "main": "dist/sidebar.menu.js",
-  "style": "dist/sidebar.menu.css",
-  "sass": "src/scss/sidebar.menu.scss",
+  "main": "dist/sidebar-menu.js",
+  "style": "dist/sidebar-menu.css",
+  "sass": "src/scss/sidebar-menu.scss",
   "devDependencies": {
     "sass": "^1.97.1",
     "vite": "^7.3.0"
