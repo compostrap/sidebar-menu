@@ -53,6 +53,10 @@ The sidebar natively supports **Light** and **Dark** themes. You can easily swit
 | Light | `data-sidebar-theme="light"` |
 | Dark  | `data-sidebar-theme="dark"`  |
 
+The menu does not switch Bootstrap's global `data-bs-theme`. It follows the sidebar skeleton and uses `data-sidebar-theme` to adapt menu links, icons, rotating arrows, hidden submenu backgrounds, and scrollbar colors.
+
+This keeps the package usable on its own: the sidebar skeleton controls the sidebar background, and the sidebar menu controls only menu colors for that sidebar state.
+
 ## Customization
 If you need to further customize the visual appearance (e.g., custom background colors for menu items, specific icon colors, or unique border radius), we recommend using the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.
 
