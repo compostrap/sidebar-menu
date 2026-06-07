@@ -8,21 +8,21 @@
 @each $theme, $map in color.$themes {
 
   [data-sidebar-theme="#{$theme}"] {
-    --sm-list-color: #{map.get($map, list-color)};
-    --sm-link-color: #{map.get($map, link-color)};
-    --sm-link-hover: #{map.get($map, link-hover)};
-    --sm-link-current: #{map.get($map, link-current)};
-    --sm-hide-bg: #{map.get($map, hide-bg)};
-    --sm-hide-color: #{map.get($map, hide-color)};
-    --sm-hide-hover: #{map.get($map, hide-hover)};
-    --sm-hide-current: #{map.get($map, hide-current)};
-    --sm-icon-color: #{map.get($map, icon-color)};
-    --sm-icon-hover: #{map.get($map, icon-hover)};
-    --sm-icon-current: #{map.get($map, icon-current)};
-    --sm-arrow-color: #{map.get($map, arrow-color)};
-    --sm-arrow-hover: #{map.get($map, arrow-hover)};
-    --sm-arrow-current: #{map.get($map, arrow-current)};
-    --sm-scrollbar-bg: #{map.get($map, scrollbar-bg)};
+	--sm-list-color: #{map.get($map, list-color)};
+	--sm-link-color: #{map.get($map, link-color)};
+	--sm-link-hover: #{map.get($map, link-hover)};
+	--sm-link-current: #{map.get($map, link-current)};
+	--sm-hide-bg: #{map.get($map, hide-bg)};
+	--sm-hide-color: #{map.get($map, hide-color)};
+	--sm-hide-hover: #{map.get($map, hide-hover)};
+	--sm-hide-current: #{map.get($map, hide-current)};
+	--sm-icon-color: #{map.get($map, icon-color)};
+	--sm-icon-hover: #{map.get($map, icon-hover)};
+	--sm-icon-current: #{map.get($map, icon-current)};
+	--sm-arrow-color: #{map.get($map, arrow-color)};
+	--sm-arrow-hover: #{map.get($map, arrow-hover)};
+	--sm-arrow-current: #{map.get($map, arrow-current)};
+	--sm-scrollbar-bg: #{map.get($map, scrollbar-bg)};
   }
 }
 

@@ -30,7 +30,7 @@ SidebarMenuApp.init();
 - [Live demo](https://compostrap.github.io/sidebar-menu)
 
 ## Introduction
-Simple and fast multi-level sidebar menu built on Bootstrap 5. 
+Simple and fast multi-level sidebar menu built on Bootstrap 5.
 So you should be aware of how Bootstrap itself is used. The advantage is also knowledge of sass, npm.
 
 **The sidebar menu is built on the sidebar skeleton. I recommend you [look at it](https://github.com/compostrap/sidebar-skeleton).**
@@ -65,4 +65,3 @@ The custom package is designed for easy modification of:
 - **Icons:** Custom coloring for active or hovered states.
 - **Layout:** Precise alignment of menu elements (like rotating arrows).
 - **Variables:** Global CSS variables for consistent styling (e.g., `--sm-modern-border-radius`).
-

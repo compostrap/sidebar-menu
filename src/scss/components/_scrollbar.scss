@@ -6,28 +6,28 @@
 @use "sidebar-skeleton-compostrap/src/scss/utils/index" as var;
 
 .scrollbar {
-  width: var.$sm-width;
-  overflow: hidden;
-  position: relative;
+	width: var.$sm-width;
+	overflow: hidden;
+	position: relative;
 
-  &-not-navbar {
-    height: calc(100vh);
-  }
+	&-not-navbar {
+		height: calc(100vh);
+	}
 
-  &-use-navbar {
-    height: calc(100vh - #{var.$sm-top});
-  }
+	&-use-navbar {
+		height: calc(100vh - #{var.$sm-top});
+	}
 }
 
 // customize
 .ps__rail-y {
-  margin-top: .125rem;
-  margin-bottom: .125rem;
+	margin-top: .125rem;
+	margin-bottom: .125rem;
 }
 
 .ps__rail-y.ps--clicking .ps__thumb-y,
 .ps__rail-y:focus .ps__thumb-y,
 .ps__rail-y:hover .ps__thumb-y,
 .ps__thumb-y {
-  width: utils.$sm-scrollbar;
+	width: utils.$sm-scrollbar;
 }
