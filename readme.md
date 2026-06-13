@@ -45,17 +45,14 @@ See the menu in the template.
 | Marks the drop-down menu icon   | link-arrow   |
 | Marks the hidden drop-down menu | list-hidden  |
 
-## Sidebar themes
-The sidebar natively supports **Light** and **Dark** themes. You can easily switch between them by using the `data-sidebar-theme` attribute on the sidebar element.
+## Themes
+The sidebar menu follows Bootstrap's global **Light** and **Dark** themes through `data-bs-theme`.
 
-| Theme | Attribute                    |
-|-------|------------------------------|
-| Light | `data-sidebar-theme="light"` |
-| Dark  | `data-sidebar-theme="dark"`  |
+```html
+<html lang="en" data-bs-theme="light">
+```
 
-The menu does not switch Bootstrap's global `data-bs-theme`. It follows the sidebar skeleton and uses `data-sidebar-theme` to adapt menu links, icons, rotating arrows, hidden submenu backgrounds, and scrollbar colors.
-
-This keeps the package usable on its own: the sidebar skeleton controls the sidebar background, and the sidebar menu controls only menu colors for that sidebar state.
+The menu adapts links, icons, rotating arrows, hidden submenu backgrounds, and scrollbar colors from that single Bootstrap theme source.
 
 ## Customization
 If you need to further customize the visual appearance (e.g., custom background colors for menu items, specific icon colors, or unique border radius), we recommend using the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.

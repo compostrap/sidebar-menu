@@ -1,10 +1,9 @@
-import { SidebarMenu as i } from "./sidebar-menu.js";
-class r {
-  static init() {
-    i.init();
-  }
-}
-export {
-  i as SidebarMenu,
-  r as SidebarMenuApp
+import { SidebarMenu as e } from "./sidebar-menu.js";
+//#region src/index.js
+var t = class {
+	static init() {
+		e.init();
+	}
 };
+//#endregion
+export { e as SidebarMenu, t as SidebarMenuApp };

@@ -5,14 +5,12 @@
 @use "sass:map";
 @use "colors" as color;
 
-@each $theme, $map in color.$themes {
-
-  [data-sidebar-theme="#{$theme}"] {
+@mixin theme-vars($map) {
 	--sm-list-color: #{map.get($map, list-color)};
 	--sm-link-color: #{map.get($map, link-color)};
 	--sm-link-hover: #{map.get($map, link-hover)};
 	--sm-link-current: #{map.get($map, link-current)};
-	--sm-hide-bg: #{map.get($map, hide-bg)};
+	--sm-hide-bg: var(--bs-tertiary-bg);
 	--sm-hide-color: #{map.get($map, hide-color)};
 	--sm-hide-hover: #{map.get($map, hide-hover)};
 	--sm-hide-current: #{map.get($map, hide-current)};
@@ -23,7 +21,15 @@
 	--sm-arrow-hover: #{map.get($map, arrow-hover)};
 	--sm-arrow-current: #{map.get($map, arrow-current)};
 	--sm-scrollbar-bg: #{map.get($map, scrollbar-bg)};
-  }
+}
+
+:root,
+[data-bs-theme="light"] {
+	@include theme-vars(map.get(color.$themes, 'light'));
+}
+
+[data-bs-theme="dark"] {
+	@include theme-vars(map.get(color.$themes, 'dark'));
 }
 
 .list {

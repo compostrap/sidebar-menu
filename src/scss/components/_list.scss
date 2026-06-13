@@ -79,6 +79,7 @@
   font-size: .75rem;
   margin-right: .313rem;
   float: right;
+  transition-property: transform;
 }
 
 .link-arrow.up:before {
@@ -90,7 +91,7 @@
 }
 
 .link-arrow.transition:before {
-  transition: 0.2s all;
+  transition: transform 0.2s;
 }
 
 .link-arrow.rotate:before {

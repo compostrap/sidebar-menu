@@ -78,6 +78,7 @@
   font-size: 0.75rem;
   margin-right: 0.313rem;
   float: right;
+  transition-property: transform;
 }
 
 .link-arrow.up:before {
@@ -89,7 +90,7 @@
 }
 
 .link-arrow.transition:before {
-  transition: 0.2s all;
+  transition: transform 0.2s;
 }
 
 .link-arrow.rotate:before {
@@ -137,12 +138,13 @@
   background-color: var(--bs-dark);
 }
 
-[data-sidebar-theme=light] {
+:root,
+[data-bs-theme=light] {
   --sm-list-color: rgb(178.5, 178.5, 178.5);
   --sm-link-color: rgba(0, 0, 0, 0.65);
   --sm-link-hover: rgba(0, 0, 0, 0.8);
   --sm-link-current: black;
-  --sm-hide-bg: rgb(245.025, 246.45, 247.875);
+  --sm-hide-bg: var(--bs-tertiary-bg);
   --sm-hide-color: rgba(0, 0, 0, 0.65);
   --sm-hide-hover: rgba(0, 0, 0, 0.8);
   --sm-hide-current: black;
@@ -155,12 +157,12 @@
   --sm-scrollbar-bg: rgb(214.2, 214.2, 214.2);
 }
 
-[data-sidebar-theme=dark] {
+[data-bs-theme=dark] {
   --sm-list-color: rgb(122.0344827586, 134.5, 146.9655172414);
   --sm-link-color: rgba(255, 255, 255, 0.55);
   --sm-link-hover: rgba(255, 255, 255, 0.75);
   --sm-link-current: #fff;
-  --sm-hide-bg: rgb(58.8586206897, 65.65, 72.4413793103);
+  --sm-hide-bg: var(--bs-tertiary-bg);
   --sm-hide-color: rgba(255, 255, 255, 0.55);
   --sm-hide-hover: rgba(255, 255, 255, 0.75);
   --sm-hide-current: #fff;
@@ -256,4 +258,4 @@
 .ps .ps__rail-y:focus,
 .ps .ps__rail-y:hover {
   background: none;
-}
+}/*$vite$:1*/
