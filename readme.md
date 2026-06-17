@@ -20,11 +20,24 @@ import { SidebarMenuApp } from 'sidebar-menu-compostrap';
 SidebarMenuApp.init();
 ```
 
+The demo uses `theme-switcher-compostrap` for switching Bootstrap themes:
+
+```javascript
+import 'theme-switcher-compostrap/theme-switcher.css';
+import ThemeSwitcher from 'theme-switcher-compostrap';
+
+new ThemeSwitcher({
+	lightIcon: 'fa-solid fa-sun',
+	darkIcon: 'fa-solid fa-moon',
+}).initialize();
+```
+
 ## Built on
 - [Bootstrap 5](https://getbootstrap.com)
 - [Font Awesome 7](https://fontawesome.com)
 - [Perfect scrollbar](https://github.com/mdbootstrap/perfect-scrollbar)
 - [Nanobar](https://github.com/jacoborus/nanobar)
+- [Theme switcher](https://github.com/compostrap/theme-switcher)
 
 ## Demo
 - [Live demo](https://compostrap.github.io/sidebar-menu)
@@ -53,6 +66,7 @@ The sidebar menu follows Bootstrap's global **Light** and **Dark** themes throug
 ```
 
 The menu adapts links, icons, rotating arrows, hidden submenu backgrounds, and scrollbar colors from that single Bootstrap theme source.
+Use `theme-switcher-compostrap` when you want a ready-made Bootstrap theme switcher.
 
 ## Customization
 If you need to further customize the visual appearance (e.g., custom background colors for menu items, specific icon colors, or unique border radius), we recommend using the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.
