@@ -24,7 +24,7 @@ The demo uses `theme-switcher-compostrap` for switching Bootstrap themes:
 
 ```javascript
 import 'theme-switcher-compostrap/theme-switcher.css';
-import ThemeSwitcher from 'theme-switcher-compostrap';
+import { ThemeSwitcher } from 'theme-switcher-compostrap';
 
 new ThemeSwitcher({
 	lightIcon: 'fa-solid fa-sun',
