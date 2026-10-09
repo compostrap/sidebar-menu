@@ -15,7 +15,7 @@
 	padding: .5rem 0 .5rem 1.563rem;
 
 	& .list-hidden {
-	`tpadding-left: .75rem;
+		padding-left: .75rem;
 	}
 	}
 
@@ -42,11 +42,11 @@
 	margin: 0;
 	text-decoration: none;
 	&:hover {
-	`t.bell {
+		.bell {
 		animation: bell-shake .5s cubic-bezier(.36,.07,.19,.97) both;
 		backface-visibility: hidden;
 		transform-origin: top right;
-	`t}
+		}
 	}
 	}
 
