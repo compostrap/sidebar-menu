@@ -2,8 +2,8 @@
 // theme default
 //
 
-@use "sass:map";
-@use "colors" as color;
+@use 'sass:map';
+@use 'colors' as color;
 
 @mixin theme-vars($map) {
 	--sm-list-color: #{map.get($map, list-color)};
@@ -24,95 +24,95 @@
 }
 
 :root,
-[data-bs-theme="light"] {
+[data-bs-theme='light'] {
 	@include theme-vars(map.get(color.$themes, 'light'));
 }
 
-[data-bs-theme="dark"] {
+[data-bs-theme='dark'] {
 	@include theme-vars(map.get(color.$themes, 'dark'));
 }
 
 .list {
-  color: var(--sm-list-color);
+	color: var(--sm-list-color);
 }
 
 .list .list-link {
-  color: var(--sm-link-color);
+	color: var(--sm-link-color);
 }
 
 .list .list-link:hover {
-  color: var(--sm-link-hover);
+	color: var(--sm-link-hover);
 }
 
 .list .link-current,
 .list .link-current:hover {
-  color: var(--sm-link-current);
+	color: var(--sm-link-current);
 }
 
 .list .list-hidden {
-  background-color: var(--sm-hide-bg);
+	background-color: var(--sm-hide-bg);
 }
 
 .list .list-hidden .list-link {
-  color: var(--sm-hide-color);
+	color: var(--sm-hide-color);
 }
 
 .list .list-hidden .list-link:hover {
-  color: var(--sm-hide-hover);
+	color: var(--sm-hide-hover);
 }
 
 .list .list-hidden .link-current,
 .list .list-hidden .link-current:hover {
-  color: var(--sm-hide-current);
+	color: var(--sm-hide-current);
 }
 
 .list .list-link .list-icon {
-  color: var(--sm-icon-color);
+	color: var(--sm-icon-color);
 }
 
 .list .list-link:hover .list-icon {
-  color: var(--sm-icon-hover);
+	color: var(--sm-icon-hover);
 }
 
 .list .list-link.link-current .list-icon,
 .list .list-link.link-current:hover .list-icon {
-  color: var(--sm-icon-current);
+	color: var(--sm-icon-current);
 }
 
 .list .link-arrow:before {
-  color: var(--sm-arrow-color);
+	color: var(--sm-arrow-color);
 }
 
 .list .link-arrow:hover:before {
-  color: var(--sm-arrow-hover);
+	color: var(--sm-arrow-hover);
 }
 
 .list .link-arrow.link-current:before,
 .list .link-arrow.link-current:hover:before {
-  color: var(--sm-arrow-current);
+	color: var(--sm-arrow-current);
 }
 
 .sidebar-user {
-  background-color: var(--sm-hide-bg);
+	background-color: var(--sm-hide-bg);
 }
 
 .sidebar-user .sidebar-user-link {
-  color: var(--sm-link-color);
+	color: var(--sm-link-color);
 }
 
 .sidebar-user .sidebar-user-link:hover {
-  color: var(--sm-link-hover);
+	color: var(--sm-link-hover);
 }
 
 .ps .ps__rail-y.ps--clicking .ps__thumb-y,
 .ps .ps__rail-y:focus .ps__thumb-y,
 .ps .ps__rail-y:hover .ps__thumb-y,
 .ps .ps__thumb-y {
-  background-color: var(--sm-scrollbar-bg);
+	background-color: var(--sm-scrollbar-bg);
 }
 
 .ps .ps__rail-y.ps--clicking,
 .ps .ps__rail-y:focus,
 .ps .ps__rail-y:hover {
-  background: none;
+	background: none;
 }

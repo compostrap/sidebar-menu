@@ -1,22 +1,22 @@
-import { defineConfig } from "vite";
-import path from "path";
+import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
-	base: "",
+	base: '',
 	build: {
-		outDir: "dist",
+		outDir: 'dist',
 		emptyOutDir: true,
 		lib: {
 			entry: {
-				index: path.resolve(__dirname, "src/index.js"),
-				"sidebar-menu": path.resolve(__dirname, "src/sidebar-menu.js")
+				index: path.resolve(__dirname, 'src/index.js'),
+				'sidebar-menu': path.resolve(__dirname, 'src/sidebar-menu.js')
 			},
-			formats: ["es"]
+			formats: ['es']
 		},
 		rollupOptions: {
-			external: ["bootstrap"],
+			external: ['bootstrap'],
 			output: {
-				entryFileNames: "[name].js"
+				entryFileNames: '[name].js'
 			}
 		}
 	}

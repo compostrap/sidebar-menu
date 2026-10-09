@@ -2,55 +2,55 @@
 // list component for sidebar skeleton
 //
 
-@use "../utils/index" as utils;
-@use "sidebar-skeleton-compostrap/src/scss/utils/index" as var;
+@use '../utils/index' as utils;
+@use 'sidebar-skeleton-compostrap/src/scss/utils/index' as var;
 
 .list {
-  width: var.$sm-width;
-  font-size: .938rem;
+	width: var.$sm-width;
+	font-size: .938rem;
 
-  & &-hidden {
+	& &-hidden {
 	display: none;
 	overflow: hidden;
 	padding: .5rem 0 .5rem 1.563rem;
 
 	& .list-hidden {
-	  padding-left: .75rem;
+	`tpadding-left: .75rem;
 	}
-  }
+	}
 
-  &-hidden &-link {
+	&-hidden &-link {
 	line-height: 1.75rem;
-  }
+	}
 
-  &-item {
+	&-item {
 	padding: 0;
 	margin-top: .563rem;
 	line-height: 2.125rem;
-  }
+	}
 
-  &-title {
+	&-title {
 	margin-bottom: 0;
 	margin-left: 1.375rem;
 	letter-spacing: .063rem;
 	font-size: .75rem;
-  }
+	}
 
-  &-link {
+	&-link {
 	display: block;
 	padding: 0 .625rem 0 1.188rem;
 	margin: 0;
 	text-decoration: none;
 	&:hover {
-	  .bell {
+	`t.bell {
 		animation: bell-shake .5s cubic-bezier(.36,.07,.19,.97) both;
 		backface-visibility: hidden;
 		transform-origin: top right;
-	  }
+	`t}
 	}
-  }
+	}
 
-  @keyframes bell-shake {
+	@keyframes bell-shake {
 	0% { transform: rotate(0); }
 	15% { transform: rotate(5deg); }
 	30% { transform: rotate(-5deg); }
@@ -60,44 +60,44 @@
 	85% { transform: rotate(-2deg); }
 	92% { transform: rotate(1deg); }
 	100% { transform: rotate(0); }
-  }
+	}
 
-  &-icon {
+	&-icon {
 	width: 1.75rem;
 	display: inline-block;
-  }
+	}
 
-  .link-current {
+	.link-current {
 	font-weight: 600;
-  }
+	}
 }
 
 // arrow icon up and down in menu
 .link-arrow:before {
-  font-family: utils.$font-awesome, sans-serif;
-  font-weight: 600;
-  font-size: .75rem;
-  margin-right: .313rem;
-  float: right;
-  transition-property: transform;
+	font-family: utils.$font-awesome, sans-serif;
+	font-weight: 600;
+	font-size: .75rem;
+	margin-right: .313rem;
+	float: right;
+	transition-property: transform;
 }
 
 .link-arrow.up:before {
-  content: "\f105";
+	content: '\f105';
 }
 
 .link-arrow.down:before {
-  content: "\f107";
+	content: '\f107';
 }
 
 .link-arrow.transition:before {
-  transition: transform 0.2s;
+	transition: transform 0.2s;
 }
 
 .link-arrow.rotate:before {
-  transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
 .link-arrow.rotate-revert:before {
-  transform: rotate(-90deg);
+	transform: rotate(-90deg);
 }

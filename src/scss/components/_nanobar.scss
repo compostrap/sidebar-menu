@@ -2,21 +2,21 @@
 // nanobar component
 //
 
-@use "../utils/index" as utils;
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
+@use '../utils/index' as utils;
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
 
 
 .nanobar {
-  width: 100%;
-  height: utils.$sm-nanobar;
-  z-index: 9999;
-  top: 0;
+	width: 100%;
+	height: utils.$sm-nanobar;
+	z-index: 9999;
+	top: 0;
 
-  & .bar {
+	& .bar {
 	width: 0;
 	height: 100%;
 	transition: height 0.3s;
 	background-color: var(--bs-dark);
-  }
+	}
 }

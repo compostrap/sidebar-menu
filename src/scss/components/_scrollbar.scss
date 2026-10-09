@@ -2,8 +2,8 @@
 // scrollbar component for list
 //
 
-@use "../utils/index" as utils;
-@use "sidebar-skeleton-compostrap/src/scss/utils/index" as var;
+@use '../utils/index' as utils;
+@use 'sidebar-skeleton-compostrap/src/scss/utils/index' as var;
 
 .scrollbar {
 	width: var.$sm-width;

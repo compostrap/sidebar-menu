@@ -1,4 +1,4 @@
-import { SidebarMenu } from "./sidebar-menu.js";
+import { SidebarMenu } from './sidebar-menu.js';
 
 export class SidebarMenuApp {
 	static init() {
