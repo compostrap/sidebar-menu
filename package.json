@@ -1,6 +1,6 @@
 {
 	"name": "sidebar-menu-compostrap",
-	"version": "3.0.2",
+	"version": "3.0.3",
 	"description": "Simple and fast multi-level sidebar menu built on Bootstrap 5.",
 	"type": "module",
 	"license": "MIT",
