@@ -1,6 +1,6 @@
 {
 	"name": "sidebar-menu-compostrap",
-	"version": "3.0.3",
+	"version": "3.0.4",
 	"description": "Simple and fast multi-level sidebar menu built on Bootstrap 5.",
 	"type": "module",
 	"license": "MIT",
@@ -20,7 +20,7 @@
 		"nanobar": "^0.4.2",
 		"perfect-scrollbar": "^1.5.6",
 		"sidebar-skeleton-compostrap": "^3.0.0",
-		"theme-switcher-compostrap": "^1.0.2"
+		"theme-switcher-compostrap": "^2.0.0"
 	},
 	"devDependencies": {
 		"sass": "^1.97.1",

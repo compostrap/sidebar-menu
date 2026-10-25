@@ -23,6 +23,10 @@ import { SidebarMenuApp } from 'sidebar-menu-compostrap';
 SidebarMenuApp.init();
 ```
 
+The initializer can be called again after adding menu items. It marks submenu controls with `aria-expanded` and
+`aria-controls`, marks current leaf links with `aria-current="page"`, and skips animation when reduced motion is
+requested.
+
 The demo uses `theme-switcher-compostrap` for switching Bootstrap themes:
 
 ```javascript

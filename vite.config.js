@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import path from 'path';
+import path from 'node:path';
 
 export default defineConfig({
 	base: '',
@@ -8,8 +8,8 @@ export default defineConfig({
 		emptyOutDir: true,
 		lib: {
 			entry: {
-				index: path.resolve(__dirname, 'src/index.js'),
-				'sidebar-menu': path.resolve(__dirname, 'src/sidebar-menu.js')
+				index: path.resolve(import.meta.dirname, 'src/index.js'),
+				'sidebar-menu': path.resolve(import.meta.dirname, 'src/sidebar-menu.js')
 			},
 			formats: ['es']
 		},
