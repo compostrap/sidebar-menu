@@ -3,6 +3,15 @@
 
 <head>
 	<meta charset="UTF-8">
+	<!-- the stored theme before the page is drawn, so a dark page does not flash light -->
+	<script>
+		try {
+			const theme = localStorage.getItem('bootstrap-theme');
+			if (theme === 'light' || theme === 'dark') {
+				document.documentElement.setAttribute('data-bs-theme', theme);
+			}
+		} catch (e) { }
+	</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="node_modules/sidebar-skeleton-compostrap/dist/sidebar.css">
