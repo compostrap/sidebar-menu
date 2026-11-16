@@ -1,6 +1,25 @@
-// font family
-$font-awesome: 'Font Awesome 7 Free';
+// icon font of the menu arrows
+$font-awesome: 'Font Awesome 7 Free' !default;
+$font-awesome-weight: 900 !default;
 
-// other settings
-$sm-scrollbar: .313rem;
-$sm-nanobar: .125rem;
+// menu: text, rows of the first level (44px) and of submenus (32px), section titles
+$sm-font-size: .875rem !default;
+$sm-line-height: 1.25rem !default;
+$sm-link-padding-y: .75rem !default;
+$sm-link-padding-x: 1.25rem !default;
+$sm-sublink-padding-y: .375rem !default;
+$sm-sub-indent: 1rem !default;
+$sm-title-font-size: .75rem !default;
+$sm-section-gap: 1rem !default;
+
+// menu icons: the column they sit in, the gap to the text and their size
+$sm-icon-width: 1.5rem !default;
+$sm-icon-gap: .625rem !default;
+$sm-icon-size: 1rem !default;
+
+// size of the rotating arrows of submenus
+$sm-arrow-size: .625rem !default;
+
+// width of the menu scrollbar and height of the nanobar
+$sm-scrollbar: .25rem !default;
+$sm-nanobar: .125rem !default;

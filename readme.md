@@ -82,11 +82,7 @@ Use `theme-switcher-compostrap` when you want a ready-made Bootstrap theme switc
 
 ## Customization
 
-If you need to further customize the visual appearance (e.g., custom background colors for menu items, specific icon colors, or unique border radius), we recommend using the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.
+The sizes of the menu (text, rows, icons, arrows) are Sass variables with `!default` in `src/scss/utils/_variables.scss`.
+The colors are CSS variables `--sm-*` mixed from the body color of Bootstrap, so they follow the light and dark theme.
 
-The custom package is designed for easy modification of:
-
-- **Backgrounds:** Subtle tints for first-level menu items.
-- **Icons:** Custom coloring for active or hovered states.
-- **Layout:** Precise alignment of menu elements (like rotating arrows).
-- **Variables:** Global CSS variables for consistent styling (e.g., `--sm-modern-border-radius`).
+For menu links as pills (the current page and a hovered link in a pill of the page background color) use the **[sidebar-menu-custom](https://github.com/compostrap/sidebar-menu-custom)** package.

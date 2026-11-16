@@ -10,12 +10,16 @@
 	overflow: hidden;
 	position: relative;
 
+	// the visible height of the window (dvh): on a phone 100vh reaches under the bars of the browser and the last
+	// links of the menu could not be scrolled into view
 	&-not-navbar {
-		height: calc(100vh);
+		height: 100vh;
+		height: 100dvh;
 	}
 
 	&-use-navbar {
 		height: calc(100vh - #{var.$sm-top});
+		height: calc(100dvh - #{var.$sm-top});
 	}
 }
 

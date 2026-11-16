@@ -32,6 +32,20 @@ export class SidebarMenu {
 				}
 				link.setAttribute('aria-expanded', String(submenu.style.display === 'block'));
 
+				// a link that only opens its submenu has no address (the browser shows none in its status bar), so it
+				// becomes a button for the keyboard and screen readers
+				if (!link.hasAttribute('href')) {
+					link.setAttribute('role', 'button');
+					link.tabIndex = 0;
+					link.addEventListener('keydown', (event) => {
+						if (event.key === 'Enter' || event.key === ' ') {
+							event.preventDefault();
+							link.click();
+						}
+					});
+				}
+
+				// an opened group is not marked as current: link-current stays only on the group holding the current page
 				link.addEventListener('click', (event) => {
 					event.preventDefault();
 					const expanded = this._slideToggle(submenu, duration);
@@ -44,7 +58,6 @@ export class SidebarMenu {
 					link.classList.add('transition');
 					link.classList.toggle('active');
 					link.classList.toggle('rotate');
-					link.classList.toggle('link-current');
 				});
 			});
 		});

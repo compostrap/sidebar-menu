@@ -7,79 +7,100 @@
 
 .list {
 	width: var.$sm-width;
-	font-size: .938rem;
-
-	& &-hidden {
-	display: none;
-	overflow: hidden;
-	padding: .5rem 0 .5rem 1.563rem;
-
-	& .list-hidden {
-		padding-left: .75rem;
-	}
-	}
-
-	&-hidden &-link {
-	line-height: 1.75rem;
-	}
+	font-size: utils.$sm-font-size;
+	line-height: utils.$sm-line-height;
 
 	&-item {
-	padding: 0;
-	margin-top: .563rem;
-	line-height: 2.125rem;
+		padding: 0;
+		margin-top: utils.$sm-section-gap;
 	}
 
+	// a section title sits close to its first link
 	&-title {
-	margin-bottom: 0;
-	margin-left: 1.375rem;
-	letter-spacing: .063rem;
-	font-size: .75rem;
+		padding: .25rem utils.$sm-link-padding-x .125rem;
+		margin-bottom: 0;
+		font-size: utils.$sm-title-font-size;
+		font-weight: 500;
+		letter-spacing: .04em;
 	}
 
 	&-link {
-	display: block;
-	padding: 0 .625rem 0 1.188rem;
-	margin: 0;
-	text-decoration: none;
-	&:hover {
-		.bell {
-		animation: bell-shake .5s cubic-bezier(.36,.07,.19,.97) both;
-		backface-visibility: hidden;
-		transform-origin: top right;
+		display: block;
+		padding: utils.$sm-link-padding-y utils.$sm-link-padding-x;
+		margin: 0;
+		text-decoration: none;
+
+		// never underlined, also when the theme (or a project) underlines links on hover
+		&:hover {
+			text-decoration: none;
+
+			// the bell shakes only for a user who has not asked the system for less motion
+			@media (prefers-reduced-motion: no-preference) {
+				.bell {
+					animation: bell-shake .5s cubic-bezier(.36, .07, .19, .97) both;
+					backface-visibility: hidden;
+					transform-origin: top right;
+				}
+			}
 		}
 	}
+
+	// a submenu spans the whole width (so a highlight of its link does too), the text of its links starts under
+	// the text of the parent link, each deeper level is indented a bit more
+	& &-hidden {
+		display: none;
+		overflow: hidden;
+		padding: 0;
+	}
+
+	&-hidden &-link {
+		padding-top: utils.$sm-sublink-padding-y;
+		padding-bottom: utils.$sm-sublink-padding-y;
+		padding-left: utils.$sm-link-padding-x + utils.$sm-icon-width + utils.$sm-icon-gap;
+	}
+
+	&-hidden &-hidden &-link {
+		padding-left: utils.$sm-link-padding-x + utils.$sm-icon-width + utils.$sm-icon-gap + utils.$sm-sub-indent;
 	}
 
 	@keyframes bell-shake {
-	0% { transform: rotate(0); }
-	15% { transform: rotate(5deg); }
-	30% { transform: rotate(-5deg); }
-	45% { transform: rotate(4deg); }
-	60% { transform: rotate(-4deg); }
-	75% { transform: rotate(2deg); }
-	85% { transform: rotate(-2deg); }
-	92% { transform: rotate(1deg); }
-	100% { transform: rotate(0); }
+		0% { transform: rotate(0); }
+		15% { transform: rotate(5deg); }
+		30% { transform: rotate(-5deg); }
+		45% { transform: rotate(4deg); }
+		60% { transform: rotate(-4deg); }
+		75% { transform: rotate(2deg); }
+		85% { transform: rotate(-2deg); }
+		92% { transform: rotate(1deg); }
+		100% { transform: rotate(0); }
 	}
 
 	&-icon {
-	width: 1.75rem;
-	display: inline-block;
+		display: inline-block;
+		width: utils.$sm-icon-width;
+		margin-right: utils.$sm-icon-gap;
+		font-size: utils.$sm-icon-size;
+		text-align: center;
 	}
 
+	// the current page and the group holding it are medium, so the section of the page is seen at once
 	.link-current {
-	font-weight: 600;
+		font-weight: 500;
 	}
 }
 
 // arrow icon up and down in menu
 .link-arrow:before {
 	font-family: utils.$font-awesome, sans-serif;
-	font-weight: 600;
-	font-size: .75rem;
-	margin-right: .313rem;
+	font-weight: utils.$font-awesome-weight;
+	font-size: utils.$sm-arrow-size;
 	float: right;
 	transition-property: transform;
+}
+
+// a badge of a link with a submenu keeps a gap before the arrow
+.link-arrow .float-end {
+	margin-right: .5rem;
 }
 
 .link-arrow.up:before {
@@ -91,7 +112,7 @@
 }
 
 .link-arrow.transition:before {
-	transition: transform 0.2s;
+	transition: transform 0.07s;
 }
 
 .link-arrow.rotate:before {
@@ -100,4 +121,10 @@
 
 .link-arrow.rotate-revert:before {
 	transform: rotate(-90deg);
+}
+
+// a link that only opens its submenu (no address) still shows the hand
+.link-arrow {
+	cursor: pointer;
+	user-select: none;
 }

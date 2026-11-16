@@ -2,34 +2,25 @@
 // theme default
 //
 
-@use 'sass:map';
-@use 'colors' as color;
-
-@mixin theme-vars($map) {
-	--sm-list-color: #{map.get($map, list-color)};
-	--sm-link-color: #{map.get($map, link-color)};
-	--sm-link-hover: #{map.get($map, link-hover)};
-	--sm-link-current: #{map.get($map, link-current)};
-	--sm-hide-bg: var(--bs-tertiary-bg);
-	--sm-hide-color: #{map.get($map, hide-color)};
-	--sm-hide-hover: #{map.get($map, hide-hover)};
-	--sm-hide-current: #{map.get($map, hide-current)};
-	--sm-icon-color: #{map.get($map, icon-color)};
-	--sm-icon-hover: #{map.get($map, icon-hover)};
-	--sm-icon-current: #{map.get($map, icon-current)};
-	--sm-arrow-color: #{map.get($map, arrow-color)};
-	--sm-arrow-hover: #{map.get($map, arrow-hover)};
-	--sm-arrow-current: #{map.get($map, arrow-current)};
-	--sm-scrollbar-bg: #{map.get($map, scrollbar-bg)};
-}
-
-:root,
-[data-bs-theme='light'] {
-	@include theme-vars(map.get(color.$themes, 'light'));
-}
-
-[data-bs-theme='dark'] {
-	@include theme-vars(map.get(color.$themes, 'dark'));
+// The colors come from the body color of Bootstrap, so they follow the light and dark theme by themselves:
+// links at 85 %, section titles at 60 %, icons at 60 % (75 % on hover and for the current page, so all icons
+// keep one shade), arrows at 85 % like the link text; the current page differs by the medium weight only, not by its color.
+:root {
+	--sm-list-color: rgba(var(--bs-body-color-rgb), .6);
+	--sm-link-color: rgba(var(--bs-body-color-rgb), .85);
+	--sm-link-hover: var(--bs-emphasis-color);
+	--sm-link-current: var(--bs-body-color);
+	--sm-hide-bg: transparent;
+	--sm-hide-color: rgba(var(--bs-body-color-rgb), .85);
+	--sm-hide-hover: var(--bs-emphasis-color);
+	--sm-hide-current: var(--bs-body-color);
+	--sm-icon-color: rgba(var(--bs-body-color-rgb), .6);
+	--sm-icon-hover: rgba(var(--bs-body-color-rgb), .75);
+	--sm-icon-current: rgba(var(--bs-body-color-rgb), .75);
+	--sm-arrow-color: rgba(var(--bs-body-color-rgb), .85);
+	--sm-arrow-hover: var(--bs-body-color);
+	--sm-arrow-current: rgba(var(--bs-body-color-rgb), .85);
+	--sm-scrollbar-bg: rgba(var(--bs-body-color-rgb), .2);
 }
 
 .list {

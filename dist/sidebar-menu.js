@@ -7,10 +7,12 @@ var e = class {
 		e.forEach((e) => {
 			e.querySelectorAll("a.link-arrow").forEach((e) => {
 				let n = e.nextElementSibling;
-				n && e.dataset.sidebarMenuInitialized !== "true" && (e.dataset.sidebarMenuInitialized = "true", e.classList.add("up"), n.id ||= `sidebar-submenu-${++this._submenuId}`, e.setAttribute("aria-controls", n.id), e.classList.contains("link-current") && (e.classList.add("active", "down"), n.style.display = "block"), e.setAttribute("aria-expanded", String(n.style.display === "block")), e.addEventListener("click", (r) => {
+				n && e.dataset.sidebarMenuInitialized !== "true" && (e.dataset.sidebarMenuInitialized = "true", e.classList.add("up"), n.id ||= `sidebar-submenu-${++this._submenuId}`, e.setAttribute("aria-controls", n.id), e.classList.contains("link-current") && (e.classList.add("active", "down"), n.style.display = "block"), e.setAttribute("aria-expanded", String(n.style.display === "block")), e.hasAttribute("href") || (e.setAttribute("role", "button"), e.tabIndex = 0, e.addEventListener("keydown", (t) => {
+					(t.key === "Enter" || t.key === " ") && (t.preventDefault(), e.click());
+				})), e.addEventListener("click", (r) => {
 					r.preventDefault();
 					let i = this._slideToggle(n, t);
-					e.setAttribute("aria-expanded", String(i)), e.classList.contains("down") && e.classList.toggle("rotate-revert"), e.classList.add("transition"), e.classList.toggle("active"), e.classList.toggle("rotate"), e.classList.toggle("link-current");
+					e.setAttribute("aria-expanded", String(i)), e.classList.contains("down") && e.classList.toggle("rotate-revert"), e.classList.add("transition"), e.classList.toggle("active"), e.classList.toggle("rotate");
 				}));
 			});
 		}), document.querySelectorAll(".list-link.link-current:not(.link-arrow)").forEach((e) => {

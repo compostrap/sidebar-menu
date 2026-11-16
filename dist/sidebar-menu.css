@@ -1,39 +1,47 @@
 .list {
   width: 14.375rem;
-  font-size: 0.938rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.list-item {
+  padding: 0;
+  margin-top: 1rem;
+}
+.list-title {
+  padding: 0.25rem 1.25rem 0.125rem;
+  margin-bottom: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.list-link {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin: 0;
+  text-decoration: none;
+}
+.list-link:hover {
+  text-decoration: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .list-link:hover .bell {
+    animation: bell-shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    backface-visibility: hidden;
+    transform-origin: top right;
+  }
 }
 .list .list-hidden {
   display: none;
   overflow: hidden;
-  padding: 0.5rem 0 0.5rem 1.563rem;
-}
-.list .list-hidden .list-hidden {
-  padding-left: 0.75rem;
+  padding: 0;
 }
 .list-hidden .list-link {
-  line-height: 1.75rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 3.375rem;
 }
-.list-item {
-  padding: 0;
-  margin-top: 0.563rem;
-  line-height: 2.125rem;
-}
-.list-title {
-  margin-bottom: 0;
-  margin-left: 1.375rem;
-  letter-spacing: 0.063rem;
-  font-size: 0.75rem;
-}
-.list-link {
-  display: block;
-  padding: 0 0.625rem 0 1.188rem;
-  margin: 0;
-  text-decoration: none;
-}
-.list-link:hover .bell {
-  animation: bell-shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  backface-visibility: hidden;
-  transform-origin: top right;
+.list-hidden .list-hidden .list-link {
+  padding-left: 4.375rem;
 }
 @keyframes bell-shake {
   0% {
@@ -65,20 +73,26 @@
   }
 }
 .list-icon {
-  width: 1.75rem;
   display: inline-block;
+  width: 1.5rem;
+  margin-right: 0.625rem;
+  font-size: 1rem;
+  text-align: center;
 }
 .list .link-current {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .link-arrow:before {
   font-family: "Font Awesome 7 Free", sans-serif;
-  font-weight: 600;
-  font-size: 0.75rem;
-  margin-right: 0.313rem;
+  font-weight: 900;
+  font-size: 0.625rem;
   float: right;
   transition-property: transform;
+}
+
+.link-arrow .float-end {
+  margin-right: 0.5rem;
 }
 
 .link-arrow.up:before {
@@ -90,7 +104,7 @@
 }
 
 .link-arrow.transition:before {
-  transition: transform 0.2s;
+  transition: transform 0.07s;
 }
 
 .link-arrow.rotate:before {
@@ -101,6 +115,11 @@
   transform: rotate(-90deg);
 }
 
+.link-arrow {
+  cursor: pointer;
+  user-select: none;
+}
+
 .scrollbar {
   width: 14.375rem;
   overflow: hidden;
@@ -108,9 +127,11 @@
 }
 .scrollbar-not-navbar {
   height: 100vh;
+  height: 100dvh;
 }
 .scrollbar-use-navbar {
   height: calc(100vh - 3.5rem);
+  height: calc(100dvh - 3.5rem);
 }
 
 .ps__rail-y {
@@ -122,7 +143,7 @@
 .ps__rail-y:focus .ps__thumb-y,
 .ps__rail-y:hover .ps__thumb-y,
 .ps__thumb-y {
-  width: 0.313rem;
+  width: 0.25rem;
 }
 
 .nanobar {
@@ -135,44 +156,25 @@
   width: 0;
   height: 100%;
   transition: height 0.3s;
-  background-color: var(--bs-dark);
+  background-color: var(--bs-body-color);
 }
 
-:root,
-[data-bs-theme=light] {
-  --sm-list-color: rgb(178.5, 178.5, 178.5);
-  --sm-link-color: rgba(0, 0, 0, 0.65);
-  --sm-link-hover: rgba(0, 0, 0, 0.8);
-  --sm-link-current: black;
-  --sm-hide-bg: var(--bs-tertiary-bg);
-  --sm-hide-color: rgba(0, 0, 0, 0.65);
-  --sm-hide-hover: rgba(0, 0, 0, 0.8);
-  --sm-hide-current: black;
-  --sm-icon-color: rgba(0, 0, 0, 0.65);
-  --sm-icon-hover: rgba(0, 0, 0, 0.8);
-  --sm-icon-current: black;
-  --sm-arrow-color: rgba(0, 0, 0, 0.65);
-  --sm-arrow-hover: rgba(0, 0, 0, 0.8);
-  --sm-arrow-current: black;
-  --sm-scrollbar-bg: rgb(214.2, 214.2, 214.2);
-}
-
-[data-bs-theme=dark] {
-  --sm-list-color: rgb(122.0344827586, 134.5, 146.9655172414);
-  --sm-link-color: rgba(255, 255, 255, 0.55);
-  --sm-link-hover: rgba(255, 255, 255, 0.75);
-  --sm-link-current: #fff;
-  --sm-hide-bg: var(--bs-tertiary-bg);
-  --sm-hide-color: rgba(255, 255, 255, 0.55);
-  --sm-hide-hover: rgba(255, 255, 255, 0.75);
-  --sm-hide-current: #fff;
-  --sm-icon-color: rgba(255, 255, 255, 0.55);
-  --sm-icon-hover: rgba(255, 255, 255, 0.75);
-  --sm-icon-current: #fff;
-  --sm-arrow-color: rgba(255, 255, 255, 0.55);
-  --sm-arrow-hover: rgba(255, 255, 255, 0.75);
-  --sm-arrow-current: #fff;
-  --sm-scrollbar-bg: rgb(111.4413793103, 124.3, 137.1586206897);
+:root {
+  --sm-list-color: rgba(var(--bs-body-color-rgb), .6);
+  --sm-link-color: rgba(var(--bs-body-color-rgb), .85);
+  --sm-link-hover: var(--bs-emphasis-color);
+  --sm-link-current: var(--bs-body-color);
+  --sm-hide-bg: transparent;
+  --sm-hide-color: rgba(var(--bs-body-color-rgb), .85);
+  --sm-hide-hover: var(--bs-emphasis-color);
+  --sm-hide-current: var(--bs-body-color);
+  --sm-icon-color: rgba(var(--bs-body-color-rgb), .6);
+  --sm-icon-hover: rgba(var(--bs-body-color-rgb), .75);
+  --sm-icon-current: rgba(var(--bs-body-color-rgb), .75);
+  --sm-arrow-color: rgba(var(--bs-body-color-rgb), .85);
+  --sm-arrow-hover: var(--bs-body-color);
+  --sm-arrow-current: rgba(var(--bs-body-color-rgb), .85);
+  --sm-scrollbar-bg: rgba(var(--bs-body-color-rgb), .2);
 }
 
 .list {
