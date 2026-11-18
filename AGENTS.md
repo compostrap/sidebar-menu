@@ -15,6 +15,7 @@ A multi-level menu for the sidebar of `sidebar-skeleton-compostrap` (Bootstrap 5
 - Font Awesome stays the icon font of the old packages: the arrows are its glyphs `\f105`/`\f107` (weight 900). Do not switch them to Bootstrap Icons.
 - Projects copy the markup (`list`, `list-item`, `list-title`, `list-link`, `list-icon`, `list-hidden`, `link-arrow`, `link-current`, `bell`), so these names stay; a change is made in SCSS or JavaScript only.
 - `link-current` marks the current page and the group holding it; opening a group does not add it (only the arrow classes change). A link with a submenu and no `href` becomes `role=button` with `tabindex=0` and opens by Enter or Space.
+- An open submenu has a 1px line on its left (`::before` of `list-hidden`, `$sm-line-width`, color `--sm-line-color` at 15 % of the body color), under the middle of the parent icon; a deeper submenu has it under the start of the parent text.
 - Submenus slide open in 200 ms (0 with reduced motion), by height, margin and padding.
 - The scrollbar of the menu is as high as the visible window (`dvh`, `vh` as the fallback).
 - The nanobar has the color of the text (`--bs-body-color`), so it is seen in both themes.

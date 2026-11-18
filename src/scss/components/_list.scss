@@ -48,9 +48,26 @@
 	// a submenu spans the whole width (so a highlight of its link does too), the text of its links starts under
 	// the text of the parent link, each deeper level is indented a bit more
 	& &-hidden {
+		position: relative;
 		display: none;
 		overflow: hidden;
 		padding: 0;
+
+		// a thin line on the left of an open submenu, under the middle of the icon of its parent link
+		&::before {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: utils.$sm-link-padding-x + utils.$sm-icon-width * .5;
+			width: utils.$sm-line-width;
+			content: '';
+			background-color: var(--sm-line-color);
+		}
+	}
+
+	// a deeper submenu has its line under the start of the text of its parent link
+	& &-hidden &-hidden::before {
+		left: utils.$sm-link-padding-x + utils.$sm-icon-width + utils.$sm-icon-gap;
 	}
 
 	&-hidden &-link {

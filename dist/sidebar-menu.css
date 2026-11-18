@@ -31,9 +31,22 @@
   }
 }
 .list .list-hidden {
+  position: relative;
   display: none;
   overflow: hidden;
   padding: 0;
+}
+.list .list-hidden::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2rem;
+  width: 1px;
+  content: "";
+  background-color: var(--sm-line-color);
+}
+.list .list-hidden .list-hidden::before {
+  left: 3.375rem;
 }
 .list-hidden .list-link {
   padding-top: 0.375rem;
@@ -165,6 +178,7 @@
   --sm-link-hover: var(--bs-emphasis-color);
   --sm-link-current: var(--bs-body-color);
   --sm-hide-bg: transparent;
+  --sm-line-color: rgba(var(--bs-body-color-rgb), .15);
   --sm-hide-color: rgba(var(--bs-body-color-rgb), .85);
   --sm-hide-hover: var(--bs-emphasis-color);
   --sm-hide-current: var(--bs-body-color);
